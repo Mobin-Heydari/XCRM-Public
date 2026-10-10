@@ -1,1 +1,4 @@
 assets/movies/
+.opencode/
+graphify-out/
+venv/

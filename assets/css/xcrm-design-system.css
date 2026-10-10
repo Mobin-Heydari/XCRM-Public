@@ -1,0 +1,1237 @@
+/* ==========================================================================
+   xCRM Design System
+   --------------------------------------------------------------------------
+   Vanilla CSS conversion of the xCRM Tailwind design config.
+   No Tailwind required. Load this BEFORE any section stylesheet.
+
+   Structure:
+     1.  Fonts
+     2.  CSS Custom Properties (light :root + .dark)
+     3.  Base
+     4.  Keyframes
+     5.  Animation utility classes
+     6.  Containers
+     7.  Cards (borderless, shadow-driven)
+     8.  Grids
+     9.  Interactive / Focus
+     10. Utilities (scrollbar, gradient text, grid bg, performance, ...)
+     11. Hero utilities
+     12. Reveal-on-scroll (pairs with xcrm-core.js)
+     13. Reduced motion
+
+   Dark mode: add class="dark" on <html> (or any ancestor).
+   ========================================================================== */
+
+/* ==========================================================================
+   1. FONTS
+   ========================================================================== */
+
+@font-face {
+  font-family: 'IRANYekanXVF';
+  src: url('../fonts/IRANYekanXVF.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IRANYekanWeb';
+  src: url('../fonts/iranyekanwebregular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ==========================================================================
+   2. CSS CUSTOM PROPERTIES
+   ========================================================================== */
+
+:root {
+  /* ---- Typography ---- */
+  --x-font-sans: 'IRANYekanXVF', 'IRANYekanWeb', 'IRANSans', Tahoma, Arial, sans-serif;
+
+  /* ---- Primary / Brand (static) ---- */
+  --x-primary: #6366F1;
+  --x-primary-hover: #5558E8;
+  --x-primary-active: #4547C7;
+  --x-primary-soft: #EEF0FF;
+  --x-primary-soft-dark: #1E1B4B;
+
+  /* ---- Secondary (static) ---- */
+  --x-secondary: #667085;
+  --x-secondary-hover: #475467;
+  --x-secondary-active: #344054;
+  --x-secondary-soft: #F2F4F7;
+  --x-secondary-soft-dark: #1E293B;
+
+  /* ---- Background (static references) ---- */
+  --x-bg-light: #F6F8FC;
+  --x-bg-dark: #070B14;
+
+  /* ---- Surfaces (static references) ---- */
+  --x-base-light: #FFFFFF;
+  --x-base-dark: #0D1320;
+  --x-surface-light: #FFFFFF;
+  --x-surface-dark: #111827;
+  --x-surface-hover-light: #F9FAFB;
+  --x-surface-hover-dark: #172033;
+
+  /* ---- Borders (static references — forms/tables/inputs only) ---- */
+  --x-border-light: #E7EAF0;
+  --x-border-dark: #1E293B;
+  --x-border-subtle-light: #EEF0F4;
+  --x-border-subtle-dark: #172033;
+
+  /* ---- Text (static references) ---- */
+  --x-text-main-light: #111827;
+  --x-text-main-dark: #F8FAFC;
+  --x-text-highlight-light: #667085;
+  --x-text-highlight-dark: #CBD5E1;
+  --x-text-muted-light: #98A2B3;
+  --x-text-muted-dark: #64748B;
+
+  /* ---- Success (static) ---- */
+  --x-success: #10B981;
+  --x-success-light: #10B981;
+  --x-success-dark: #34D399;
+  --x-success-soft: #ECFDF5;
+  --x-success-soft-dark: #052E24;
+  --x-success-strong: #059669;
+  --x-success-on-dark: #6EE7B7;
+
+  /* ---- Info (static) ---- */
+  --x-info: #0EA5E9;
+  --x-info-light: #0EA5E9;
+  --x-info-dark: #22D3EE;
+  --x-info-soft: #F0F9FF;
+  --x-info-soft-dark: #082F49;
+  --x-info-strong: #0284C7;
+  --x-info-on-dark: #67E8F9;
+
+  /* ---- Warning (static) ---- */
+  --x-warn: #F59E0B;
+  --x-warn-light: #F59E0B;
+  --x-warn-dark: #FBBF24;
+  --x-warn-soft: #FFFBEB;
+  --x-warn-soft-dark: #451A03;
+  --x-warn-strong: #B45309;
+  --x-warn-on-dark: #FCD34D;
+
+  /* ---- Error (static) ---- */
+  --x-error: #F04438;
+  --x-error-light: #F04438;
+  --x-error-dark: #FB7185;
+  --x-error-soft: #FEF2F2;
+  --x-error-soft-dark: #450A0A;
+  --x-error-strong: #D92D20;
+  --x-error-on-dark: #FDA4AF;
+
+  /* ---- Accent colors (static) ---- */
+  --x-purple: #8B5CF6;
+  --x-purple-soft: #F5F3FF;
+  --x-purple-soft-dark: #2E1065;
+  --x-cyan: #06B6D4;
+  --x-cyan-soft: #ECFEFF;
+  --x-cyan-soft-dark: #083344;
+  --x-pink: #EC4899;
+  --x-pink-soft: #FDF2F8;
+  --x-pink-soft-dark: #500724;
+  --x-orange: #F97316;
+  --x-orange-soft: #FFF7ED;
+  --x-orange-soft-dark: #431407;
+
+  /* ---- Sidebar (static references) ---- */
+  --x-sidebar-light: #FFFFFF;
+  --x-sidebar-dark: #0B1120;
+  --x-sidebar-active-light: #EEF0FF;
+  --x-sidebar-active-dark: #1E1B4B;
+  --x-sidebar-hover-light: #F7F8FC;
+  --x-sidebar-hover-dark: #111827;
+
+  /* ---- Inputs (static references) ---- */
+  --x-input-light: #FFFFFF;
+  --x-input-dark: #0D1320;
+  --x-input-border-light: #D0D5DD;
+  --x-input-border-dark: #334155;
+  --x-input-focus-light: #6366F1;
+  --x-input-focus-dark: #818CF8;
+
+  /* ---- Chart system (always static) ---- */
+  --x-chart-primary: #6366F1;
+  --x-chart-secondary: #06B6D4;
+  --x-chart-success: #10B981;
+  --x-chart-warning: #F59E0B;
+  --x-chart-danger: #F04438;
+  --x-chart-purple: #8B5CF6;
+  --x-chart-pink: #EC4899;
+  --x-chart-orange: #F97316;
+
+  /* ---- Theme-aware: Background / Surface / Border / Text ---- */
+  --x-bg: var(--x-bg-light);
+  --x-base: var(--x-base-light);
+  --x-surface: var(--x-surface-light);
+  --x-surface-hover: var(--x-surface-hover-light);
+  --x-border: var(--x-border-light);
+  --x-border-subtle: var(--x-border-subtle-light);
+  --x-text: var(--x-text-main-light);
+  --x-text-highlight: var(--x-text-highlight-light);
+  --x-text-muted: var(--x-text-muted-light);
+
+  /* ---- Theme-aware: Soft backgrounds ---- */
+  --x-soft-primary: var(--x-primary-soft);
+  --x-soft-secondary: var(--x-secondary-soft);
+  --x-soft-success: var(--x-success-soft);
+  --x-soft-info: var(--x-info-soft);
+  --x-soft-warn: var(--x-warn-soft);
+  --x-soft-error: var(--x-error-soft);
+  --x-soft-purple: var(--x-purple-soft);
+  --x-soft-cyan: var(--x-cyan-soft);
+  --x-soft-pink: var(--x-pink-soft);
+  --x-soft-orange: var(--x-orange-soft);
+
+  /* ---- Theme-aware: Accent text ---- */
+  --x-accent-success: var(--x-success-strong);
+  --x-accent-info: var(--x-info-strong);
+  --x-accent-warn: var(--x-warn-strong);
+  --x-accent-error: var(--x-error-strong);
+
+  /* ---- Theme-aware: Sidebar / Inputs ---- */
+  --x-sidebar: var(--x-sidebar-light);
+  --x-sidebar-active: var(--x-sidebar-active-light);
+  --x-sidebar-hover: var(--x-sidebar-hover-light);
+  --x-input: var(--x-input-light);
+  --x-input-border: var(--x-input-border-light);
+  --x-input-focus: var(--x-input-focus-light);
+
+  /* ---- Shadows: General / Cards / Soft (theme-aware) ---- */
+  --x-shadow-main: 0 10px 40px rgba(15, 23, 42, 0.06);
+  --x-shadow-card: 0 1px 3px rgba(15, 23, 42, 0.06);
+  --x-shadow-card-hover: 0 10px 28px rgba(15, 23, 42, 0.08);
+  --x-shadow-soft: 0 4px 16px rgba(15, 23, 42, 0.05);
+
+  /* ---- Shadows: Dark variants (static, for manual use) ---- */
+  --x-shadow-main-dark: 0 10px 40px rgba(0, 0, 0, 0.28);
+  --x-shadow-card-dark: 0 2px 6px rgba(0, 0, 0, 0.25);
+  --x-shadow-card-hover-dark: 0 12px 32px rgba(0, 0, 0, 0.30);
+  --x-shadow-soft-dark: 0 4px 18px rgba(0, 0, 0, 0.22);
+
+  /* ---- Shadows: Primary ---- */
+  --x-shadow-primary: 0 4px 14px rgba(99, 102, 241, 0.18);
+  --x-shadow-primary-lg: 0 10px 30px rgba(99, 102, 241, 0.20);
+
+  /* ---- Shadows: Glows (static) ---- */
+  --x-glow-primary: 0 0 24px rgba(99, 102, 241, 0.18);
+  --x-glow-primary-sm: 0 0 12px rgba(99, 102, 241, 0.12);
+  --x-glow-primary-lg: 0 0 40px rgba(99, 102, 241, 0.20);
+  --x-glow-info: 0 0 24px rgba(14, 165, 233, 0.16);
+  --x-glow-info-sm: 0 0 12px rgba(14, 165, 233, 0.10);
+  --x-glow-info-lg: 0 0 36px rgba(14, 165, 233, 0.18);
+  --x-glow-success: 0 0 24px rgba(16, 185, 129, 0.16);
+  --x-glow-success-sm: 0 0 12px rgba(16, 185, 129, 0.10);
+  --x-glow-success-lg: 0 0 36px rgba(16, 185, 129, 0.18);
+  --x-glow-success-xl: 0 0 44px rgba(16, 185, 129, 0.22);
+  --x-glow-warn: 0 0 24px rgba(245, 158, 11, 0.16);
+  --x-glow-warn-sm: 0 0 12px rgba(245, 158, 11, 0.10);
+  --x-glow-warn-lg: 0 0 36px rgba(245, 158, 11, 0.18);
+  --x-glow-error: 0 0 24px rgba(240, 68, 56, 0.16);
+  --x-glow-error-sm: 0 0 12px rgba(240, 68, 56, 0.10);
+  --x-glow-error-lg: 0 0 36px rgba(240, 68, 56, 0.18);
+  --x-glow-error-xl: 0 0 44px rgba(240, 68, 56, 0.22);
+  --x-glow-purple: 0 0 24px rgba(139, 92, 246, 0.16);
+  --x-glow-cyan: 0 0 24px rgba(6, 182, 212, 0.16);
+
+  /* ---- Gradients ---- */
+  --x-gradient-primary: linear-gradient(135deg, #6366F1 0%, #8B5CF6 100%);
+  --x-gradient-ocean: linear-gradient(135deg, #6366F1 0%, #06B6D4 100%);
+  --x-gradient-premium: linear-gradient(135deg, #7C3AED 0%, #EC4899 100%);
+  --x-gradient-success: linear-gradient(135deg, #10B981 0%, #06B6D4 100%);
+  --x-gradient-sunset: linear-gradient(135deg, #F97316 0%, #EC4899 100%);
+  --x-gradient-dark: linear-gradient(135deg, #0B1120 0%, #111827 100%);
+  --x-gradient-brand-glow: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.18), transparent 60%);
+  --x-gradient-brand-glow-dark: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.14), transparent 60%);
+
+  /* ---- Border radius ---- */
+  --x-radius-xs: 0.375rem;
+  --x-radius-sm: 0.5rem;
+  --x-radius-md: 0.625rem;
+  --x-radius-lg: 0.875rem;
+  --x-radius-xl: 1.125rem;
+  --x-radius-2xl: 1.25rem;
+
+  /* ---- Motion ---- */
+  --x-ease-standard: cubic-bezier(0.22, 1, 0.36, 1);
+  --x-ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --x-dur-150: 150ms;
+  --x-dur-180: 180ms;
+  --x-dur-220: 220ms;
+  --x-dur-250: 250ms;
+
+  /* ---- Layout ---- */
+  --x-container-max: 1300px;
+  --x-container-main-max: 80vw;
+}
+
+/* --------------------------------------------------------------------------
+   Dark theme — flips theme-aware variables
+   -------------------------------------------------------------------------- */
+
+.dark {
+  --x-bg: var(--x-bg-dark);
+  --x-base: var(--x-base-dark);
+  --x-surface: var(--x-surface-dark);
+  --x-surface-hover: var(--x-surface-hover-dark);
+  --x-border: var(--x-border-dark);
+  --x-border-subtle: var(--x-border-subtle-dark);
+  --x-text: var(--x-text-main-dark);
+  --x-text-highlight: var(--x-text-highlight-dark);
+  --x-text-muted: var(--x-text-muted-dark);
+
+  --x-soft-primary: var(--x-primary-soft-dark);
+  --x-soft-secondary: var(--x-secondary-soft-dark);
+  --x-soft-success: var(--x-success-soft-dark);
+  --x-soft-info: var(--x-info-soft-dark);
+  --x-soft-warn: var(--x-warn-soft-dark);
+  --x-soft-error: var(--x-error-soft-dark);
+  --x-soft-purple: var(--x-purple-soft-dark);
+  --x-soft-cyan: var(--x-cyan-soft-dark);
+  --x-soft-pink: var(--x-pink-soft-dark);
+  --x-soft-orange: var(--x-orange-soft-dark);
+
+  --x-accent-success: var(--x-success-on-dark);
+  --x-accent-info: var(--x-info-on-dark);
+  --x-accent-warn: var(--x-warn-on-dark);
+  --x-accent-error: var(--x-error-on-dark);
+
+  --x-sidebar: var(--x-sidebar-dark);
+  --x-sidebar-active: var(--x-sidebar-active-dark);
+  --x-sidebar-hover: var(--x-sidebar-hover-dark);
+  --x-input: var(--x-input-dark);
+  --x-input-border: var(--x-input-border-dark);
+  --x-input-focus: var(--x-input-focus-dark);
+
+  --x-shadow-main: var(--x-shadow-main-dark);
+  --x-shadow-card: var(--x-shadow-card-dark);
+  --x-shadow-card-hover: var(--x-shadow-card-hover-dark);
+  --x-shadow-soft: var(--x-shadow-soft-dark);
+
+  color-scheme: dark;
+}
+
+/* ==========================================================================
+   3. BASE
+   ========================================================================== */
+
+.x-body {
+  font-family: var(--x-font-sans);
+  background-color: var(--x-bg);
+  color: var(--x-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ==========================================================================
+   4. KEYFRAMES
+   ========================================================================== */
+
+@keyframes x-ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes x-pulse-slow {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes x-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes x-scale-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes x-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes x-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+}
+
+@keyframes x-icon-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.15);
+    opacity: 0.8;
+  }
+}
+
+@keyframes x-gradient-shift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes x-orbit-dot {
+  0% {
+    offset-distance: 0%;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    offset-distance: 100%;
+    opacity: 0;
+  }
+}
+
+@keyframes x-hero-gradient-rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes x-spotlight-follow {
+  0% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+}
+
+@keyframes x-glow-breathe {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(99, 102, 241, 0.2), 0 0 40px rgba(99, 102, 241, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(99, 102, 241, 0.35), 0 0 60px rgba(99, 102, 241, 0.15);
+  }
+}
+
+@keyframes x-float-subtle {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-4px) rotate(1deg);
+  }
+  66% {
+    transform: translateY(-2px) rotate(-0.5deg);
+  }
+}
+
+@keyframes x-mesh-shift {
+  0% {
+    background-position: 0% 50%, 100% 50%, 50% 0%;
+  }
+  33% {
+    background-position: 100% 0%, 0% 100%, 50% 100%;
+  }
+  66% {
+    background-position: 50% 100%, 50% 0%, 0% 50%;
+  }
+  100% {
+    background-position: 0% 50%, 100% 50%, 50% 0%;
+  }
+}
+
+/* ==========================================================================
+   5. ANIMATION UTILITY CLASSES
+   --------------------------------------------------------------------------
+   Apply to any element. Respect prefers-reduced-motion automatically.
+   ========================================================================== */
+
+.anim-ping-3 {
+  animation: x-ping 1s cubic-bezier(0, 0, 0.2, 1) 3;
+}
+
+.anim-pulse-slow {
+  animation: x-pulse-slow 4s infinite;
+}
+
+.anim-fade-in {
+  animation: x-fade-in 220ms var(--x-ease-standard);
+}
+
+.anim-scale-in {
+  animation: x-scale-in 220ms var(--x-ease-standard);
+}
+
+.anim-shimmer {
+  animation: x-shimmer 2s linear infinite;
+}
+
+.anim-float {
+  animation: x-float 3s ease-in-out infinite;
+}
+
+.anim-icon-pulse {
+  animation: x-icon-pulse 2s ease-in-out infinite;
+}
+
+.anim-icon-pulse-fast {
+  animation: x-icon-pulse 1s ease-in-out infinite;
+}
+
+.anim-gradient-shift {
+  animation: x-gradient-shift 6s ease infinite;
+}
+
+.anim-orbit-dot {
+  animation: x-orbit-dot 3s linear infinite;
+}
+
+.anim-hero-gradient-rotate {
+  animation: x-hero-gradient-rotate 8s linear infinite;
+}
+
+.anim-spotlight-follow {
+  animation: x-spotlight-follow 3s ease-in-out infinite;
+}
+
+.anim-glow-breathe {
+  animation: x-glow-breathe 4s ease-in-out infinite;
+}
+
+.anim-float-subtle {
+  animation: x-float-subtle 6s ease-in-out infinite;
+}
+
+.anim-mesh-shift {
+  animation: x-mesh-shift 12s ease-in-out infinite;
+}
+
+/* ==========================================================================
+   6. CONTAINERS
+   ========================================================================== */
+
+.base-container {
+  max-width: var(--x-container-max);
+  margin-inline: auto;
+  width: 100%;
+  padding-inline: 1.5rem;
+}
+
+.container-main {
+  max-width: var(--x-container-main-max);
+  margin-inline: auto;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container-main {
+    padding-inline: 1.5rem;
+  }
+}
+
+/* ==========================================================================
+   7. CARDS
+   --------------------------------------------------------------------------
+   Intentionally minimal borders. Hierarchy comes from shadow, not lines.
+   All cards auto-adapt to .dark via theme-aware variables.
+   ========================================================================== */
+
+/* ---- Main Card ---- */
+
+.main-card {
+  border: 1px solid #eaeaea;
+  border-radius: var(--x-radius-lg);
+  background-color: var(--x-base);
+  padding: 0.25rem;
+  box-shadow: var(--x-shadow-card);
+  transition:
+    box-shadow var(--x-dur-180) var(--x-ease-smooth),
+    transform var(--x-dur-180) var(--x-ease-smooth);
+}
+
+.main-card:hover {
+  box-shadow: var(--x-shadow-card-hover);
+}
+
+.dark .main-card {
+  border: none;
+  background-color: var(--x-base);
+  box-shadow: var(--x-shadow-card);
+}
+
+.dark .main-card:hover {
+  box-shadow: var(--x-shadow-card-hover);
+}
+
+/* ---- Primary Card ---- */
+
+.primary-card {
+  border: none;
+  border-radius: var(--x-radius-lg);
+  background-color: rgba(99, 102, 241, 0.065);
+  padding: 0.25rem;
+  box-shadow: 0 4px 14px rgba(99, 102, 241, 0.08);
+  color: var(--x-primary-hover);
+  transition:
+    background-color var(--x-dur-180) ease,
+    box-shadow var(--x-dur-180) ease,
+    transform var(--x-dur-180) ease;
+}
+
+.primary-card:hover {
+  background-color: rgba(99, 102, 241, 0.09);
+  box-shadow: 0 12px 30px rgba(99, 102, 241, 0.12);
+}
+
+.dark .primary-card {
+  border: none;
+  background-color: rgba(99, 102, 241, 0.11);
+  color: #a5b4fc;
+}
+
+.dark .primary-card:hover {
+  background-color: rgba(99, 102, 241, 0.15);
+  box-shadow: 0 14px 34px rgba(99, 102, 241, 0.14);
+}
+
+/* ---- Secondary Card ---- */
+
+.secondary-card {
+  border: none;
+  border-radius: var(--x-radius-lg);
+  background-color: rgba(102, 112, 133, 0.045);
+  padding: 0.25rem;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
+  color: var(--x-secondary);
+  transition:
+    background-color var(--x-dur-180) ease,
+    box-shadow var(--x-dur-180) ease;
+}
+
+.secondary-card:hover {
+  background-color: rgba(102, 112, 133, 0.07);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.06);
+}
+
+.dark .secondary-card {
+  border: none;
+  background-color: rgba(148, 163, 184, 0.045);
+  color: #cbd5e1;
+}
+
+.dark .secondary-card:hover {
+  background-color: rgba(148, 163, 184, 0.07);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.24);
+}
+
+/* ---- Success Card ---- */
+
+.success-card {
+  border: none;
+  border-radius: var(--x-radius-lg);
+  background-color: rgba(16, 185, 129, 0.055);
+  padding: 0.25rem;
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.07);
+  color: var(--x-success-strong);
+  transition:
+    background-color var(--x-dur-180) ease,
+    box-shadow var(--x-dur-180) ease;
+}
+
+.success-card:hover {
+  background-color: rgba(16, 185, 129, 0.08);
+  box-shadow: 0 10px 28px rgba(16, 185, 129, 0.10);
+}
+
+.dark .success-card {
+  border: none;
+  background-color: rgba(16, 185, 129, 0.09);
+  color: var(--x-success-on-dark);
+}
+
+.dark .success-card:hover {
+  background-color: rgba(16, 185, 129, 0.12);
+}
+
+/* ---- Info Card ---- */
+
+.info-card {
+  border: none;
+  border-radius: var(--x-radius-lg);
+  background-color: rgba(14, 165, 233, 0.05);
+  padding: 0.25rem;
+  box-shadow: 0 4px 14px rgba(14, 165, 233, 0.065);
+  color: var(--x-info-strong);
+  transition:
+    background-color var(--x-dur-180) ease,
+    box-shadow var(--x-dur-180) ease;
+}
+
+.info-card:hover {
+  background-color: rgba(14, 165, 233, 0.075);
+  box-shadow: 0 10px 28px rgba(14, 165, 233, 0.09);
+}
+
+.dark .info-card {
+  border: none;
+  background-color: rgba(6, 182, 212, 0.08);
+  color: var(--x-info-on-dark);
+}
+
+.dark .info-card:hover {
+  background-color: rgba(6, 182, 212, 0.11);
+}
+
+/* ---- Warning Card ---- */
+
+.warn-card {
+  border: none;
+  border-radius: var(--x-radius-lg);
+  background-color: rgba(245, 158, 11, 0.055);
+  padding: 0.25rem;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.065);
+  color: var(--x-warn-strong);
+  transition:
+    background-color var(--x-dur-180) ease,
+    box-shadow var(--x-dur-180) ease;
+}
+
+.warn-card:hover {
+  background-color: rgba(245, 158, 11, 0.085);
+  box-shadow: 0 10px 28px rgba(245, 158, 11, 0.09);
+}
+
+.dark .warn-card {
+  border: none;
+  background-color: rgba(245, 158, 11, 0.085);
+  color: var(--x-warn-on-dark);
+}
+
+.dark .warn-card:hover {
+  background-color: rgba(245, 158, 11, 0.12);
+}
+
+/* ---- Error Card ---- */
+
+.error-card {
+  border: none;
+  border-radius: var(--x-radius-lg);
+  background-color: rgba(240, 68, 56, 0.05);
+  padding: 0.25rem;
+  box-shadow: 0 4px 14px rgba(240, 68, 56, 0.065);
+  color: var(--x-error-strong);
+  transition:
+    background-color var(--x-dur-180) ease,
+    box-shadow var(--x-dur-180) ease;
+}
+
+.error-card:hover {
+  background-color: rgba(240, 68, 56, 0.075);
+  box-shadow: 0 10px 28px rgba(240, 68, 56, 0.09);
+}
+
+.dark .error-card {
+  border: none;
+  background-color: rgba(240, 68, 56, 0.09);
+  color: var(--x-error-on-dark);
+}
+
+.dark .error-card:hover {
+  background-color: rgba(240, 68, 56, 0.12);
+}
+
+/* ---- Glass Card ---- */
+
+.glass-card {
+  border: none;
+  border-radius: var(--x-radius-lg);
+  background-color: rgba(255, 255, 255, 0.72);
+  padding: 0.25rem;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.08);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  transition:
+    background-color var(--x-dur-180) ease,
+    box-shadow var(--x-dur-180) ease;
+}
+
+.glass-card:hover {
+  background-color: rgba(255, 255, 255, 0.82);
+  box-shadow: 0 18px 42px rgba(15, 23, 42, 0.11);
+}
+
+.dark .glass-card {
+  border: none;
+  background-color: rgba(13, 19, 32, 0.76);
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.28);
+}
+
+.dark .glass-card:hover {
+  background-color: rgba(17, 24, 39, 0.84);
+  box-shadow: 0 18px 44px rgba(0, 0, 0, 0.34);
+}
+
+/* ---- Hover Card (lifts on hover) ---- */
+
+.hover-card {
+  border: none;
+  border-radius: var(--x-radius-lg);
+  background-color: var(--x-base);
+  padding: 0.25rem;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+  transition:
+    transform var(--x-dur-220) var(--x-ease-standard),
+    box-shadow var(--x-dur-220) var(--x-ease-standard);
+  cursor: pointer;
+}
+
+.hover-card:hover {
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.09);
+  transform: translateY(-2px);
+}
+
+.dark .hover-card {
+  border: none;
+  background-color: var(--x-base);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.dark .hover-card:hover {
+  box-shadow: 0 16px 38px rgba(0, 0, 0, 0.32);
+}
+
+/* ---- Brand Surface (gradient hero surface) ---- */
+
+.brand-surface {
+  position: relative;
+  overflow: hidden;
+  border: none;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.13), rgba(139, 92, 246, 0.07));
+  box-shadow: 0 12px 32px rgba(99, 102, 241, 0.10);
+}
+
+.dark .brand-surface {
+  border: none;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.16), rgba(139, 92, 246, 0.08));
+  box-shadow: 0 14px 38px rgba(0, 0, 0, 0.24);
+}
+
+/* ==========================================================================
+   8. GRIDS
+   ========================================================================== */
+
+.grid-primary {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.grid-secondary {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.grid-full {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.grid-auto {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1rem;
+}
+
+/* ==========================================================================
+   9. INTERACTIVE / FOCUS
+   ========================================================================== */
+
+.interactive-surface {
+  transition:
+    background-color 160ms ease,
+    color 160ms ease,
+    box-shadow 160ms ease;
+}
+
+.interactive-surface:hover {
+  background-color: var(--x-surface-hover);
+}
+
+.dark .interactive-surface:hover {
+  background-color: var(--x-surface-hover);
+}
+
+.xcrm-focus {
+  outline: none;
+  transition: box-shadow var(--x-dur-150) ease;
+}
+
+.xcrm-focus:focus-visible {
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.16);
+}
+
+/* ==========================================================================
+   10. UTILITIES
+   ========================================================================== */
+
+/* ---- Scrollbars ---- */
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-thin {
+  scrollbar-width: thin;
+}
+
+/* ---- Gradient Text ---- */
+
+.text-gradient-primary {
+  background: var(--x-gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-shimmer {
+  background: linear-gradient(135deg, #6366F1 0%, #8B5CF6 25%, #06B6D4 50%, #8B5CF6 75%, #6366F1 100%);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: x-shimmer 3s linear infinite;
+}
+
+/* ---- XCRM Grid Background ---- */
+
+.xcrm-grid-bg {
+  background-image:
+    linear-gradient(rgba(99, 102, 241, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(99, 102, 241, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+.dark .xcrm-grid-bg {
+  background-image:
+    linear-gradient(rgba(129, 140, 248, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(129, 140, 248, 0.035) 1px, transparent 1px);
+}
+
+/* ---- Performance ---- */
+
+.section-contain {
+  contain: layout style paint;
+  content-visibility: auto;
+  contain-intrinsic-size: 0 500px;
+}
+
+.will-animate {
+  will-change: transform, opacity;
+}
+
+.gpu-accelerated {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* ---- Card Flip ---- */
+
+.card-flip-container {
+  perspective: 1000px;
+}
+
+.card-flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s var(--x-ease-standard);
+}
+
+.card-flip-container:hover .card-flip-inner {
+  transform: rotateY(180deg);
+}
+
+.card-flip-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card-flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+/* ---- Animated Gradient Border (on hover) ---- */
+
+.animated-border {
+  position: relative;
+}
+
+.animated-border::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: inherit;
+  padding: 1px;
+  background: conic-gradient(from 0deg, #6366F1, #8B5CF6, #06B6D4, #6366F1);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.animated-border:hover::before {
+  opacity: 1;
+}
+
+/* ---- Icon Pulse ---- */
+
+.icon-pulse {
+  animation: x-icon-pulse 2s ease-in-out infinite;
+}
+
+.icon-pulse-fast {
+  animation: x-icon-pulse 1s ease-in-out infinite;
+}
+
+/* ==========================================================================
+   11. HERO UTILITIES
+   ========================================================================== */
+
+.hero-mesh-gradient {
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(139, 92, 246, 0.06) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(6, 182, 212, 0.05) 0%, transparent 50%);
+  background-size: 200% 200%, 200% 200%, 200% 200%;
+  animation: x-mesh-shift 12s ease-in-out infinite;
+}
+
+.dark .hero-mesh-gradient {
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(99, 102, 241, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 20%, rgba(139, 92, 246, 0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 80%, rgba(6, 182, 212, 0.06) 0%, transparent 50%);
+  background-size: 200% 200%, 200% 200%, 200% 200%;
+}
+
+.hero-spotlight {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.12) 0%, transparent 70%);
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: left 0.3s ease-out, top 0.3s ease-out;
+  z-index: 0;
+}
+
+.dark .hero-spotlight {
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
+}
+
+.hero-glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow:
+    0 8px 32px rgba(15, 23, 42, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.dark .hero-glass {
+  background: rgba(13, 19, 32, 0.6);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.hero-orbit-ring {
+  border: 1px solid rgba(99, 102, 241, 0.12);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dark .hero-orbit-ring {
+  border-color: rgba(99, 102, 241, 0.08);
+}
+
+.hero-connection-line {
+  stroke-dasharray: 6 4;
+  animation: none;
+}
+
+.hero-accordion-trigger {
+  transition: all 0.3s var(--x-ease-standard);
+}
+
+.hero-accordion-trigger:hover {
+  transform: translateX(-4px);
+}
+
+/* ==========================================================================
+   12. REVEAL-ON-SCROLL
+   --------------------------------------------------------------------------
+   Pairs with XCRM.reveal in xcrm-core.js.
+   Markup:  <div data-reveal="up" data-reveal-delay="120"> ... </div>
+   Directions: up (default) | down | left | right | fade | scale
+   ========================================================================== */
+
+[data-reveal] {
+  opacity: 0;
+  transition:
+    opacity 0.7s var(--x-ease-standard),
+    transform 0.7s var(--x-ease-standard);
+  will-change: opacity, transform;
+}
+
+[data-reveal='up'] {
+  transform: translateY(28px);
+}
+
+[data-reveal='down'] {
+  transform: translateY(-28px);
+}
+
+[data-reveal='left'] {
+  transform: translateX(-28px);
+}
+
+[data-reveal='right'] {
+  transform: translateX(28px);
+}
+
+[data-reveal='scale'] {
+  transform: scale(0.96);
+}
+
+[data-reveal='fade'] {
+  transform: none;
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* ==========================================================================
+   13. REDUCED MOTION
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+  .anim-ping-3,
+  .anim-pulse-slow,
+  .anim-fade-in,
+  .anim-scale-in,
+  .anim-shimmer,
+  .anim-float,
+  .anim-icon-pulse,
+  .anim-icon-pulse-fast,
+  .anim-gradient-shift,
+  .anim-orbit-dot,
+  .anim-hero-gradient-rotate,
+  .anim-spotlight-follow,
+  .anim-glow-breathe,
+  .anim-float-subtle,
+  .anim-mesh-shift,
+  .hero-mesh-gradient,
+  .text-gradient-shimmer,
+  .icon-pulse,
+  .icon-pulse-fast {
+    animation: none;
+  }
+
+  [data-reveal] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  .card-flip-inner {
+    transition: none;
+  }
+}
