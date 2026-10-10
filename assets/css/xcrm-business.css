@@ -322,6 +322,115 @@
 .fb__footer-links a { font-size:0.8rem; font-weight:600; color:var(--x-text-highlight); text-decoration:none; transition:color var(--x-dur-180) ease; }
 .fb__footer-links a:hover { color:var(--x-primary); }
 
+/* ══════════════════════════════════════════
+   INDUSTRY CARDS (4-col with animated SVGs)
+   ══════════════════════════════════════════ */
+.fb__ind-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
+.fb__ind-card { background:var(--x-base); border:1px solid var(--x-border-subtle); border-radius:var(--x-radius-xl); overflow:hidden; display:flex; flex-direction:column; transition:border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s var(--x-ease-standard), background-color 0.45s ease; opacity:0; }
+[data-reveal].is-visible .fb__ind-card { animation:fb-card-in 0.6s var(--x-ease-standard) forwards; }
+[data-reveal].is-visible .fb__ind-card:nth-child(1) { animation-delay:0.05s; } [data-reveal].is-visible .fb__ind-card:nth-child(2) { animation-delay:0.14s; } [data-reveal].is-visible .fb__ind-card:nth-child(3) { animation-delay:0.23s; } [data-reveal].is-visible .fb__ind-card:nth-child(4) { animation-delay:0.32s; }
+.fb__ind-card:hover { border-color:rgba(99,102,241,0.35); box-shadow:var(--x-shadow-soft), var(--x-glow-primary-sm); transform:translateY(-4px); }
+.fb__ind-visual { position:relative; overflow:hidden; border-bottom:1px solid var(--x-border-subtle); }
+.fb-ind-svg { display:block; width:100%; height:auto; }
+.fb__ind-body { padding:18px 18px 20px; display:flex; flex-direction:column; gap:8px; flex:1; }
+.fb__ind-title { font-size:0.95rem; font-weight:800; color:var(--x-text); margin:0; line-height:1.4; transition:color 0.45s ease; }
+.fb__ind-desc { font-size:0.8rem; color:var(--x-text-highlight); line-height:1.75; margin:0; transition:color 0.45s ease; }
+.fb__ind-body .fb__cap-tags { padding-top:8px; }
+
+/* ── Industry SVG shared elements ── */
+.fb-ind-frame { fill:var(--x-base); stroke:var(--x-border-subtle); stroke-width:1.5; opacity:0; }
+[data-reveal].is-visible .fb-ind-frame { animation:fb-card-in 0.5s ease 0.1s forwards; }
+
+/* Ind1: E-commerce tiles */
+.fb-ind-tile { fill:var(--x-surface); stroke:var(--x-border-subtle); stroke-width:1; opacity:0; transform-origin:center; transform-box:fill-box; }
+[data-reveal].is-visible .fb-ind-tile--1 { animation:fb-badge-pop 0.4s ease 0.25s forwards; }
+[data-reveal].is-visible .fb-ind-tile--2 { animation:fb-badge-pop 0.4s ease 0.35s forwards; }
+[data-reveal].is-visible .fb-ind-tile--3 { animation:fb-badge-pop 0.4s ease 0.45s forwards; }
+.fb-ind-cursor { opacity:0; }
+[data-reveal].is-visible .fb-ind-cursor { animation:fb-badge-pop 0.35s ease 0.6s forwards, fb-float-soft 2.5s ease-in-out 1s infinite; }
+.fb-ind-fbar { opacity:0; transform-origin:right center; transform-box:fill-box; }
+.fb-ind-fbar--1 { fill:var(--x-primary); opacity:0.7; } .fb-ind-fbar--2 { fill:var(--x-info); opacity:0.6; } .fb-ind-fbar--3 { fill:var(--x-success); opacity:0.7; }
+[data-reveal].is-visible .fb-ind-fbar--1 { animation:fb-row-in 0.4s ease 0.7s forwards; }
+[data-reveal].is-visible .fb-ind-fbar--2 { animation:fb-row-in 0.4s ease 0.82s forwards; }
+[data-reveal].is-visible .fb-ind-fbar--3 { animation:fb-row-in 0.4s ease 0.94s forwards; }
+.fb-ind-ping-ring { fill:none; stroke:var(--x-success); stroke-width:1.5; opacity:0; transform-origin:center; transform-box:fill-box; }
+[data-reveal].is-visible .fb-ind-ping-ring { animation:fb-ring-pulse 2.5s ease-in-out 1s infinite; }
+
+/* Ind2: Education cap */
+.fb-ind-cap-top { opacity:0; }
+[data-reveal].is-visible .fb-ind-cap-top { animation:fb-badge-pop 0.5s ease 0.2s forwards; }
+.fb-ind-cap-tassel { stroke-dasharray:1; stroke-dashoffset:1; }
+[data-reveal].is-visible .fb-ind-cap-tassel { animation:fb-draw 0.5s ease 0.5s forwards; }
+.fb-ind-cap-ball { opacity:0; transform-origin:center; transform-box:fill-box; }
+[data-reveal].is-visible .fb-ind-cap-ball { animation:fb-dot-pop 0.35s ease 0.8s forwards, fb-float-soft 2s ease-in-out 1.2s infinite; }
+.fb-ind-cap-base { stroke-dasharray:1; stroke-dashoffset:1; opacity:0.6; }
+[data-reveal].is-visible .fb-ind-cap-base { animation:fb-draw 0.6s ease 0.4s forwards; }
+.fb-ind-lbar { opacity:0; transform-origin:right center; transform-box:fill-box; }
+.fb-ind-lbar--1 { fill:var(--x-primary); opacity:0.65; } .fb-ind-lbar--2 { fill:var(--x-info); opacity:0.55; } .fb-ind-lbar--3 { fill:var(--x-success); opacity:0.7; }
+[data-reveal].is-visible .fb-ind-lbar--1 { animation:fb-row-in 0.4s ease 0.9s forwards; }
+[data-reveal].is-visible .fb-ind-lbar--2 { animation:fb-row-in 0.4s ease 1.02s forwards; }
+[data-reveal].is-visible .fb-ind-lbar--3 { animation:fb-row-in 0.4s ease 1.14s forwards; }
+.fb-ind-bell-sm { opacity:0; }
+[data-reveal].is-visible .fb-ind-bell-sm { animation:fb-badge-pop 0.4s ease 1s forwards, fb-bell-ring 1s ease 1.5s 2; }
+.fb-ind-nbadge { opacity:0; transform-origin:center; transform-box:fill-box; }
+[data-reveal].is-visible .fb-ind-nbadge { animation:fb-badge-pop 0.35s ease 1.2s forwards; }
+
+/* Ind3: B2B deal */
+.fb-ind-deal-bg { fill:var(--x-base); stroke:var(--x-border-subtle); stroke-width:1.5; opacity:0; }
+[data-reveal].is-visible .fb-ind-deal-bg { animation:fb-card-in 0.5s ease 0.15s forwards; }
+.fb-ind-hand { stroke-dasharray:1; stroke-dashoffset:1; }
+[data-reveal].is-visible .fb-ind-hand { animation:fb-draw 0.5s ease 0.55s forwards; }
+.fb-ind-deal-t { fill:var(--x-text-muted); font-size:9px; font-weight:700; font-family:var(--x-font-sans); opacity:0; }
+[data-reveal].is-visible .fb-ind-deal-t { animation:fb-fade 0.4s ease 0.7s forwards; }
+.fb-ind-mini-stage { opacity:0; transform:translateY(8px); }
+[data-reveal].is-visible .fb-ind-mini-stage--1 { animation:fb-card-in 0.4s ease 0.8s forwards; }
+[data-reveal].is-visible .fb-ind-mini-stage--2 { animation:fb-card-in 0.4s ease 0.95s forwards; }
+[data-reveal].is-visible .fb-ind-mini-stage--3 { animation:fb-card-in 0.4s ease 1.1s forwards; }
+.fb-ind-ms-bg { fill:var(--x-surface); stroke:var(--x-border); stroke-width:1; }
+.fb-ind-ms-t { fill:var(--x-text); font-size:8px; font-weight:700; font-family:var(--x-font-sans); }
+.fb-ind-ms-t--w { fill:#fff; }
+.fb-ind-ms-arrow { stroke:var(--x-border); stroke-width:1.5; stroke-linecap:round; stroke-dasharray:1; stroke-dashoffset:1; }
+[data-reveal].is-visible .fb-ind-ms-arrow--1 { animation:fb-draw 0.3s ease 1.05s forwards; }
+[data-reveal].is-visible .fb-ind-ms-arrow--2 { animation:fb-draw 0.3s ease 1.2s forwards; }
+.fb-ind-adot { opacity:0; transform-origin:center; transform-box:fill-box; }
+.fb-ind-adot--1 { fill:var(--x-primary); } .fb-ind-adot--2 { fill:var(--x-info); } .fb-ind-adot--3 { fill:var(--x-success); }
+[data-reveal].is-visible .fb-ind-adot--1 { animation:fb-dot-pop 0.3s ease 1.2s forwards; }
+[data-reveal].is-visible .fb-ind-adot--2 { animation:fb-dot-pop 0.3s ease 1.3s forwards; }
+[data-reveal].is-visible .fb-ind-adot--3 { animation:fb-dot-pop 0.3s ease 1.4s forwards; }
+.fb-ind-check { opacity:0; transform-origin:center; transform-box:fill-box; }
+.fb-ind-check path { stroke-dasharray:1; stroke-dashoffset:1; }
+[data-reveal].is-visible .fb-ind-check { animation:fb-badge-pop 0.4s ease 0.6s forwards; }
+[data-reveal].is-visible .fb-ind-check path { animation:fb-draw 0.35s ease 0.8s forwards; }
+
+/* Ind4: Services clipboard */
+.fb-ind-clip-bg { fill:var(--x-base); stroke:var(--x-border-subtle); stroke-width:1.5; opacity:0; }
+[data-reveal].is-visible .fb-ind-clip-bg { animation:fb-card-in 0.5s ease 0.1s forwards; }
+.fb-ind-clip-tab { fill:var(--x-primary); opacity:0.8; opacity:0; }
+[data-reveal].is-visible .fb-ind-clip-tab { animation:fb-badge-pop 0.35s ease 0.3s forwards; }
+.fb-ind-ctask { opacity:0; transform:translateX(-8px); }
+[data-reveal].is-visible .fb-ind-ctask--1 { animation:fb-row-in 0.35s ease 0.4s forwards; }
+[data-reveal].is-visible .fb-ind-ctask--2 { animation:fb-row-in 0.35s ease 0.52s forwards; }
+[data-reveal].is-visible .fb-ind-ctask--3 { animation:fb-row-in 0.35s ease 0.64s forwards; }
+[data-reveal].is-visible .fb-ind-ctask--4 { animation:fb-row-in 0.35s ease 0.76s forwards; }
+.fb-ind-ctask-dot { fill:none; stroke:var(--x-border); stroke-width:1.5; }
+.fb-ind-ctask-dot--done { fill:var(--x-success); stroke:var(--x-success); }
+.fb-ind-ctask-dot--active { fill:var(--x-primary); stroke:var(--x-primary); }
+.fb-ind-ctask-l { fill:var(--x-text-muted); opacity:0.3; }
+.fb-ind-fpill { opacity:0; transform-origin:center; transform-box:fill-box; }
+.fb-ind-fpill-bg { fill:var(--x-soft-primary); }
+.fb-ind-fpill-t { fill:var(--x-primary); font-size:8px; font-weight:700; font-family:var(--x-font-sans); }
+.dark .fb-ind-fpill-t { fill:#a5b4fc; }
+[data-reveal].is-visible .fb-ind-fpill--1 { animation:fb-badge-pop 0.35s ease 0.9s forwards; }
+[data-reveal].is-visible .fb-ind-fpill--2 { animation:fb-badge-pop 0.35s ease 1.05s forwards; }
+.fb-ind-ring-pulse { fill:none; stroke:var(--x-primary); stroke-width:1.5; opacity:0; transform-origin:center; transform-box:fill-box; }
+[data-reveal].is-visible .fb-ind-ring-pulse { animation:fb-ring-pulse 2.5s ease-in-out 0.8s infinite; }
+.fb-ind-clip-line { stroke:var(--x-border); stroke-width:1.5; stroke-dasharray:1; stroke-dashoffset:1; }
+[data-reveal].is-visible .fb-ind-clip-line { animation:fb-draw 0.5s ease 0.7s forwards; }
+
+/* Industry grid responsive */
+@media (max-width:1024px) { .fb__ind-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:640px) { .fb__ind-grid { grid-template-columns:1fr; } }
+
 /* ── Responsive ── */
 @media (max-width:1024px) {
   .fb__grid-4 { grid-template-columns:repeat(2,minmax(0,1fr)); }

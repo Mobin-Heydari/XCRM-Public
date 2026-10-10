@@ -421,16 +421,152 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 
 	<!-- INDUSTRIES -->
 	<section class="fb__section fb__section--surface" id="industries">
+		<div class="fb__deco-blob fb__deco-blob--indigo" style="top:8%;left:-6%;" aria-hidden="true"></div>
+		<div class="fb__deco-blob fb__deco-blob--cyan" style="bottom:12%;right:-5%;" aria-hidden="true"></div>
 		<div class="fb__section-inner">
 			<div class="fb__head" data-reveal="up">
 				<p class="fb__eyebrow">کاربرد xCRM در کسب‌وکارهای مختلف</p>
 				<h2 class="fb__h2">متناسب با مدل کسب‌وکار خود از امکانات xCRM استفاده کنید</h2>
 			</div>
-			<div class="fb__grid-4">
-				<article class="fb__card fb__card--industry" data-reveal="up"><div class="fb__card-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></div><h3 class="fb__card-title">فروشگاه‌های اینترنتی</h3><p class="fb__card-desc">رفتار بازدیدکنندگان، رویدادهای محصولات، بخش‌بندی مشتریان و اطلاعات قیف خرید را بررسی کنید.</p><div class="fb__cap-tags"><span>ردیابی وب</span><span>قیف خرید</span><span>بخش‌بندی</span></div></article>
-				<article class="fb__card fb__card--industry" data-reveal="up" data-reveal-delay="80"><div class="fb__card-icon fb__card-icon--info" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></div><h3 class="fb__card-title">کسب‌وکارهای آموزشی</h3><p class="fb__card-desc">سرنخ‌های ثبت‌نام، پیگیری متقاضیان، مراحل فروش و یادآوری‌های تیم را ساختارمند مدیریت کنید.</p><div class="fb__cap-tags"><span>پروفایل</span><span>پایپ‌لاین</span><span>یادآوری</span></div></article>
-				<article class="fb__card fb__card--industry" data-reveal="up" data-reveal-delay="160"><div class="fb__card-icon fb__card-icon--success" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg></div><h3 class="fb__card-title">شرکت‌های B2B</h3><p class="fb__card-desc">فرصت‌های فروش، سوابق تعامل، مراحل مذاکره و مسئولیت‌های اعضای تیم را مدیریت کنید.</p><div class="fb__cap-tags"><span>پایپ‌لاین</span><span>گزارش فعالیت</span><span>دسترسی تیمی</span></div></article>
-				<article class="fb__card fb__card--industry" data-reveal="up" data-reveal-delay="240"><div class="fb__card-icon fb__card-icon--warn" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div><h3 class="fb__card-title">کسب‌وکارهای خدماتی</h3><p class="fb__card-desc">اطلاعات مشتریان، پیگیری درخواست‌ها و سوابق تعاملات را در یک فرآیند منظم دنبال کنید.</p><div class="fb__cap-tags"><span>پروفایل</span><span>یادآوری</span><span>ویژگی سفارشی</span></div></article>
+			<div class="fb__ind-grid">
+
+				<!-- Industry 1: E-commerce -->
+				<article class="fb__ind-card" data-reveal="up">
+					<div class="fb__ind-visual">
+						<svg class="fb-ind-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<defs>
+								<linearGradient id="ind1g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.12"/><stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.05"/></linearGradient>
+								<linearGradient id="ind1bar" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.2"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
+							</defs>
+							<rect x="10" y="10" width="280" height="180" rx="20" fill="url(#ind1g)"/>
+							<!-- browser frame -->
+							<rect x="40" y="30" width="220" height="140" rx="12" class="fb-ind-frame"/>
+							<circle cx="58" cy="44" r="4" fill="#F04438" opacity="0.6"/><circle cx="70" cy="44" r="4" fill="#F59E0B" opacity="0.6"/><circle cx="82" cy="44" r="4" fill="#10B981" opacity="0.6"/>
+							<!-- product grid -->
+							<rect x="52" y="56" width="58" height="42" rx="6" class="fb-ind-tile fb-ind-tile--1"/>
+							<rect x="118" y="56" width="58" height="42" rx="6" class="fb-ind-tile fb-ind-tile--2"/>
+							<rect x="184" y="56" width="58" height="42" rx="6" class="fb-ind-tile fb-ind-tile--3"/>
+							<!-- cursor -->
+							<g class="fb-ind-cursor"><path d="M150 95 l0 18 5-4 3 8 4-2-3-8 7-1z" fill="var(--x-primary)"/></g>
+							<!-- funnel bars -->
+							<rect x="60" y="118" width="160" height="10" rx="5" class="fb-ind-fbar fb-ind-fbar--1"/>
+							<rect x="80" y="134" width="120" height="10" rx="5" class="fb-ind-fbar fb-ind-fbar--2"/>
+							<rect x="100" y="150" width="80" height="10" rx="5" class="fb-ind-fbar fb-ind-fbar--3"/>
+							<!-- tracking dot -->
+							<circle cx="240" cy="70" r="8" class="fb-ind-ping-ring"/>
+							<circle cx="240" cy="70" r="4" fill="var(--x-success)"/>
+						</svg>
+					</div>
+					<div class="fb__ind-body">
+						<h3 class="fb__ind-title">فروشگاه‌های اینترنتی</h3>
+						<p class="fb__ind-desc">رفتار بازدیدکنندگان، رویدادهای محصولات، بخش‌بندی مشتریان و اطلاعات قیف خرید را بررسی کنید.</p>
+						<div class="fb__cap-tags"><span>ردیابی وب</span><span>قیف خرید</span><span>بخش‌بندی</span></div>
+					</div>
+				</article>
+
+				<!-- Industry 2: Education -->
+				<article class="fb__ind-card" data-reveal="up" data-reveal-delay="80">
+					<div class="fb__ind-visual">
+						<svg class="fb-ind-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<defs>
+								<linearGradient id="ind2g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#06B6D4" stop-opacity="0.12"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0.05"/></linearGradient>
+								<linearGradient id="ind2cap" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#06B6D4"/></linearGradient>
+							</defs>
+							<rect x="10" y="10" width="280" height="180" rx="20" fill="url(#ind2g)"/>
+							<!-- graduation cap -->
+							<g class="fb-ind-cap">
+								<path pathLength="1" class="fb-ind-cap-top" d="M150 50 L90 75 L150 100 L210 75 Z" fill="url(#ind2cap)"/>
+								<path pathLength="1" class="fb-ind-cap-tassel" d="M210 75 V105" stroke="var(--x-primary)" stroke-width="2.5" stroke-linecap="round"/>
+								<circle class="fb-ind-cap-ball" cx="210" cy="110" r="5" fill="var(--x-primary)"/>
+								<path pathLength="1" class="fb-ind-cap-base" d="M120 88 V105 C120 115 180 115 180 105 V88" stroke="var(--x-primary)" stroke-width="2" fill="none" stroke-linecap="round"/>
+							</g>
+							<!-- lead funnel -->
+							<rect x="70" y="128" width="160" height="12" rx="6" class="fb-ind-lbar fb-ind-lbar--1"/>
+							<rect x="90" y="146" width="120" height="12" rx="6" class="fb-ind-lbar fb-ind-lbar--2"/>
+							<rect x="110" y="164" width="80" height="12" rx="6" class="fb-ind-lbar fb-ind-lbar--3"/>
+							<!-- bell -->
+							<g class="fb-ind-bell-sm">
+								<path pathLength="1" d="M250 48 c-8 0-13 6-13 13 v10 l-5 7 h36 l-5-7 v-10 c0-7-5-13-13-13z" stroke="var(--x-accent-warn)" stroke-width="2" fill="none" stroke-linecap="round"/>
+								<circle cx="250" cy="82" r="4" fill="var(--x-accent-warn)"/>
+							</g>
+							<g class="fb-ind-nbadge"><circle cx="262" cy="46" r="9" fill="#F04438"/><text x="262" y="50" text-anchor="middle" fill="#fff" font-size="8" font-weight="800" font-family="inherit">۵</text></g>
+						</svg>
+					</div>
+					<div class="fb__ind-body">
+						<h3 class="fb__ind-title">کسب‌وکارهای آموزشی</h3>
+						<p class="fb__ind-desc">سرنخ‌های ثبت‌نام، پیگیری متقاضیان، مراحل فروش و یادآوری‌های تیم را ساختارمند مدیریت کنید.</p>
+						<div class="fb__cap-tags"><span>پروفایل</span><span>پایپ‌لاین</span><span>یادآوری</span></div>
+					</div>
+				</article>
+
+				<!-- Industry 3: B2B -->
+				<article class="fb__ind-card" data-reveal="up" data-reveal-delay="160">
+					<div class="fb__ind-visual">
+						<svg class="fb-ind-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<defs>
+								<linearGradient id="ind3g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#10B981" stop-opacity="0.1"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0.05"/></linearGradient>
+								<linearGradient id="ind3deal" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#10B981"/></linearGradient>
+							</defs>
+							<rect x="10" y="10" width="280" height="180" rx="20" fill="url(#ind3g)"/>
+							<!-- handshake / deal card -->
+							<rect x="70" y="40" width="160" height="70" rx="14" class="fb-ind-deal-bg"/>
+							<!-- two person icons shaking -->
+							<circle cx="120" cy="62" r="12" fill="var(--x-primary)" opacity="0.8"/>
+							<circle cx="180" cy="62" r="12" fill="var(--x-cyan)" opacity="0.8"/>
+							<path pathLength="1" class="fb-ind-hand" d="M132 70 Q150 82 168 70" stroke="var(--x-success)" stroke-width="3" stroke-linecap="round" fill="none"/>
+							<text x="150" y="100" text-anchor="middle" class="fb-ind-deal-t">قرارداد امضاشده</text>
+							<!-- pipeline mini stages -->
+							<g class="fb-ind-mini-stage fb-ind-mini-stage--1"><rect x="50" y="130" width="52" height="22" rx="6" class="fb-ind-ms-bg"/><text x="76" y="145" text-anchor="middle" class="fb-ind-ms-t">سرنخ</text></g>
+							<path pathLength="1" class="fb-ind-ms-arrow fb-ind-ms-arrow--1" d="M106 141 H120"/>
+							<g class="fb-ind-mini-stage fb-ind-mini-stage--2"><rect x="124" y="130" width="52" height="22" rx="6" class="fb-ind-ms-bg"/><text x="150" y="145" text-anchor="middle" class="fb-ind-ms-t">مذاکره</text></g>
+							<path pathLength="1" class="fb-ind-ms-arrow fb-ind-ms-arrow--2" d="M180 141 H194"/>
+							<g class="fb-ind-mini-stage fb-ind-mini-stage--3"><rect x="198" y="130" width="52" height="22" rx="6" fill="url(#ind3deal)"/><text x="224" y="145" text-anchor="middle" class="fb-ind-ms-t fb-ind-ms-t--w">بسته</text></g>
+							<!-- activity dots -->
+							<circle cx="80" cy="170" r="4" class="fb-ind-adot fb-ind-adot--1"/><circle cx="96" cy="170" r="4" class="fb-ind-adot fb-ind-adot--2"/><circle cx="112" cy="170" r="4" class="fb-ind-adot fb-ind-adot--3"/>
+							<!-- check badge -->
+							<g class="fb-ind-check"><circle cx="250" cy="55" r="14" fill="var(--x-soft-success)"/><path pathLength="1" d="M244 55 l4 4 8-10" stroke="var(--x-accent-success)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+						</svg>
+					</div>
+					<div class="fb__ind-body">
+						<h3 class="fb__ind-title">شرکت‌های B2B</h3>
+						<p class="fb__ind-desc">فرصت‌های فروش، سوابق تعامل، مراحل مذاکره و مسئولیت‌های اعضای تیم را مدیریت کنید.</p>
+						<div class="fb__cap-tags"><span>پایپ‌لاین</span><span>گزارش فعالیت</span><span>دسترسی تیمی</span></div>
+					</div>
+				</article>
+
+				<!-- Industry 4: Services -->
+				<article class="fb__ind-card" data-reveal="up" data-reveal-delay="240">
+					<div class="fb__ind-visual">
+						<svg class="fb-ind-svg" viewBox="0 0 300 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+							<defs>
+								<linearGradient id="ind4g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F59E0B" stop-opacity="0.1"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0.05"/></linearGradient>
+							</defs>
+							<rect x="10" y="10" width="280" height="180" rx="20" fill="url(#ind4g)"/>
+							<!-- clipboard -->
+							<rect x="80" y="30" width="140" height="150" rx="12" class="fb-ind-clip-bg"/>
+							<rect x="125" y="24" width="50" height="16" rx="6" class="fb-ind-clip-tab"/>
+							<!-- task rows on clipboard -->
+							<g class="fb-ind-ctask fb-ind-ctask--1"><circle cx="102" cy="68" r="6" class="fb-ind-ctask-dot fb-ind-ctask-dot--done"/><rect x="116" y="64" width="80" height="7" rx="3.5" class="fb-ind-ctask-l"/></g>
+							<g class="fb-ind-ctask fb-ind-ctask--2"><circle cx="102" cy="92" r="6" class="fb-ind-ctask-dot fb-ind-ctask-dot--done"/><rect x="116" y="88" width="64" height="7" rx="3.5" class="fb-ind-ctask-l"/></g>
+							<g class="fb-ind-ctask fb-ind-ctask--3"><circle cx="102" cy="116" r="6" class="fb-ind-ctask-dot fb-ind-ctask-dot--active"/><rect x="116" y="112" width="72" height="7" rx="3.5" class="fb-ind-ctask-l"/></g>
+							<g class="fb-ind-ctask fb-ind-ctask--4"><circle cx="102" cy="140" r="6" class="fb-ind-ctask-dot"/><rect x="116" y="136" width="56" height="7" rx="3.5" class="fb-ind-ctask-l"/></g>
+							<!-- custom field pills -->
+							<g class="fb-ind-fpill fb-ind-fpill--1"><rect x="40" y="60" width="34" height="18" rx="9" class="fb-ind-fpill-bg"/><text x="57" y="73" text-anchor="middle" class="fb-ind-fpill-t">ویژه</text></g>
+							<g class="fb-ind-fpill fb-ind-fpill--2"><rect x="230" y="100" width="34" height="18" rx="9" class="fb-ind-fpill-bg"/><text x="247" y="113" text-anchor="middle" class="fb-ind-fpill-t">VIP</text></g>
+							<!-- profile avatar mini -->
+							<circle cx="240" cy="55" r="14" fill="var(--x-primary)" opacity="0.75"/>
+							<circle cx="240" cy="55" r="18" class="fb-ind-ring-pulse"/>
+							<!-- connecting line -->
+							<path pathLength="1" class="fb-ind-clip-line" d="M226 55 H190"/>
+						</svg>
+					</div>
+					<div class="fb__ind-body">
+						<h3 class="fb__ind-title">کسب‌وکارهای خدماتی</h3>
+						<p class="fb__ind-desc">اطلاعات مشتریان، پیگیری درخواست‌ها و سوابق تعاملات را در یک فرآیند منظم دنبال کنید.</p>
+						<div class="fb__cap-tags"><span>پروفایل</span><span>یادآوری</span><span>ویژگی سفارشی</span></div>
+					</div>
+				</article>
+
 			</div>
 		</div>
 	</section>
