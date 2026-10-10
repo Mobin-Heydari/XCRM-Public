@@ -131,6 +131,14 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 	<section class="fb__hero" id="hero">
 		<div class="fb__hero-bg" aria-hidden="true">
 			<div class="xcrm-grid-bg fb__grid"></div>
+			<div class="fb__hero-rings">
+				<div class="fb__hero-ring fb__hero-ring--1"></div>
+				<div class="fb__hero-ring fb__hero-ring--2"></div>
+				<div class="fb__hero-ring fb__hero-ring--3"></div>
+			</div>
+			<span class="fb-hero-orb fb-hero-orb--1"></span>
+			<span class="fb-hero-orb fb-hero-orb--2"></span>
+			<span class="fb-hero-orb fb-hero-orb--3"></span>
 		</div>
 		<div class="fb__section-inner fb__hero-inner">
 			<div class="fb__hero-copy">
@@ -145,40 +153,60 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 				</div>
 			</div>
 
-			<!-- UI composition: mini dashboard -->
+			<!-- Animated dashboard SVG -->
 			<div class="fb__hero-visual fb-anim fb-anim--3" aria-hidden="true">
-				<div class="fb-ui fb-ui--dash">
-					<div class="fb-ui__bar">
-						<span></span><span></span><span></span>
-						<em>داشبورد فروش</em>
-					</div>
-					<div class="fb-ui__dash-body">
-						<div class="fb-ui__mini-card">
-							<span class="fb-ui__mini-label">فرصت‌های باز</span>
-							<span class="fb-ui__mini-rows">
-								<i style="--w:78%"></i>
-								<i style="--w:54%"></i>
-								<i style="--w:66%"></i>
-							</span>
-						</div>
-						<div class="fb-ui__mini-card fb-ui__mini-card--wide">
-							<span class="fb-ui__mini-label">مراحل پایپ‌لاین</span>
-							<div class="fb-ui__kanban-mini">
-								<div class="fb-ui__kcol"><b></b><i style="--w:80%"></i><i style="--w:55%"></i></div>
-								<div class="fb-ui__kcol"><b></b><i style="--w:70%"></i><i style="--w:45%"></i><i style="--w:60%"></i></div>
-								<div class="fb-ui__kcol"><b></b><i style="--w:50%"></i></div>
-								<div class="fb-ui__kcol"><b></b><i style="--w:65%"></i><i style="--w:40%"></i></div>
-							</div>
-						</div>
-						<div class="fb-ui__mini-card">
-							<span class="fb-ui__mini-label">پیگیری امروز</span>
-							<span class="fb-ui__check-rows">
-								<i class="is-done"></i>
-								<i class="is-done"></i>
-								<i></i>
-							</span>
-						</div>
-					</div>
+				<div class="fb-dash">
+					<svg class="fb-dash-svg" viewBox="0 0 420 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<defs>
+							<linearGradient id="fbLineGrad" x1="0" y1="0" x2="420" y2="0">
+								<stop offset="0%" stop-color="#6366F1"/>
+								<stop offset="100%" stop-color="#06B6D4"/>
+							</linearGradient>
+							<linearGradient id="fbAreaGrad" x1="0" y1="0" x2="0" y2="1">
+								<stop offset="0%" stop-color="#6366F1" stop-opacity="0.22"/>
+								<stop offset="100%" stop-color="#6366F1" stop-opacity="0"/>
+							</linearGradient>
+							<linearGradient id="fbBarGrad" x1="0" y1="1" x2="0" y2="0">
+								<stop offset="0%" stop-color="#6366F1" stop-opacity="0.2"/>
+								<stop offset="100%" stop-color="#8B5CF6"/>
+							</linearGradient>
+						</defs>
+						<rect x="8" y="8" width="404" height="284" rx="20" class="fb-dash-frame"/>
+						<circle cx="34" cy="36" r="5" fill="#F04438" opacity="0.8"/>
+						<circle cx="52" cy="36" r="5" fill="#F59E0B" opacity="0.8"/>
+						<circle cx="70" cy="36" r="5" fill="#10B981" opacity="0.8"/>
+						<text x="392" y="41" text-anchor="end" class="fb-dash-label">فرصت‌های فروش</text>
+						<line x1="48" y1="90" x2="380" y2="90" class="fb-dash-gridline"/>
+						<line x1="48" y1="140" x2="380" y2="140" class="fb-dash-gridline"/>
+						<line x1="48" y1="190" x2="380" y2="190" class="fb-dash-gridline"/>
+						<line x1="48" y1="240" x2="380" y2="240" class="fb-dash-gridline"/>
+						<rect class="fb-bar" x="70"  y="200" width="28" height="60"  rx="6" fill="url(#fbBarGrad)" style="--i:0"/>
+						<rect class="fb-bar" x="118" y="170" width="28" height="90"  rx="6" fill="url(#fbBarGrad)" style="--i:1"/>
+						<rect class="fb-bar" x="166" y="185" width="28" height="75"  rx="6" fill="url(#fbBarGrad)" style="--i:2"/>
+						<rect class="fb-bar" x="214" y="130" width="28" height="130" rx="6" fill="url(#fbBarGrad)" style="--i:3"/>
+						<rect class="fb-bar" x="262" y="145" width="28" height="115" rx="6" fill="url(#fbBarGrad)" style="--i:4"/>
+						<rect class="fb-bar" x="310" y="95"  width="28" height="165" rx="6" fill="url(#fbBarGrad)" style="--i:5"/>
+						<path class="fb-area" d="M84 190 L132 160 L180 172 L228 118 L276 132 L324 85 L324 260 L84 260 Z" fill="url(#fbAreaGrad)"/>
+						<path class="fb-line" pathLength="1" d="M84 190 L132 160 L180 172 L228 118 L276 132 L324 85" stroke="url(#fbLineGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+						<circle class="fb-dot" cx="84"  cy="190" r="5" style="--i:0"/>
+						<circle class="fb-dot" cx="132" cy="160" r="5" style="--i:1"/>
+						<circle class="fb-dot" cx="180" cy="172" r="5" style="--i:2"/>
+						<circle class="fb-dot" cx="228" cy="118" r="5" style="--i:3"/>
+						<circle class="fb-dot" cx="276" cy="132" r="5" style="--i:4"/>
+						<circle class="fb-dot" cx="324" cy="85"  r="6" style="--i:5"/>
+						<g class="fb-chip fb-chip--1">
+							<rect x="248" y="46" width="124" height="34" rx="10" class="fb-chip-bg"/>
+							<text x="310" y="68" text-anchor="middle" class="fb-chip-text">۳ فرصت در مذاکره</text>
+						</g>
+						<g class="fb-chip fb-chip--2">
+							<rect x="36" y="100" width="118" height="34" rx="10" class="fb-chip-bg"/>
+							<text x="95" y="122" text-anchor="middle" class="fb-chip-text">۲ پیگیری امروز</text>
+						</g>
+						<g class="fb-chip fb-chip--3">
+							<rect x="260" y="196" width="108" height="34" rx="10" class="fb-chip-bg"/>
+							<text x="314" y="218" text-anchor="middle" class="fb-chip-text">سرنخ جدید</text>
+						</g>
+					</svg>
 				</div>
 			</div>
 		</div>
@@ -229,6 +257,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 
 	<!-- ══════════ 3. CUSTOMER PROFILES ══════════ -->
 	<section class="fb__section" id="profiles">
+		<div class="fb__deco-blob fb__deco-blob--purple" style="top:20%;left:-8%;" aria-hidden="true"></div>
 		<div class="fb__section-inner fb__split">
 			<div class="fb__split-copy" data-reveal="up">
 				<p class="fb__eyebrow">مدیریت اطلاعات مشتریان</p>
@@ -282,6 +311,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 
 	<!-- ══════════ 4. SALES PIPELINE ══════════ -->
 	<section class="fb__section fb__section--surface" id="pipeline">
+		<div class="fb__deco-blob fb__deco-blob--indigo" style="bottom:5%;left:-6%;" aria-hidden="true"></div>
 		<div class="fb__section-inner">
 			<div class="fb__head fb__head--start" data-reveal="up">
 				<p class="fb__eyebrow">مدیریت فرصت‌های فروش</p>
@@ -473,6 +503,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 
 	<!-- ══════════ 7. ANALYTICS ══════════ -->
 	<section class="fb__section" id="analytics">
+		<div class="fb__deco-blob fb__deco-blob--indigo" style="top:10%;left:-5%;" aria-hidden="true"></div>
 		<div class="fb__section-inner">
 			<div class="fb__head" data-reveal="up">
 				<p class="fb__eyebrow">تحلیل عملکرد کسب‌وکار</p>
@@ -481,6 +512,54 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 					گزارش‌های تحلیلی xCRM به شما کمک می‌کنند مسیر کاربران، عملکرد قیف‌ها، منابع جذب و فعالیت مشتریان را بهتر بررسی کنید.
 				</p>
 			</div>
+
+			<!-- Animated chart SVG -->
+			<div class="fb__chart-wrap" data-reveal="up" aria-hidden="true">
+				<div class="fb-chart">
+					<svg class="fb-chart-svg" viewBox="0 0 800 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<defs>
+							<linearGradient id="fbChartBarG" x1="0" y1="1" x2="0" y2="0">
+								<stop offset="0%" stop-color="#6366F1" stop-opacity="0.15"/>
+								<stop offset="100%" stop-color="#8B5CF6"/>
+							</linearGradient>
+							<linearGradient id="fbChartLineG" x1="0" y1="0" x2="800" y2="0">
+								<stop offset="0%" stop-color="#6366F1"/>
+								<stop offset="100%" stop-color="#06B6D4"/>
+							</linearGradient>
+						</defs>
+						<rect x="1" y="1" width="798" height="238" rx="16" class="fb-chart-frame"/>
+						<text x="760" y="32" text-anchor="end" class="fb-chart-title">نمای کلی عملکرد</text>
+						<!-- grid -->
+						<line x1="60" y1="70" x2="480" y2="70" style="stroke:var(--x-border-subtle)" stroke-width="1" opacity="0.5"/>
+						<line x1="60" y1="110" x2="480" y2="110" style="stroke:var(--x-border-subtle)" stroke-width="1" opacity="0.5"/>
+						<line x1="60" y1="150" x2="480" y2="150" style="stroke:var(--x-border-subtle)" stroke-width="1" opacity="0.5"/>
+						<line x1="60" y1="190" x2="480" y2="190" style="stroke:var(--x-border-subtle)" stroke-width="1" opacity="0.5"/>
+						<!-- bars -->
+						<rect class="fb-chart-bar" x="90"  y="150" width="36" height="50"  rx="6" fill="url(#fbChartBarG)" style="--i:0"/>
+						<rect class="fb-chart-bar" x="150" y="120" width="36" height="80"  rx="6" fill="url(#fbChartBarG)" style="--i:1"/>
+						<rect class="fb-chart-bar" x="210" y="135" width="36" height="65"  rx="6" fill="url(#fbChartBarG)" style="--i:2"/>
+						<rect class="fb-chart-bar" x="270" y="90"  width="36" height="110" rx="6" fill="url(#fbChartBarG)" style="--i:3"/>
+						<rect class="fb-chart-bar" x="330" y="105" width="36" height="95"  rx="6" fill="url(#fbChartBarG)" style="--i:4"/>
+						<rect class="fb-chart-bar" x="390" y="70"  width="36" height="130" rx="6" fill="url(#fbChartBarG)" style="--i:5"/>
+						<!-- line -->
+						<path class="fb-chart-line" pathLength="1" d="M108 155 L168 125 L228 140 L288 95 L348 110 L408 75" stroke="url(#fbChartLineG)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+						<circle class="fb-chart-dot" cx="108" cy="155" r="4.5" style="--i:0"/>
+						<circle class="fb-chart-dot" cx="168" cy="125" r="4.5" style="--i:1"/>
+						<circle class="fb-chart-dot" cx="228" cy="140" r="4.5" style="--i:2"/>
+						<circle class="fb-chart-dot" cx="288" cy="95"  r="4.5" style="--i:3"/>
+						<circle class="fb-chart-dot" cx="348" cy="110" r="4.5" style="--i:4"/>
+						<circle class="fb-chart-dot" cx="408" cy="75"  r="5.5" style="--i:5"/>
+						<!-- donut -->
+						<circle cx="620" cy="130" r="60" style="stroke:var(--x-border-subtle)" stroke-width="14" fill="none" opacity="0.5"/>
+						<circle class="fb-chart-donut-seg fb-chart-donut-seg--1" cx="620" cy="130" r="60" pathLength="1" stroke="#6366F1" stroke-dasharray="0.4 0.6" stroke-dashoffset="0.25" transform="rotate(-90 620 130)"/>
+						<circle class="fb-chart-donut-seg fb-chart-donut-seg--2" cx="620" cy="130" r="60" pathLength="1" stroke="#8B5CF6" stroke-dasharray="0.25 0.75" stroke-dashoffset="-0.15" transform="rotate(-90 620 130)"/>
+						<circle class="fb-chart-donut-seg fb-chart-donut-seg--3" cx="620" cy="130" r="60" pathLength="1" stroke="#06B6D4" stroke-dasharray="0.18 0.82" stroke-dashoffset="-0.4" transform="rotate(-90 620 130)"/>
+						<text x="620" y="126" text-anchor="middle" class="fb-chart-title">قیف فروش</text>
+						<text x="620" y="144" text-anchor="middle" class="fb-chart-label">۳ مرحله فعال</text>
+					</svg>
+				</div>
+			</div>
+
 			<div class="fb__grid-3">
 				<article class="fb__card fb__card--flat" data-reveal="up">
 					<div class="fb__card-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></div>
@@ -524,6 +603,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 
 	<!-- ══════════ 8. COMMUNICATION ══════════ -->
 	<section class="fb__section fb__section--surface" id="communication">
+		<div class="fb__deco-blob fb__deco-blob--cyan" style="bottom:10%;right:-5%;" aria-hidden="true"></div>
 		<div class="fb__section-inner">
 			<div class="fb__head" data-reveal="up">
 				<p class="fb__eyebrow">ارتباط با مشتریان</p>
@@ -532,36 +612,41 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 					تنظیمات کانال‌های ارتباطی و ارائه‌دهندگان پشتیبانی‌شده را مدیریت کنید و از قابلیت‌های موجود برای هماهنگی پیام‌ها و پیگیری مشتریان بهره ببرید.
 				</p>
 			</div>
-			<div class="fb__grid-4">
-				<article class="fb__card" data-reveal="up">
-					<div class="fb__card-icon" aria-hidden="true">
-						<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+
+			<!-- Animated channels visual -->
+			<div class="fb__comm-visual" data-reveal="up" aria-hidden="true">
+				<div class="fb-comm">
+					<div class="fb-comm__item">
+						<div class="fb-comm__icon">
+							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+						</div>
+						<h3>پیامک</h3>
+						<p>تنظیم ارائه‌دهنده و ارسال پیام</p>
 					</div>
-					<h3 class="fb__card-title">پیامک</h3>
-					<p class="fb__card-desc">تنظیم ارائه‌دهنده پیامک، ارسال پیام و استفاده از الگوهای پیام پشتیبانی‌شده.</p>
-				</article>
-				<article class="fb__card" data-reveal="up" data-reveal-delay="80">
-					<div class="fb__card-icon fb__card-icon--info" aria-hidden="true">
-						<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+					<div class="fb-comm__item">
+						<div class="fb-comm__icon">
+							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+						</div>
+						<h3>تلگرام</h3>
+						<p>اتصال حساب و مدیریت پیام</p>
 					</div>
-					<h3 class="fb__card-title">تلگرام</h3>
-					<p class="fb__card-desc">اتصال حساب‌های پشتیبانی‌شده، مدیریت تنظیمات و استفاده از قابلیت‌های پیام‌رسانی موجود.</p>
-				</article>
-				<article class="fb__card" data-reveal="up" data-reveal-delay="160">
-					<div class="fb__card-icon fb__card-icon--success" aria-hidden="true">
-						<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+					<div class="fb-comm__item">
+						<div class="fb-comm__icon">
+							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+						</div>
+						<h3>ایمیل و اعلان</h3>
+						<p>مدیریت ارائه‌دهندگان پوش و ایمیل</p>
 					</div>
-					<h3 class="fb__card-title">ایمیل و اعلان‌ها</h3>
-					<p class="fb__card-desc">مدیریت تنظیمات و ارائه‌دهندگان ایمیل و پوش، متناسب با قابلیت‌های فعال‌شده.</p>
-				</article>
-				<article class="fb__card" data-reveal="up" data-reveal-delay="240">
-					<div class="fb__card-icon fb__card-icon--warn" aria-hidden="true">
-						<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+					<div class="fb-comm__item">
+						<div class="fb-comm__icon">
+							<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+						</div>
+						<h3>زمان‌بندی</h3>
+						<p>بازه‌های مجاز ارسال پیام</p>
 					</div>
-					<h3 class="fb__card-title">زمان‌بندی ارتباطات</h3>
-					<p class="fb__card-desc">تنظیم بازه‌های مجاز ارسال پیام برای کانال‌های پشتیبانی‌شده.</p>
-				</article>
+				</div>
 			</div>
+
 			<div class="fb__center-cta" data-reveal="up">
 				<a href="#start" class="fb__text-link">
 					مشاهده امکانات ارتباط با مشتریان
@@ -573,6 +658,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 
 	<!-- ══════════ 9. TEAM & PERMISSIONS ══════════ -->
 	<section class="fb__section" id="team">
+		<div class="fb__deco-blob fb__deco-blob--purple" style="bottom:10%;right:-5%;" aria-hidden="true"></div>
 		<div class="fb__section-inner fb__split fb__split--reverse">
 			<div class="fb__split-copy" data-reveal="up">
 				<p class="fb__eyebrow">مدیریت تیم</p>
@@ -620,6 +706,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 
 	<!-- ══════════ 10. INDUSTRIES ══════════ -->
 	<section class="fb__section fb__section--surface" id="industries">
+		<div class="fb__deco-blob fb__deco-blob--cyan" style="top:15%;right:-7%;" aria-hidden="true"></div>
 		<div class="fb__section-inner">
 			<div class="fb__head" data-reveal="up">
 				<p class="fb__eyebrow">کاربرد xCRM در کسب‌وکارهای مختلف</p>
