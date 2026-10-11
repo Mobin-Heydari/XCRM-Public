@@ -609,8 +609,8 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 					<g class="b2s-cond b2s-cond--2"><rect x="212" y="177" width="106" height="24" rx="6" class="b2s-cond-bg"/><text x="265" y="193" text-anchor="middle" class="b2s-cond-t">خرید &gt; ۳ بار</text></g>
 					<g class="b2s-cond b2s-cond--3"><rect x="212" y="209" width="106" height="24" rx="6" class="b2s-cond-bg"/><text x="265" y="225" text-anchor="middle" class="b2s-cond-t">آخرین فعالیت &lt; ۳۰ روز</text></g>
 					<!-- AND badges -->
-					<text x="340" y="166" class="b2s-and">و</text>
-					<text x="340" y="198" class="b2s-and">و</text>
+					<text x="360" y="166" class="b2s-and">AND</text>
+					<text x="359" y="198" class="b2s-and">OR</text>
 				</g>
 
 				<!-- ═══════ PHASE 3: SEGMENT GROUPS ═══════ -->
@@ -653,8 +653,8 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 					<g class="b2s-c-ch b2s-c-ch--2"><rect x="668" y="176" width="44" height="22" rx="7" class="b2s-c-ch-bg"/><text x="690" y="191" text-anchor="middle" class="b2s-c-ch-t">تلگرام</text></g>
 					<g class="b2s-c-ch b2s-c-ch--3"><rect x="720" y="176" width="44" height="22" rx="7" class="b2s-c-ch-bg"/><text x="742" y="191" text-anchor="middle" class="b2s-c-ch-t">ایمیل</text></g>
 					<!-- status -->
-					<circle cx="620" cy="218" r="5" fill="#10B981"/>
-					<text x="632" y="222" class="b2s-camp-status">در حال ارسال</text>
+					<circle cx="760" cy="219" r="5" fill="#10B981"/>
+					<text x="752" y="221" class="b2s-camp-status">در حال ارسال</text>
 				</g>
 
 				<!-- ═══════ FLOW PATHS ═══════ -->
@@ -706,24 +706,79 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 			<p class="xcrm-b2__desc">رویدادهای مشتری، مسیر کاربر، قیف تبدیل و عملکرد فعالیت‌های بازاریابی را تحلیل کنید.</p>
 		</div>
 		<div class="xcrm-b2__chart-wrap" data-reveal="up" aria-hidden="true">
-			<svg class="xcrm-b2-svg" viewBox="0 0 800 260" fill="none" xmlns="http://www.w3.org/2000/svg">
-				<defs><linearGradient id="b2aBar" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.18"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient><linearGradient id="b2aLn" x1="0" y1="0" x2="800" y2="0"><stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#06B6D4"/></linearGradient></defs>
-				<rect x="1" y="1" width="798" height="258" rx="18" class="b2a-frame"/>
-				<text x="760" y="32" text-anchor="end" class="b2a-title">نمای کلی عملکرد — نمونهٔ نمایشی</text>
-				<line x1="60" y1="70" x2="480" y2="70" class="b2a-grid"/><line x1="60" y1="115" x2="480" y2="115" class="b2a-grid"/><line x1="60" y1="160" x2="480" y2="160" class="b2a-grid"/><line x1="60" y1="205" x2="480" y2="205" class="b2a-grid"/>
-				<rect class="b2a-bar" x="90" y="160" width="36" height="55" rx="6" fill="url(#b2aBar)" style="--i:0"/>
-				<rect class="b2a-bar" x="150" y="125" width="36" height="90" rx="6" fill="url(#b2aBar)" style="--i:1"/>
-				<rect class="b2a-bar" x="210" y="140" width="36" height="75" rx="6" fill="url(#b2aBar)" style="--i:2"/>
-				<rect class="b2a-bar" x="270" y="95" width="36" height="120" rx="6" fill="url(#b2aBar)" style="--i:3"/>
-				<rect class="b2a-bar" x="330" y="110" width="36" height="105" rx="6" fill="url(#b2aBar)" style="--i:4"/>
-				<rect class="b2a-bar" x="390" y="75" width="36" height="140" rx="6" fill="url(#b2aBar)" style="--i:5"/>
-				<path pathLength="1" class="b2a-line" d="M108 160 L168 125 L228 140 L288 95 L348 110 L408 75" stroke="url(#b2aLn)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-				<circle class="b2a-dot" cx="108" cy="160" r="4.5" style="--i:0"/><circle class="b2a-dot" cx="168" cy="125" r="4.5" style="--i:1"/><circle class="b2a-dot" cx="228" cy="140" r="4.5" style="--i:2"/><circle class="b2a-dot" cx="288" cy="95" r="4.5" style="--i:3"/><circle class="b2a-dot" cx="348" cy="110" r="4.5" style="--i:4"/><circle class="b2a-dot" cx="408" cy="75" r="5.5" style="--i:5"/>
-				<text x="640" y="60" text-anchor="middle" class="b2a-title">قیف تبدیل</text>
-				<rect x="540" y="75" width="200" height="28" rx="8" class="b2a-funnel b2a-funnel--1"/>
-				<rect x="565" y="113" width="150" height="28" rx="8" class="b2a-funnel b2a-funnel--2"/>
-				<rect x="590" y="151" width="100" height="28" rx="8" class="b2a-funnel b2a-funnel--3"/>
-				<rect x="615" y="189" width="50" height="28" rx="8" class="b2a-funnel b2a-funnel--4"/>
+			<svg class="xcrm-b2-svg" viewBox="0 0 860 380" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<defs>
+					<linearGradient id="b2aBar" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.18"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
+					<linearGradient id="b2aLn" x1="0" y1="0" x2="860" y2="0"><stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#06B6D4"/></linearGradient>
+					<linearGradient id="b2aArea" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.15"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0"/></linearGradient>
+					<radialGradient id="b2aGlow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.1"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0"/></radialGradient>
+				</defs>
+				<rect x="1" y="1" width="858" height="378" rx="20" class="b2a-frame"/>
+				<ellipse cx="300" cy="180" rx="200" ry="120" fill="url(#b2aGlow)" class="b2a-glow"/>
+
+				<!-- Dashboard header -->
+				<rect x="1" y="1" width="858" height="44" rx="20" class="b2a-header"/>
+				<circle cx="24" cy="23" r="5" fill="#F04438" opacity="0.6"/><circle cx="38" cy="23" r="5" fill="#F59E0B" opacity="0.6"/><circle cx="52" cy="23" r="5" fill="#10B981" opacity="0.6"/>
+				<text x="830" y="28" text-anchor="end" class="b2a-header-t">داشبورد تحلیلی — نمونهٔ نمایشی</text>
+
+				<!-- ═══ KPI Cards (top row) ═══ -->
+				<g class="b2a-kpi b2a-kpi--1"><rect x="20" y="58" width="130" height="52" rx="10" class="b2a-kpi-bg"/><text x="85" y="78" text-anchor="middle" class="b2a-kpi-l">بازدیدکنندگان</text><text x="85" y="100" text-anchor="middle" class="b2a-kpi-v">۱۲,۴۰۰</text></g>
+				<g class="b2a-kpi b2a-kpi--2"><rect x="165" y="58" width="130" height="52" rx="10" class="b2a-kpi-bg"/><text x="230" y="78" text-anchor="middle" class="b2a-kpi-l">نرخ تبدیل</text><text x="230" y="100" text-anchor="middle" class="b2a-kpi-v">۳.۲٪</text></g>
+				<g class="b2a-kpi b2a-kpi--3"><rect x="310" y="58" width="130" height="52" rx="10" class="b2a-kpi-bg"/><text x="375" y="78" text-anchor="middle" class="b2a-kpi-l">میانگین سفارش</text><text x="375" y="100" text-anchor="middle" class="b2a-kpi-v">۲.۱M</text></g>
+				<g class="b2a-kpi b2a-kpi--4"><rect x="455" y="58" width="130" height="52" rx="10" class="b2a-kpi-bg"/><text x="520" y="78" text-anchor="middle" class="b2a-kpi-l">نرخ بازگشت</text><text x="520" y="100" text-anchor="middle" class="b2a-kpi-v">۴۲٪</text></g>
+				<g class="b2a-kpi b2a-kpi--5"><rect x="600" y="58" width="130" height="52" rx="10" class="b2a-kpi-bg"/><text x="665" y="78" text-anchor="middle" class="b2a-kpi-l">ارزش مشتری</text><text x="665" y="100" text-anchor="middle" class="b2a-kpi-v">۸.۷M</text></g>
+
+				<!-- ═══ Bar Chart (bottom-left) ═══ -->
+				<text x="30" y="140" class="b2a-chart-t">عملکرد ماهانه</text>
+				<line x1="30" y1="330" x2="420" y2="330" class="b2a-axis"/>
+				<line x1="30" y1="170" x2="30" y2="330" class="b2a-axis"/>
+				<rect class="b2a-bar b2a-bar--1" x="50" y="270" width="32" height="60" rx="5" fill="url(#b2aBar)" style="--i:0"/>
+				<rect class="b2a-bar b2a-bar--2" x="100" y="240" width="32" height="90" rx="5" fill="url(#b2aBar)" style="--i:1"/>
+				<rect class="b2a-bar b2a-bar--3" x="150" y="255" width="32" height="75" rx="5" fill="url(#b2aBar)" style="--i:2"/>
+				<rect class="b2a-bar b2a-bar--4" x="200" y="210" width="32" height="120" rx="5" fill="url(#b2aBar)" style="--i:3"/>
+				<rect class="b2a-bar b2a-bar--5" x="250" y="225" width="32" height="105" rx="5" fill="url(#b2aBar)" style="--i:4"/>
+				<rect class="b2a-bar b2a-bar--6" x="300" y="185" width="32" height="145" rx="5" fill="url(#b2aBar)" style="--i:5"/>
+				<rect class="b2a-bar b2a-bar--7" x="350" y="200" width="32" height="130" rx="5" fill="url(#b2aBar)" style="--i:6"/>
+				<!-- bar labels -->
+				<text x="66" y="348" text-anchor="middle" class="b2a-bar-l">فروردین</text>
+				<text x="116" y="348" text-anchor="middle" class="b2a-bar-l">اردیبهشت</text>
+				<text x="166" y="348" text-anchor="middle" class="b2a-bar-l">خرداد</text>
+				<text x="216" y="348" text-anchor="middle" class="b2a-bar-l">تیر</text>
+				<text x="266" y="348" text-anchor="middle" class="b2a-bar-l">مرداد</text>
+				<text x="316" y="348" text-anchor="middle" class="b2a-bar-l">شهریور</text>
+				<text x="366" y="348" text-anchor="middle" class="b2a-bar-l">مهر</text>
+
+				<!-- ═══ Line Chart (top-right) ═══ -->
+				<text x="470" y="140" class="b2a-chart-t">روند بازدید</text>
+				<line x1="470" y1="330" x2="680" y2="330" class="b2a-axis"/>
+				<line x1="470" y1="170" x2="470" y2="330" class="b2a-axis"/>
+				<!-- area fill -->
+				<path pathLength="1" class="b2a-area" d="M490 280 L530 250 L570 265 L610 200 L650 220 L670 180 L670 330 L490 330 Z" fill="url(#b2aArea)"/>
+				<!-- line -->
+				<path pathLength="1" class="b2a-line" d="M490 280 L530 250 L570 265 L610 200 L650 220 L670 180" stroke="url(#b2aLn)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+				<!-- dots -->
+				<circle class="b2a-dot" cx="490" cy="280" r="4" style="--i:0"/><circle class="b2a-dot" cx="530" cy="250" r="4" style="--i:1"/>
+				<circle class="b2a-dot" cx="570" cy="265" r="4" style="--i:2"/><circle class="b2a-dot" cx="610" cy="200" r="4" style="--i:3"/>
+				<circle class="b2a-dot" cx="650" cy="220" r="4" style="--i:4"/><circle class="b2a-dot" cx="670" cy="180" r="5" style="--i:5"/>
+				<!-- pulse on last dot -->
+				<circle cx="670" cy="180" r="10" class="b2a-pulse"/>
+
+				<!-- ═══ Donut Chart (bottom-right) ═══ -->
+				<text x="770" y="140" text-anchor="middle" class="b2a-chart-t">ترافیک منابع</text>
+				<circle cx="770" cy="230" r="55" class="b2a-donut-bg"/>
+				<circle class="b2a-donut b2a-donut--1" cx="770" cy="230" r="55" pathLength="1" stroke="#6366F1" stroke-width="14" stroke-dasharray="0.4 0.6" stroke-dashoffset="0.25" fill="none" stroke-linecap="round" transform="rotate(-90 770 230)"/>
+				<circle class="b2a-donut b2a-donut--2" cx="770" cy="230" r="55" pathLength="1" stroke="#06B6D4" stroke-width="14" stroke-dasharray="0.25 0.75" stroke-dashoffset="-0.15" fill="none" stroke-linecap="round" transform="rotate(-90 770 230)"/>
+				<circle class="b2a-donut b2a-donut--3" cx="770" cy="230" r="55" pathLength="1" stroke="#F59E0B" stroke-width="14" stroke-dasharray="0.18 0.82" stroke-dashoffset="-0.4" fill="none" stroke-linecap="round" transform="rotate(-90 770 230)"/>
+				<circle class="b2a-donut b2a-donut--4" cx="770" cy="230" r="55" pathLength="1" stroke="#10B981" stroke-width="14" stroke-dasharray="0.12 0.88" stroke-dashoffset="-0.58" fill="none" stroke-linecap="round" transform="rotate(-90 770 230)"/>
+				<text x="770" y="226" text-anchor="middle" class="b2a-donut-c">۴</text>
+				<text x="770" y="242" text-anchor="middle" class="b2a-donut-l">منبع</text>
+
+				<!-- ═══ Funnel (far right) ═══ -->
+				<text x="770" y="110" text-anchor="middle" class="b2a-chart-t">قیف تبدیل</text>
+				<rect x="710" y="118" width="120" height="18" rx="6" class="b2a-funnel b2a-funnel--1"/>
+				<rect x="725" y="142" width="90" height="18" rx="6" class="b2a-funnel b2a-funnel--2"/>
+				<rect x="740" y="166" width="60" height="18" rx="6" class="b2a-funnel b2a-funnel--3"/>
+				<rect x="755" y="190" width="30" height="18" rx="6" class="b2a-funnel b2a-funnel--4"/>
 			</svg>
 		</div>
 	</div>

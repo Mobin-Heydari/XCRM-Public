@@ -303,21 +303,90 @@
 .b2s-camp-s { fill:var(--x-text-muted); font-size:9px; font-weight:600; font-family:var(--x-font-sans); }
 [data-reveal].is-visible .b2s-camp { animation:b2-badge-pop 0.4s ease 1.6s forwards; }
 
-/* Analytics SVG */
+/* Analytics SVG — detailed infinite dashboard */
 .b2a-frame { fill:var(--x-base); stroke:var(--x-border-subtle); stroke-width:1.5; }
-.b2a-title { fill:var(--x-text-muted); font-size:11px; font-weight:700; font-family:var(--x-font-sans); }
-.b2a-grid { stroke:var(--x-border-subtle); stroke-width:1; opacity:0.5; }
-.b2a-bar { transform-origin:center bottom; transform-box:fill-box; opacity:0; animation:b2-bar-grow 0.85s var(--x-ease-standard) forwards; animation-delay:calc(0.2s + var(--i,0)*0.08s); }
-.b2a-line { stroke-dasharray:1; stroke-dashoffset:1; }
-[data-reveal].is-visible .b2a-line { animation:b2-draw 1.3s ease 0.6s forwards; }
-.b2a-dot { fill:var(--x-cyan); stroke:var(--x-base); stroke-width:2; opacity:0; transform-origin:center; transform-box:fill-box; }
-[data-reveal].is-visible .b2a-dot { animation:b2-dot-pop 0.3s ease forwards; animation-delay:calc(0.9s + var(--i,0)*0.1s); }
+.b2a-header { fill:var(--x-primary); opacity:0.04; }
+.b2a-header-t { fill:var(--x-text-muted); font-size:10px; font-weight:700; font-family:var(--x-font-sans); }
+.b2a-glow { opacity:0; }
+[data-reveal].is-visible .b2a-glow { animation:b2-fade 1.2s ease 0.3s forwards; }
+
+/* KPI cards */
+.b2a-kpi { opacity:0; transform:translateY(8px); }
+.b2a-kpi-bg { fill:var(--x-surface); stroke:var(--x-border-subtle); stroke-width:1; }
+.b2a-kpi-l { fill:var(--x-text-muted); font-size:7.5px; font-weight:600; font-family:var(--x-font-sans); }
+.b2a-kpi-v { fill:var(--x-text); font-size:14px; font-weight:800; font-family:var(--x-font-sans); }
+[data-reveal].is-visible .b2a-kpi--1 { animation:b2-card-in 0.4s ease 0.3s forwards; }
+[data-reveal].is-visible .b2a-kpi--2 { animation:b2-card-in 0.4s ease 0.4s forwards; }
+[data-reveal].is-visible .b2a-kpi--3 { animation:b2-card-in 0.4s ease 0.5s forwards; }
+[data-reveal].is-visible .b2a-kpi--4 { animation:b2-card-in 0.4s ease 0.6s forwards; }
+[data-reveal].is-visible .b2a-kpi--5 { animation:b2-card-in 0.4s ease 0.7s forwards; }
+
+/* Chart titles */
+.b2a-chart-t { fill:var(--x-text-muted); font-size:9px; font-weight:700; font-family:var(--x-font-sans); }
+.b2a-axis { stroke:var(--x-border); stroke-width:1; opacity:0.5; }
+
+/* Bars — infinite grow/shrink */
+.b2a-bar { transform-origin:center bottom; transform-box:fill-box; opacity:0; animation:b2a-bar-loop 4s ease-in-out infinite; animation-delay:calc(var(--i,0) * 0.15s); }
+.b2a-bar--1 { fill:var(--x-primary); opacity:0.4; } .b2a-bar--2 { fill:var(--x-primary); opacity:0.5; }
+.b2a-bar--3 { fill:var(--x-info); opacity:0.45; } .b2a-bar--4 { fill:var(--x-primary); opacity:0.6; }
+.b2a-bar--5 { fill:var(--x-success); opacity:0.5; } .b2a-bar--6 { fill:var(--x-purple); opacity:0.55; }
+.b2a-bar--7 { fill:var(--x-primary); opacity:0.5; }
+@keyframes b2a-bar-loop {
+  0%,100% { transform:scaleY(0.6); opacity:0.35; }
+  50% { transform:scaleY(1); opacity:0.7; }
+}
+
+/* Bar labels */
+.b2a-bar-l { fill:var(--x-text-muted); font-size:6.5px; font-weight:600; font-family:var(--x-font-sans); }
+
+/* Line chart — infinite redraw */
+.b2a-area { opacity:0; }
+[data-reveal].is-visible .b2a-area { animation:b2-fade 0.8s ease 1s forwards; }
+.b2a-line { stroke-dasharray:1; stroke-dashoffset:1; animation:b2a-line-loop 5s ease-in-out infinite; }
+@keyframes b2a-line-loop {
+  0% { stroke-dashoffset:1; opacity:0.4; }
+  40% { stroke-dashoffset:0; opacity:1; }
+  80% { stroke-dashoffset:0; opacity:1; }
+  95% { stroke-dashoffset:0; opacity:0.3; }
+  100% { stroke-dashoffset:1; opacity:0.3; }
+}
+
+/* Line dots — infinite pop */
+.b2a-dot { fill:var(--x-cyan); stroke:var(--x-base); stroke-width:2; opacity:0; transform-origin:center; transform-box:fill-box; animation:b2a-dot-loop 5s ease-in-out infinite; animation-delay:calc(var(--i,0) * 0.2s); }
+@keyframes b2a-dot-loop {
+  0%,5% { opacity:0; transform:scale(0); }
+  15% { opacity:1; transform:scale(1.3); }
+  25% { opacity:1; transform:scale(1); }
+  80% { opacity:1; transform:scale(1); }
+  95%,100% { opacity:0; transform:scale(0.5); }
+}
+
+/* Pulse on last dot */
+.b2a-pulse { fill:none; stroke:var(--x-success); stroke-width:1.5; opacity:0; transform-origin:center; transform-box:fill-box; }
+[data-reveal].is-visible .b2a-pulse { animation:b2-ring-pulse 2.5s ease-in-out 2s infinite; }
+
+/* Donut chart */
+.b2a-donut-bg { fill:none; stroke:var(--x-border-subtle); stroke-width:14; opacity:0.5; }
+.b2a-donut { stroke-dasharray:1; stroke-dashoffset:1; opacity:0; }
+[data-reveal].is-visible .b2a-donut--1 { animation:b2-draw 0.8s ease 0.8s forwards; }
+[data-reveal].is-visible .b2a-donut--2 { animation:b2-draw 0.8s ease 1s forwards; }
+[data-reveal].is-visible .b2a-donut--3 { animation:b2-draw 0.8s ease 1.2s forwards; }
+[data-reveal].is-visible .b2a-donut--4 { animation:b2-draw 0.8s ease 1.4s forwards; }
+.b2a-donut-c { fill:var(--x-text); font-size:16px; font-weight:800; font-family:var(--x-font-sans); }
+.b2a-donut-l { fill:var(--x-text-muted); font-size:8px; font-weight:600; font-family:var(--x-font-sans); }
+
+/* Funnel */
 .b2a-funnel { opacity:0; transform-origin:right center; transform-box:fill-box; }
-.b2a-funnel--1 { fill:var(--x-primary); opacity:0.7; } .b2a-funnel--2 { fill:var(--x-info); opacity:0.6; } .b2a-funnel--3 { fill:var(--x-warn); opacity:0.6; } .b2a-funnel--4 { fill:var(--x-success); opacity:0.7; }
-[data-reveal].is-visible .b2a-funnel--1 { animation:b2-row-in 0.4s ease 0.4s forwards; }
-[data-reveal].is-visible .b2a-funnel--2 { animation:b2-row-in 0.4s ease 0.55s forwards; }
-[data-reveal].is-visible .b2a-funnel--3 { animation:b2-row-in 0.4s ease 0.7s forwards; }
-[data-reveal].is-visible .b2a-funnel--4 { animation:b2-row-in 0.4s ease 0.85s forwards; }
+.b2a-funnel--1 { fill:var(--x-primary); opacity:0.6; } .b2a-funnel--2 { fill:var(--x-info); opacity:0.5; }
+.b2a-funnel--3 { fill:var(--x-warn); opacity:0.5; } .b2a-funnel--4 { fill:var(--x-success); opacity:0.6; }
+[data-reveal].is-visible .b2a-funnel--1 { animation:b2a-funnel-loop 3.5s ease-in-out 0.5s infinite; }
+[data-reveal].is-visible .b2a-funnel--2 { animation:b2a-funnel-loop 3.5s ease-in-out 0.7s infinite; }
+[data-reveal].is-visible .b2a-funnel--3 { animation:b2a-funnel-loop 3.5s ease-in-out 0.9s infinite; }
+[data-reveal].is-visible .b2a-funnel--4 { animation:b2a-funnel-loop 3.5s ease-in-out 1.1s infinite; }
+@keyframes b2a-funnel-loop {
+  0%,100% { transform:scaleX(0.85); opacity:0.35; }
+  50% { transform:scaleX(1); opacity:0.7; }
+}
 
 /* Communication SVG */
 .b2c-core { opacity:0; transform-origin:center; transform-box:fill-box; }
@@ -1255,7 +1324,7 @@
   .b2s-cluster, .b2s-node, .b2s-flow, .b2s-lbl, .b2s-camp, .b2s-funnel, .b2s-cluster-pulse, .b2s-camp-pulse, .b2s-glow,
   .b2s-src-ring, .b2s-src-core, .b2s-dot, .b2s-engine-frame, .b2s-engine-header, .b2s-cond, .b2s-and,
   .b2s-g-circle, .b2s-g-pulse, .b2s-g-lbl, .b2s-camp-frame, .b2s-c-ch, .b2s-camp-status,
-  .b2a-bar, .b2a-line, .b2a-dot, .b2a-funnel,
+  .b2a-bar, .b2a-line, .b2a-dot, .b2a-funnel, .b2a-kpi, .b2a-glow, .b2a-area, .b2a-pulse, .b2a-donut,
   .b2c-core, .b2c-chan, .b2c-flow,
   .b2t-role, .b2t-link, .b2t-pdot,
   .b2h-core, .b2h-ring, .b2h-spoke, .b2h-node, .b2h-npulse, .b2h-glow,
@@ -1272,7 +1341,7 @@
   .xcrm-b2__ring, .xcrm-b2__orb, .xcrm-b2__deco, .xcrm-b2__final-box, .xcrm-b2__pricing-box::before {
     animation:none !important; opacity:1 !important; transform:none !important;
   }
-  .b2f-draw, .b2f-check, .b2f-eye, .b2p-tl-line, .b2fu-bell-path, .b2fu-link, .b2s-flow, .b2s-funnel-body, .b2s-funnel-spout, .b2s-camp-check, .b2a-line, .b2c-flow, .b2t-link, .b2h-spoke, .b2st-check, .b2st-arrow, .b2st-arrow-head, .b2st-line-chart,
+  .b2f-draw, .b2f-check, .b2f-eye, .b2p-tl-line, .b2fu-bell-path, .b2fu-link, .b2s-flow, .b2s-funnel-body, .b2s-funnel-spout, .b2s-camp-check, .b2a-line, .b2a-donut, .b2c-flow, .b2t-link, .b2h-spoke, .b2st-check, .b2st-arrow, .b2st-arrow-head, .b2st-line-chart,
   .b2ch1-link, .b2ch2-line, .b2ch2-break, .b2ch2-fade, .b2ch2-clock-hand, .b2ch3-wave,
   .b2i2-cap-tassel, .b2i2-cap-base, .b2i3-hand, .b2i3-arrow, .b2i3-timeline, .b2i3-check path, .b2i4-clip-line {
     stroke-dashoffset:0 !important;
