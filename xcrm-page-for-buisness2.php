@@ -719,17 +719,19 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 				<!-- Dashboard header -->
 				<rect x="1" y="1" width="858" height="44" rx="20" class="b2a-header"/>
 				<circle cx="24" cy="23" r="5" fill="#F04438" opacity="0.6"/><circle cx="38" cy="23" r="5" fill="#F59E0B" opacity="0.6"/><circle cx="52" cy="23" r="5" fill="#10B981" opacity="0.6"/>
-				<text x="830" y="28" text-anchor="end" class="b2a-header-t">داشبورد تحلیلی — نمونهٔ نمایشی</text>
+				<text x="710" y="28" text-anchor="end" class="b2a-header-t">داشبورد تحلیلی — نمونهٔ نمایشی</text>
 
 				<!-- ═══ KPI Cards (top row) ═══ -->
-				<g class="b2a-kpi b2a-kpi--1"><rect x="20" y="58" width="130" height="52" rx="10" class="b2a-kpi-bg"/><text x="85" y="78" text-anchor="middle" class="b2a-kpi-l">بازدیدکنندگان</text><text x="85" y="100" text-anchor="middle" class="b2a-kpi-v">۱۲,۴۰۰</text></g>
-				<g class="b2a-kpi b2a-kpi--2"><rect x="165" y="58" width="130" height="52" rx="10" class="b2a-kpi-bg"/><text x="230" y="78" text-anchor="middle" class="b2a-kpi-l">نرخ تبدیل</text><text x="230" y="100" text-anchor="middle" class="b2a-kpi-v">۳.۲٪</text></g>
-				<g class="b2a-kpi b2a-kpi--3"><rect x="310" y="58" width="130" height="52" rx="10" class="b2a-kpi-bg"/><text x="375" y="78" text-anchor="middle" class="b2a-kpi-l">میانگین سفارش</text><text x="375" y="100" text-anchor="middle" class="b2a-kpi-v">۲.۱M</text></g>
-				<g class="b2a-kpi b2a-kpi--4"><rect x="455" y="58" width="130" height="52" rx="10" class="b2a-kpi-bg"/><text x="520" y="78" text-anchor="middle" class="b2a-kpi-l">نرخ بازگشت</text><text x="520" y="100" text-anchor="middle" class="b2a-kpi-v">۴۲٪</text></g>
-				<g class="b2a-kpi b2a-kpi--5"><rect x="600" y="58" width="130" height="52" rx="10" class="b2a-kpi-bg"/><text x="665" y="78" text-anchor="middle" class="b2a-kpi-l">ارزش مشتری</text><text x="665" y="100" text-anchor="middle" class="b2a-kpi-v">۸.۷M</text></g>
+				<g class="b2a-kpi b2a-kpi--1"><rect x="20" y="58" width="110" height="52" rx="10" class="b2a-kpi-bg"/><text x="75" y="78" text-anchor="middle" class="b2a-kpi-l">بازدیدکنندگان</text><text x="75" y="100" text-anchor="middle" class="b2a-kpi-v">۱۲,۴۰۰</text></g>
+				<g class="b2a-kpi b2a-kpi--2"><rect x="165" y="58" width="110" height="52" rx="10" class="b2a-kpi-bg"/><text x="220" y="78" text-anchor="middle" class="b2a-kpi-l">نرخ تبدیل</text><text x="220" y="100" text-anchor="middle" class="b2a-kpi-v">۳.۲٪</text></g>
+				<g class="b2a-kpi b2a-kpi--3"><rect x="310" y="58" width="110" height="52" rx="10" class="b2a-kpi-bg"/><text x="365" y="78" text-anchor="middle" class="b2a-kpi-l">میانگین سفارش</text><text x="365" y="100" text-anchor="middle" class="b2a-kpi-v">۲.۱M</text></g>
+				<g class="b2a-kpi b2a-kpi--4"><rect x="455" y="58" width="110" height="52" rx="10" class="b2a-kpi-bg"/><text x="510" y="78" text-anchor="middle" class="b2a-kpi-l">نرخ بازگشت</text><text x="510" y="100" text-anchor="middle" class="b2a-kpi-v">۴۲٪</text></g>
+				<g class="b2a-kpi b2a-kpi--5"><rect x="600" y="58" width="110" height="52" rx="10" class="b2a-kpi-bg"/><text x="655" y="78" text-anchor="middle" class="b2a-kpi-l">ارزش مشتری</text><text x="655" y="100" text-anchor="middle" class="b2a-kpi-v">۸.۷M</text></g>
+				<g class="b2a-kpi b2a-kpi--6"><rect x="730" y="58" width="110" height="52" rx="10" class="b2a-kpi-bg"/><text x="785" y="78" text-anchor="middle" class="b2a-kpi-l">ارزش محصول</text><text x="785" y="100" text-anchor="middle" class="b2a-kpi-v">3.۷M</text></g>
+
 
 				<!-- ═══ Bar Chart (bottom-left) ═══ -->
-				<text x="30" y="140" class="b2a-chart-t">عملکرد ماهانه</text>
+				<text x="60" y="140" class="b2a-chart-t">عملکرد ماهانه</text>
 				<line x1="30" y1="330" x2="420" y2="330" class="b2a-axis"/>
 				<line x1="30" y1="170" x2="30" y2="330" class="b2a-axis"/>
 				<rect class="b2a-bar b2a-bar--1" x="50" y="270" width="32" height="60" rx="5" fill="url(#b2aBar)" style="--i:0"/>
@@ -749,7 +751,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 				<text x="366" y="348" text-anchor="middle" class="b2a-bar-l">مهر</text>
 
 				<!-- ═══ Line Chart (top-right) ═══ -->
-				<text x="470" y="140" class="b2a-chart-t">روند بازدید</text>
+				<text x="490" y="140" class="b2a-chart-t">روند بازدید</text>
 				<line x1="470" y1="330" x2="680" y2="330" class="b2a-axis"/>
 				<line x1="470" y1="170" x2="470" y2="330" class="b2a-axis"/>
 				<!-- area fill -->
@@ -764,21 +766,21 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 				<circle cx="670" cy="180" r="10" class="b2a-pulse"/>
 
 				<!-- ═══ Donut Chart (bottom-right) ═══ -->
-				<text x="770" y="140" text-anchor="middle" class="b2a-chart-t">ترافیک منابع</text>
+				<!-- <text x="770" y="140" text-anchor="middle" class="b2a-chart-t">ترافیک منابع</text>
 				<circle cx="770" cy="230" r="55" class="b2a-donut-bg"/>
 				<circle class="b2a-donut b2a-donut--1" cx="770" cy="230" r="55" pathLength="1" stroke="#6366F1" stroke-width="14" stroke-dasharray="0.4 0.6" stroke-dashoffset="0.25" fill="none" stroke-linecap="round" transform="rotate(-90 770 230)"/>
 				<circle class="b2a-donut b2a-donut--2" cx="770" cy="230" r="55" pathLength="1" stroke="#06B6D4" stroke-width="14" stroke-dasharray="0.25 0.75" stroke-dashoffset="-0.15" fill="none" stroke-linecap="round" transform="rotate(-90 770 230)"/>
 				<circle class="b2a-donut b2a-donut--3" cx="770" cy="230" r="55" pathLength="1" stroke="#F59E0B" stroke-width="14" stroke-dasharray="0.18 0.82" stroke-dashoffset="-0.4" fill="none" stroke-linecap="round" transform="rotate(-90 770 230)"/>
 				<circle class="b2a-donut b2a-donut--4" cx="770" cy="230" r="55" pathLength="1" stroke="#10B981" stroke-width="14" stroke-dasharray="0.12 0.88" stroke-dashoffset="-0.58" fill="none" stroke-linecap="round" transform="rotate(-90 770 230)"/>
 				<text x="770" y="226" text-anchor="middle" class="b2a-donut-c">۴</text>
-				<text x="770" y="242" text-anchor="middle" class="b2a-donut-l">منبع</text>
+				<text x="770" y="242" text-anchor="middle" class="b2a-donut-l">منبع</text> -->
 
 				<!-- ═══ Funnel (far right) ═══ -->
-				<text x="770" y="110" text-anchor="middle" class="b2a-chart-t">قیف تبدیل</text>
-				<rect x="710" y="118" width="120" height="18" rx="6" class="b2a-funnel b2a-funnel--1"/>
-				<rect x="725" y="142" width="90" height="18" rx="6" class="b2a-funnel b2a-funnel--2"/>
-				<rect x="740" y="166" width="60" height="18" rx="6" class="b2a-funnel b2a-funnel--3"/>
-				<rect x="755" y="190" width="30" height="18" rx="6" class="b2a-funnel b2a-funnel--4"/>
+				<text x="770" y="210" text-anchor="middle" class="b2a-chart-t">قیف تبدیل</text>
+				<rect x="710" y="218" width="120" height="18" rx="6" class="b2a-funnel b2a-funnel--1"/>
+				<rect x="725" y="242" width="90" height="18" rx="6" class="b2a-funnel b2a-funnel--2"/>
+				<rect x="740" y="266" width="60" height="18" rx="6" class="b2a-funnel b2a-funnel--3"/>
+				<rect x="755" y="290" width="30" height="18" rx="6" class="b2a-funnel b2a-funnel--4"/>
 			</svg>
 		</div>
 	</div>

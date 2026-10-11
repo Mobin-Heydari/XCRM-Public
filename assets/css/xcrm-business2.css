@@ -320,6 +320,8 @@
 [data-reveal].is-visible .b2a-kpi--3 { animation:b2-card-in 0.4s ease 0.5s forwards; }
 [data-reveal].is-visible .b2a-kpi--4 { animation:b2-card-in 0.4s ease 0.6s forwards; }
 [data-reveal].is-visible .b2a-kpi--5 { animation:b2-card-in 0.4s ease 0.7s forwards; }
+[data-reveal].is-visible .b2a-kpi--6 { animation:b2-card-in 0.4s ease 0.8s forwards; }
+
 
 /* Chart titles */
 .b2a-chart-t { fill:var(--x-text-muted); font-size:9px; font-weight:700; font-family:var(--x-font-sans); }
