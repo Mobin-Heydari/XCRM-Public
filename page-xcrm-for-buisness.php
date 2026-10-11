@@ -1,9 +1,9 @@
 <?php
 /**
- * Template Name: For Business v2
+ * Template Name: For Business
  * Template Post Type: page
  *
- * لندینگ کسب‌وکارها v2 — /for-buisness/
+ * لندینگ کسب‌وکارها — /for-buisness/
  * ۱۵ بخش با SVGهای اختصاصی و انیمیشنی
  *
  * @package HelloElementorChild

@@ -105,55 +105,55 @@ add_action( 'wp_enqueue_scripts', 'hello_elementor_child_scripts_styles', 20 );
  * Force /for-marketers/ to render the For Marketers template
  * even when no WP page exists with that slug.
  */
-add_filter( 'template_include', 'xcrm_for_marketers_template' );
-function xcrm_for_marketers_template( $template ) {
-	$uri = isset( $_SERVER['REQUEST_URI'] ) ? wp_parse_url( wp_unslash( $_SERVER['REQUEST_URI'] ), PHP_URL_PATH ) : '';
-	$uri = untrailingslashit( (string) $uri );
+// add_filter( 'template_include', 'xcrm_for_marketers_template' );
+// function xcrm_for_marketers_template( $template ) {
+// 	$uri = isset( $_SERVER['REQUEST_URI'] ) ? wp_parse_url( wp_unslash( $_SERVER['REQUEST_URI'] ), PHP_URL_PATH ) : '';
+// 	$uri = untrailingslashit( (string) $uri );
 
-	// Match /for-marketers at site root or in a subdirectory install
-	if ( $uri === '/for-marketers' || substr( $uri, -14 ) === '/for-marketers' ) {
-		$custom = get_stylesheet_directory() . '/page-xcrm-for-marketers.php';
-		if ( file_exists( $custom ) ) {
-			return $custom;
-		}
-	}
+// 	// Match /for-marketers at site root or in a subdirectory install
+// 	if ( $uri === '/for-marketers' || substr( $uri, -14 ) === '/for-marketers' ) {
+// 		$custom = get_stylesheet_directory() . '/page-xcrm-for-marketers.php';
+// 		if ( file_exists( $custom ) ) {
+// 			return $custom;
+// 		}
+// 	}
 
-	return $template;
-}
+// 	return $template;
+// }
 
 /**
  * Force /for-business/ to render the For Business template
  * even when no WP page exists with that slug.
  */
-add_filter( 'template_include', 'xcrm_for_business_template' );
-function xcrm_for_business_template( $template ) {
-	$uri = isset( $_SERVER['REQUEST_URI'] ) ? wp_parse_url( wp_unslash( $_SERVER['REQUEST_URI'] ), PHP_URL_PATH ) : '';
-	$uri = untrailingslashit( (string) $uri );
+// add_filter( 'template_include', 'xcrm_for_business_template' );
+// function xcrm_for_business_template( $template ) {
+// 	$uri = isset( $_SERVER['REQUEST_URI'] ) ? wp_parse_url( wp_unslash( $_SERVER['REQUEST_URI'] ), PHP_URL_PATH ) : '';
+// 	$uri = untrailingslashit( (string) $uri );
 
-	if ( $uri === '/for-business' || substr( $uri, -13 ) === '/for-business' ) {
-		$custom = get_stylesheet_directory() . '/page-xcrm-for-business.php';
-		if ( file_exists( $custom ) ) {
-			return $custom;
-		}
-	}
+// 	if ( $uri === '/for-business' || substr( $uri, -13 ) === '/for-business' ) {
+// 		$custom = get_stylesheet_directory() . '/page-xcrm-for-business.php';
+// 		if ( file_exists( $custom ) ) {
+// 			return $custom;
+// 		}
+// 	}
 
-	return $template;
-}
+// 	return $template;
+// }
 
-/**
- * Force /for-buisness/ to render the For Business v2 template.
- */
-add_filter( 'template_include', 'xcrm_for_buisness2_template' );
-function xcrm_for_buisness2_template( $template ) {
-	$uri = isset( $_SERVER['REQUEST_URI'] ) ? wp_parse_url( wp_unslash( $_SERVER['REQUEST_URI'] ), PHP_URL_PATH ) : '';
-	$uri = untrailingslashit( (string) $uri );
+// /**
+//  * Force /for-buisness/ to render the For Business v2 template.
+//  */
+// add_filter( 'template_include', 'xcrm_for_buisness2_template' );
+// function xcrm_for_buisness2_template( $template ) {
+// 	$uri = isset( $_SERVER['REQUEST_URI'] ) ? wp_parse_url( wp_unslash( $_SERVER['REQUEST_URI'] ), PHP_URL_PATH ) : '';
+// 	$uri = untrailingslashit( (string) $uri );
 
-	if ( $uri === '/for-buisness' || substr( $uri, -13 ) === '/for-buisness' ) {
-		$custom = get_stylesheet_directory() . '/xcrm-page-for-buisness2.php';
-		if ( file_exists( $custom ) ) {
-			return $custom;
-		}
-	}
+// 	if ( $uri === '/for-buisness' || substr( $uri, -13 ) === '/for-buisness' ) {
+// 		$custom = get_stylesheet_directory() . '/xcrm-page-for-buisness2.php';
+// 		if ( file_exists( $custom ) ) {
+// 			return $custom;
+// 		}
+// 	}
 
-	return $template;
-}
+// 	return $template;
+// }
