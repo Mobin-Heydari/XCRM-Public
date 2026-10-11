@@ -960,76 +960,178 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 
 <!-- ══════════ 12. GETTING STARTED ══════════ -->
 <section class="xcrm-b2__section xcrm-b2__section--surface" id="start">
+	<div class="xcrm-b2__deco xcrm-b2__deco--indigo" style="top:5%;left:-6%;" aria-hidden="true"></div>
 	<div class="xcrm-b2__inner">
 		<div class="xcrm-b2__head" data-reveal="up">
 			<p class="xcrm-b2__eyebrow">شروع کار با xCRM</p>
 			<h2 class="xcrm-b2__h2">از ثبت اطلاعات مشتریان تا مدیریت یکپارچه‌تر</h2>
 		</div>
-		<ol class="xcrm-b2__steps">
-			<li class="xcrm-b2__step" data-reveal="up">
-				<span class="xcrm-b2__step-num" aria-hidden="true">۱</span>
-				<div class="xcrm-b2__step-body">
-					<svg class="xcrm-b2__step-svg" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-						<rect x="20" y="15" width="80" height="50" rx="8" class="b2st-card"/>
-						<circle cx="45" cy="35" r="8" fill="#6366F1" opacity="0.8"/>
-						<rect x="58" y="30" width="28" height="5" rx="2.5" class="b2st-line"/>
-						<rect x="58" y="40" width="20" height="4" rx="2" class="b2st-line"/>
-						<path pathLength="1" class="b2st-check" d="M35 55 l6 6 12-14" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-						<circle class="b2st-pulse" cx="90" cy="25" r="8"/>
-					</svg>
-					<h3>ایجاد حساب و تنظیمات اولیه</h3>
-					<p>اطلاعات شرکت، لوگو و تنظیمات اولیه فضای کاری را تکمیل کنید.</p>
-				</div>
-			</li>
-			<li class="xcrm-b2__step" data-reveal="up" data-reveal-delay="100">
-				<span class="xcrm-b2__step-num" aria-hidden="true">۲</span>
-				<div class="xcrm-b2__step-body">
-					<svg class="xcrm-b2__step-svg" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-						<rect x="15" y="20" width="50" height="40" rx="6" class="b2st-card"/>
-						<text x="40" y="44" text-anchor="middle" class="b2st-file-t">CSV</text>
-						<path pathLength="1" class="b2st-arrow" d="M70 40 H95" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
-						<path pathLength="1" class="b2st-arrow-head" d="M90 35 l5 5-5 5" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-						<rect x="70" y="25" width="35" height="30" rx="6" class="b2st-card b2st-card--target"/>
-						<circle cx="87" cy="37" r="4" fill="#10B981" opacity="0.6"/>
-						<circle class="b2st-pulse" cx="30" cy="18" r="6"/>
-					</svg>
-					<h3>ثبت یا اتصال اطلاعات مشتریان</h3>
-					<p>اطلاعات را از CSV، Excel، JSON یا API وارد کنید و فیلدها را نگاشت کنید.</p>
-				</div>
-			</li>
-			<li class="xcrm-b2__step" data-reveal="up" data-reveal-delay="200">
-				<span class="xcrm-b2__step-num" aria-hidden="true">۳</span>
-				<div class="xcrm-b2__step-body">
-					<svg class="xcrm-b2__step-svg" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-						<circle cx="60" cy="40" r="28" class="b2st-ring b2st-ring--1"/>
-						<circle cx="60" cy="40" r="18" class="b2st-ring b2st-ring--2"/>
-						<circle cx="60" cy="40" r="8" fill="#6366F1" opacity="0.8"/>
-						<circle cx="40" cy="25" r="4" fill="#06B6D4" opacity="0.7"/>
-						<circle cx="80" cy="25" r="4" fill="#10B981" opacity="0.7"/>
-						<circle cx="40" cy="55" r="4" fill="#F59E0B" opacity="0.7"/>
-						<circle cx="80" cy="55" r="4" fill="#EC4899" opacity="0.7"/>
-						<circle class="b2st-pulse" cx="60" cy="40" r="14"/>
-					</svg>
-					<h3>پیکربندی بخش‌بندی و ارتباطات</h3>
-					<p>بخش‌بندی‌ها و کانال‌های ارتباطی موردنیاز را تنظیم و فعال کنید.</p>
-				</div>
-			</li>
-			<li class="xcrm-b2__step" data-reveal="up" data-reveal-delay="300">
-				<span class="xcrm-b2__step-num" aria-hidden="true">۴</span>
-				<div class="xcrm-b2__step-body">
-					<svg class="xcrm-b2__step-svg" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-						<rect x="15" y="50" width="18" height="15" rx="3" class="b2st-bar b2st-bar--1"/>
-						<rect x="40" y="38" width="18" height="27" rx="3" class="b2st-bar b2st-bar--2"/>
-						<rect x="65" y="44" width="18" height="21" rx="3" class="b2st-bar b2st-bar--3"/>
-						<rect x="90" y="28" width="18" height="37" rx="3" class="b2st-bar b2st-bar--4"/>
-						<path pathLength="1" class="b2st-line-chart" d="M24 45 L49 32 L74 38 L99 22" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-						<circle class="b2st-pulse" cx="99" cy="22" r="5"/>
-					</svg>
-					<h3>بررسی داده‌ها و شروع استفاده</h3>
-					<p>داده‌ها را بررسی کنید، گزارش‌ها را ببینید و از قابلیت‌های موجود استفاده کنید.</p>
-				</div>
-			</li>
-		</ol>
+
+		<!-- Step 1: Account Setup -->
+		<article class="xcrm-b2__chal" data-reveal="up">
+			<div class="xcrm-b2__chal-visual">
+				<svg class="xcrm-b2-svg" viewBox="0 0 380 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<defs><linearGradient id="b2s1g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.1"/><stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.04"/></linearGradient><radialGradient id="b2s1av" cx="50%" cy="40%" r="50%"><stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#8B5CF6"/></radialGradient></defs>
+					<rect x="10" y="10" width="360" height="240" rx="20" fill="url(#b2s1g)"/>
+					<!-- company card -->
+					<rect x="60" y="40" width="260" height="180" rx="16" class="b2s1-card"/>
+					<!-- header bar -->
+					<rect x="60" y="40" width="260" height="36" rx="16" class="b2s1-header"/>
+					<circle cx="84" cy="58" r="6" fill="#6366F1" opacity="0.8"/>
+					<circle cx="98" cy="58" r="6" fill="#06B6D4" opacity="0.6"/>
+					<circle cx="112" cy="58" r="6" fill="#10B981" opacity="0.5"/>
+					<text x="290" y="62" text-anchor="end" class="b2s1-header-t">تنظیمات فضای کاری</text>
+					<!-- avatar -->
+					<circle cx="115" cy="110" r="24" fill="url(#b2s1av)" class="b2s1-avatar"/>
+					<circle cx="115" cy="110" r="30" class="b2s1-ring"/>
+					<!-- info lines -->
+					<rect x="150" y="96" width="100" height="8" rx="4" class="b2s1-line b2s1-line--1"/>
+					<rect x="150" y="112" width="70" height="6" rx="3" class="b2s1-line b2s1-line--2"/>
+					<!-- form fields -->
+					<rect x="80" y="150" width="100" height="28" rx="8" class="b2s1-field b2s1-field--1"/>
+					<rect x="195" y="150" width="100" height="28" rx="8" class="b2s1-field b2s1-field--2"/>
+					<rect x="80" y="190" width="215" height="28" rx="8" class="b2s1-field b2s1-field--3"/>
+					<!-- checkmark -->
+					<g class="b2s1-check"><circle cx="300" cy="55" r="14" fill="#ECFDF5"/><path pathLength="1" d="M294 55 l4 4 8-10" stroke="#10B981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+					<!-- floating gear -->
+					<g class="b2s1-gear">
+						<circle cx="330" cy="120" r="12" fill="none" stroke="#6366F1" stroke-width="2"/>
+						<circle cx="330" cy="120" r="5" fill="#6366F1" opacity="0.6"/>
+						<path d="M330 104 v-4M330 140 v4M314 120 h-4M350 120 h4M319 109 l-3-3M341 131 l3 3M319 131 l-3 3M341 109 l3-3" stroke="#6366F1" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+					</g>
+					<!-- floating dots -->
+					<circle class="b2s1-dot b2s1-dot--1" cx="50" cy="130" r="3" fill="#6366F1"/>
+					<circle class="b2s1-dot b2s1-dot--2" cx="340" cy="200" r="2.5" fill="#06B6D4"/>
+					<circle class="b2s1-dot b2s1-dot--3" cx="40" cy="210" r="2" fill="#8B5CF6"/>
+				</svg>
+			</div>
+			<div class="xcrm-b2__chal-body">
+				<span class="xcrm-b2__chal-num" aria-hidden="true">گام اول</span>
+				<h3 class="xcrm-b2__chal-title">ایجاد حساب و تنظیمات اولیه</h3>
+				<p class="xcrm-b2__chal-desc">حساب کاربری ایجاد کنید، اطلاعات شرکت و لوگو را بارگذاری کنید و تنظیمات اولیه فضای کاری را تکمیل کنید. این مرحله فقط چند دقیقه طول می‌کشد و پس از آن آماده واردکردن اطلاعات مشتریان خواهید بود.</p>
+				<ul class="xcrm-b2__chal-tags"><li>ایجاد حساب</li><li>اطلاعات شرکت</li><li>تنظیمات اولیه</li></ul>
+			</div>
+		</article>
+
+		<!-- Step 2: Import Data -->
+		<article class="xcrm-b2__chal xcrm-b2__chal--rev" data-reveal="up">
+			<div class="xcrm-b2__chal-visual">
+				<svg class="xcrm-b2-svg" viewBox="0 0 380 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<defs><linearGradient id="b2s2g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#06B6D4" stop-opacity="0.1"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0.04"/></linearGradient></defs>
+					<rect x="10" y="10" width="360" height="240" rx="20" fill="url(#b2s2g)"/>
+					<!-- source file -->
+					<g class="b2s2-file">
+						<rect x="30" y="70" width="80" height="100" rx="8" class="b2s2-file-bg"/>
+						<path pathLength="1" class="b2s2-file-fold" d="M30 78 Q30 70 38 70 H62 L72 80 H112 Q120 80 120 88 V162 Q120 170 112 170 H38 Q30 170 30 162 Z"/>
+						<text x="70" y="130" text-anchor="middle" class="b2s2-file-t">CSV</text>
+					</g>
+					<!-- arrow -->
+					<path pathLength="1" class="b2s2-arrow" d="M125 120 H165" stroke="#6366F1" stroke-width="2.5" stroke-linecap="round"/>
+					<path pathLength="1" class="b2s2-arrow-head" d="M158 112 l8 8-8 8" stroke="#6366F1" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+					<!-- target dashboard -->
+					<rect x="175" y="50" width="180" height="160" rx="12" class="b2s2-target"/>
+					<rect x="175" y="50" width="180" height="28" rx="12" class="b2s2-target-header"/>
+					<text x="265" y="69" text-anchor="middle" class="b2s2-target-t">پایگاه داده مشتریان</text>
+					<!-- imported rows -->
+					<g class="b2s2-row b2s2-row--1"><rect x="190" y="90" width="150" height="22" rx="6" class="b2s2-row-bg"/><circle cx="204" cy="101" r="6" fill="#6366F1" opacity="0.7"/><rect x="216" y="97" width="80" height="6" rx="3" class="b2s2-row-l"/></g>
+					<g class="b2s2-row b2s2-row--2"><rect x="190" y="120" width="150" height="22" rx="6" class="b2s2-row-bg"/><circle cx="204" cy="131" r="6" fill="#06B6D4" opacity="0.7"/><rect x="216" y="127" width="65" height="6" rx="3" class="b2s2-row-l"/></g>
+					<g class="b2s2-row b2s2-row--3"><rect x="190" y="150" width="150" height="22" rx="6" class="b2s2-row-bg"/><circle cx="204" cy="161" r="6" fill="#10B981" opacity="0.7"/><rect x="216" y="157" width="90" height="6" rx="3" class="b2s2-row-l"/></g>
+					<g class="b2s2-row b2s2-row--4"><rect x="190" y="180" width="150" height="22" rx="6" class="b2s2-row-bg"/><circle cx="204" cy="191" r="6" fill="#F59E0B" opacity="0.7"/><rect x="216" y="187" width="70" height="6" rx="3" class="b2s2-row-l"/></g>
+					<!-- progress bar -->
+					<rect x="190" y="220" width="150" height="8" rx="4" class="b2s2-progress-bg"/>
+					<rect x="190" y="220" width="150" height="8" rx="4" class="b2s2-progress-fill"/>
+					<!-- floating format chips -->
+					<g class="b2s2-chip b2s2-chip--1"><rect x="30" y="30" width="40" height="20" rx="8" class="b2s2-chip-bg"/><text x="50" y="44" text-anchor="middle" class="b2s2-chip-t">Excel</text></g>
+					<g class="b2s2-chip b2s2-chip--2"><rect x="30" y="190" width="40" height="20" rx="8" class="b2s2-chip-bg"/><text x="50" y="204" text-anchor="middle" class="b2s2-chip-t">JSON</text></g>
+					<circle class="b2s2-dot b2s2-dot--1" cx="150" cy="50" r="3" fill="#6366F1"/>
+					<circle class="b2s2-dot b2s2-dot--2" cx="360" cy="140" r="2.5" fill="#06B6D4"/>
+				</svg>
+			</div>
+			<div class="xcrm-b2__chal-body">
+				<span class="xcrm-b2__chal-num" aria-hidden="true">گام دوم</span>
+				<h3 class="xcrm-b2__chal-title">ثبت یا اتصال اطلاعات مشتریان</h3>
+				<p class="xcrm-b2__chal-desc">اطلاعات مشتریان موجود را از فایل‌های CSV، Excel یا JSON وارد کنید یا از طریق API متصل شوید. فیلدها را نگاشت کنید و اطلاعات را در چند دقیقه به پایگاه داده xCRM منتقل کنید.</p>
+				<ul class="xcrm-b2__chal-tags"><li>واردکردن CSV/Excel</li><li>اتصال API</li><li>نگاشت فیلدها</li></ul>
+			</div>
+		</article>
+
+		<!-- Step 3: Configure -->
+		<article class="xcrm-b2__chal" data-reveal="up">
+			<div class="xcrm-b2__chal-visual">
+				<svg class="xcrm-b2-svg" viewBox="0 0 380 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<defs><linearGradient id="b2s3g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#10B981" stop-opacity="0.08"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0.04"/></linearGradient></defs>
+					<rect x="10" y="10" width="360" height="240" rx="20" fill="url(#b2s3g)"/>
+					<!-- segment builder panel -->
+					<rect x="40" y="40" width="200" height="180" rx="12" class="b2s3-panel"/>
+					<text x="140" y="65" text-anchor="middle" class="b2s3-panel-t">ساخت بخش مشتریان</text>
+					<!-- condition rows -->
+					<g class="b2s3-cond b2s3-cond--1"><rect x="55" y="80" width="170" height="30" rx="8" class="b2s3-cond-bg"/><text x="65" y="99" class="b2s3-cond-t">برچسب = ویژه</text></g>
+					<g class="b2s3-cond b2s3-cond--2"><rect x="55" y="120" width="170" height="30" rx="8" class="b2s3-cond-bg"/><text x="65" y="139" class="b2s3-cond-t">آخرین خرید &lt; ۳۰ روز</text></g>
+					<g class="b2s3-cond b2s3-cond--3"><rect x="55" y="160" width="170" height="30" rx="8" class="b2s3-cond-bg"/><text x="65" y="179" class="b2s3-cond-t">ارزش سفارش &gt; ۱ میلیون</text></g>
+					<!-- AND badges -->
+					<circle cx="230" cy="95" r="10" class="b2s3-logic"/><text x="230" y="99" text-anchor="middle" class="b2s3-logic-t">و</text>
+					<circle cx="230" cy="135" r="10" class="b2s3-logic"/><text x="230" y="139" text-anchor="middle" class="b2s3-logic-t">و</text>
+					<!-- channel icons -->
+					<g class="b2s3-chan b2s3-chan--sms"><rect x="270" y="60" width="80" height="36" rx="10" class="b2s3-chan-bg"/><text x="310" y="83" text-anchor="middle" class="b2s3-chan-t">پیامک</text></g>
+					<g class="b2s3-chan b2s3-chan--tg"><rect x="270" y="110" width="80" height="36" rx="10" class="b2s3-chan-bg"/><text x="310" y="133" text-anchor="middle" class="b2s3-chan-t">تلگرام</text></g>
+					<g class="b2s3-chan b2s3-chan--email"><rect x="270" y="160" width="80" height="36" rx="10" class="b2s3-chan-bg"/><text x="310" y="183" text-anchor="middle" class="b2s3-chan-t">ایمیل</text></g>
+					<!-- flow lines to channels -->
+					<path pathLength="1" class="b2s3-flow b2s3-flow--1" d="M245 95 Q258 78 270 78" stroke="#6366F1" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
+					<path pathLength="1" class="b2s3-flow b2s3-flow--2" d="M245 135 H270" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
+					<path pathLength="1" class="b2s3-flow b2s3-flow--3" d="M245 175 Q258 192 270 178" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
+					<!-- activate toggle -->
+					<g class="b2s3-toggle"><rect x="100" y="210" width="80" height="28" rx="14" class="b2s3-toggle-bg"/><circle cx="155" cy="224" r="10" fill="#10B981"/><text x="140" y="229" text-anchor="middle" class="b2s3-toggle-t">فعال</text></g>
+					<circle class="b2s3-dot b2s3-dot--1" cx="30" cy="100" r="3" fill="#10B981"/>
+					<circle class="b2s3-dot b2s3-dot--2" cx="360" cy="220" r="2.5" fill="#6366F1"/>
+				</svg>
+			</div>
+			<div class="xcrm-b2__chal-body">
+				<span class="xcrm-b2__chal-num" aria-hidden="true">گام سوم</span>
+				<h3 class="xcrm-b2__chal-title">پیکربندی بخش‌بندی و ارتباطات</h3>
+				<p class="xcrm-b2__chal-desc">بخش‌بندی‌های موردنیاز خود را با شرط‌های دلخواه بسازید، کانال‌های ارتباطی (پیامک، تلگرام، ایمیل) را تنظیم کنید و گردش‌کارهای اتوماسیون را فعال کنید تا ارتباطات هدفمند شروع شود.</p>
+				<ul class="xcrm-b2__chal-tags"><li>بخش‌بندی پویا</li><li>تنظیم کانال‌ها</li><li>اتوماسیون</li></ul>
+			</div>
+		</article>
+
+		<!-- Step 4: Review & Grow -->
+		<article class="xcrm-b2__chal xcrm-b2__chal--rev" data-reveal="up">
+			<div class="xcrm-b2__chal-visual">
+				<svg class="xcrm-b2-svg" viewBox="0 0 380 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<defs><linearGradient id="b2s4g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.08"/><stop offset="100%" stop-color="#06B6D4" stop-opacity="0.04"/></linearGradient><linearGradient id="b2s4bar" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.2"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient><linearGradient id="b2s4ln" x1="0" y1="0" x2="380" y2="0"><stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#06B6D4"/></linearGradient></defs>
+					<rect x="10" y="10" width="360" height="240" rx="20" fill="url(#b2s4g)"/>
+					<!-- dashboard frame -->
+					<rect x="30" y="30" width="320" height="200" rx="14" class="b2s4-frame"/>
+					<rect x="30" y="30" width="320" height="28" rx="14" class="b2s4-header"/>
+					<circle cx="48" cy="44" r="4" fill="#F04438" opacity="0.5"/><circle cx="58" cy="44" r="4" fill="#F59E0B" opacity="0.5"/><circle cx="68" cy="44" r="4" fill="#10B981" opacity="0.5"/>
+					<text x="320" y="49" text-anchor="end" class="b2s4-header-t">داشبورد تحلیلی</text>
+					<!-- KPI cards -->
+					<g class="b2s4-kpi b2s4-kpi--1"><rect x="45" y="70" width="85" height="50" rx="8" class="b2s4-kpi-bg"/><text x="87" y="90" text-anchor="middle" class="b2s4-kpi-l">بازدیدکنندگان</text><text x="87" y="110" text-anchor="middle" class="b2s4-kpi-v">۱۲,۴۰۰</text></g>
+					<g class="b2s4-kpi b2s4-kpi--2"><rect x="145" y="70" width="85" height="50" rx="8" class="b2s4-kpi-bg"/><text x="187" y="90" text-anchor="middle" class="b2s4-kpi-l">نرخ تبدیل</text><text x="187" y="110" text-anchor="middle" class="b2s4-kpi-v">۳.۲٪</text></g>
+					<g class="b2s4-kpi b2s4-kpi--3"><rect x="245" y="70" width="85" height="50" rx="8" class="b2s4-kpi-bg"/><text x="287" y="90" text-anchor="middle" class="b2s4-kpi-l">فروش ماه</text><text x="287" y="110" text-anchor="middle" class="b2s4-kpi-v">۸۴.۵M</text></g>
+					<!-- chart bars -->
+					<rect class="b2s4-bar b2s4-bar--1" x="55" y="175" width="30" height="35" rx="5" fill="url(#b2s4bar)" style="--i:0"/>
+					<rect class="b2s4-bar b2s4-bar--2" x="100" y="155" width="30" height="55" rx="5" fill="url(#b2s4bar)" style="--i:1"/>
+					<rect class="b2s4-bar b2s4-bar--3" x="145" y="165" width="30" height="45" rx="5" fill="url(#b2s4bar)" style="--i:2"/>
+					<rect class="b2s4-bar b2s4-bar--4" x="190" y="135" width="30" height="75" rx="5" fill="url(#b2s4bar)" style="--i:3"/>
+					<rect class="b2s4-bar b2s4-bar--5" x="235" y="145" width="30" height="65" rx="5" fill="url(#b2s4bar)" style="--i:4"/>
+					<rect class="b2s4-bar b2s4-bar--6" x="280" y="120" width="30" height="90" rx="5" fill="url(#b2s4bar)" style="--i:5"/>
+					<!-- trend line -->
+					<path pathLength="1" class="b2s4-line" d="M70 170 L115 150 L160 160 L205 130 L250 140 L295 115" stroke="url(#b2s4ln)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+					<circle class="b2s4-dot" cx="70" cy="170" r="4" style="--i:0"/><circle class="b2s4-dot" cx="115" cy="150" r="4" style="--i:1"/><circle class="b2s4-dot" cx="160" cy="160" r="4" style="--i:2"/><circle class="b2s4-dot" cx="205" cy="130" r="4" style="--i:3"/><circle class="b2s4-dot" cx="250" cy="140" r="4" style="--i:4"/><circle class="b2s4-dot" cx="295" cy="115" r="5" style="--i:5"/>
+					<!-- success pulse -->
+					<circle cx="295" cy="115" r="10" class="b2s4-pulse"/>
+					<!-- floating badge -->
+					<g class="b2s4-badge"><rect x="260" y="85" width="70" height="22" rx="8" class="b2s4-badge-bg"/><text x="295" y="100" text-anchor="middle" class="b2s4-badge-t">رشد +۲۴٪</text></g>
+				</svg>
+			</div>
+			<div class="xcrm-b2__chal-body">
+				<span class="xcrm-b2__chal-num" aria-hidden="true">گام چهارم</span>
+				<h3 class="xcrm-b2__chal-title">بررسی داده‌ها و شروع استفاده</h3>
+				<p class="xcrm-b2__chal-desc">داشبورد تحلیلی خود را بررسی کنید، گزارش‌های رفتار مشتریان را ببینید و بر اساس داده‌های واقعی فرآیندهای فروش و بازاریابی خود را بهبود دهید. xCRM به شما کمک می‌کند تصمیمات بهتری بگیرید.</p>
+				<ul class="xcrm-b2__chal-tags"><li>داشبورد تحلیلی</li><li>گزارش‌گیری</li><li>بهبود فرآیند</li></ul>
+			</div>
+		</article>
+
 		<div class="xcrm-b2__center-cta" data-reveal="up"><a href="<?php echo esc_url( $signup_url ); ?>" class="xcrm-b2__btn xcrm-b2__btn--primary">شروع استفاده از xCRM</a></div>
 	</div>
 </section>
