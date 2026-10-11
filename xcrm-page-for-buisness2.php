@@ -111,7 +111,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 		<span class="xcrm-b2__orb xcrm-b2__orb--3"></span>
 		<span class="xcrm-b2__orb xcrm-b2__orb--4"></span>
 	</div>
-	<div class="xcrm-b2__hero-inner">
+	<div class="xcrm-b2__inner xcrm-b2__hero-inner">
 		<div class="xcrm-b2__hero-copy">
 			<p class="xcrm-b2__eyebrow xcrm-b2-anim xcrm-b2-anim--1">مدیریت مشتری و اتوماسیون بازاریابی</p>
 			<h1 class="xcrm-b2__h1 xcrm-b2-anim xcrm-b2-anim--2">مشتریان را بشناسید، فروش را مدیریت کنید، رشد کنید</h1>
@@ -129,87 +129,89 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 			</div>
 		</div>
 		<div class="xcrm-b2__hero-visual xcrm-b2-anim xcrm-b2-anim--3" aria-hidden="true">
-			<!-- Advanced flow: visitor → identify → profile → segment → automation → channel → sale -->
-			<svg class="xcrm-b2-flow" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<!-- Compact flow: visitor → identify → profile → segment → automation → channels → sale -->
+			<svg class="xcrm-b2-flow" viewBox="0 0 480 300" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<defs>
-					<linearGradient id="b2fLine" x1="0" y1="0" x2="500" y2="0"><stop offset="0%" stop-color="#6366F1"/><stop offset="50%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#06B6D4"/></linearGradient>
+					<linearGradient id="b2fLine" x1="0" y1="0" x2="480" y2="0"><stop offset="0%" stop-color="#6366F1"/><stop offset="50%" stop-color="#8B5CF6"/><stop offset="100%" stop-color="#06B6D4"/></linearGradient>
 					<linearGradient id="b2fNode" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
-					<linearGradient id="b2fDash" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.6"/><stop offset="100%" stop-color="#06B6D4" stop-opacity="0.6"/></linearGradient>
-					<radialGradient id="b2fGlow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.25"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0"/></radialGradient>
-					<filter id="b2fBlur"><feGaussianBlur stdDeviation="6"/></filter>
+					<radialGradient id="b2fGlow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.2"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0"/></radialGradient>
 				</defs>
-				<!-- ambient glow behind dashboard -->
-				<ellipse cx="250" cy="190" rx="160" ry="120" fill="url(#b2fGlow)" filter="url(#b2fBlur)" class="b2f-glow"/>
-				<!-- connecting paths with flowing particles -->
-				<path pathLength="1" class="b2f-draw b2f-draw--1" d="M80 90 Q140 90 160 150" stroke="url(#b2fLine)" stroke-width="2" stroke-dasharray="1" fill="none"/>
-				<path pathLength="1" class="b2f-draw b2f-draw--2" d="M200 180 Q240 180 260 120" stroke="url(#b2fLine)" stroke-width="2" stroke-dasharray="1" fill="none"/>
-				<path pathLength="1" class="b2f-draw b2f-draw--3" d="M310 140 Q340 140 360 180" stroke="url(#b2fLine)" stroke-width="2" stroke-dasharray="1" fill="none"/>
-				<path pathLength="1" class="b2f-draw b2f-draw--4" d="M260 210 Q240 260 200 280" stroke="url(#b2fLine)" stroke-width="2" stroke-dasharray="1" fill="none"/>
-				<path pathLength="1" class="b2f-draw b2f-draw--5" d="M160 300 Q220 320 300 310" stroke="url(#b2fLine)" stroke-width="2" stroke-dasharray="1" fill="none"/>
-				<!-- flowing particles along paths -->
-				<circle r="3.5" fill="#6366F1" class="b2f-particle b2f-particle--1"><animateMotion dur="3s" repeatCount="indefinite" begin="0.5s"><mpath href="#b2fp1"/></animateMotion></circle>
-				<path id="b2fp1" d="M80 90 Q140 90 160 150" fill="none" stroke="none"/>
-				<circle r="3" fill="#8B5CF6" class="b2f-particle b2f-particle--2"><animateMotion dur="3s" repeatCount="indefinite" begin="1.2s"><mpath href="#b2fp2"/></animateMotion></circle>
-				<path id="b2fp2" d="M200 180 Q240 180 260 120" fill="none" stroke="none"/>
-				<circle r="3.5" fill="#06B6D4" class="b2f-particle b2f-particle--3"><animateMotion dur="3s" repeatCount="indefinite" begin="1.9s"><mpath href="#b2fp3"/></animateMotion></circle>
-				<path id="b2fp3" d="M310 140 Q340 140 360 180" fill="none" stroke="none"/>
-				<circle r="3" fill="#10B981" class="b2f-particle b2f-particle--4"><animateMotion dur="3s" repeatCount="indefinite" begin="2.6s"><mpath href="#b2fp4"/></animateMotion></circle>
-				<path id="b2fp4" d="M260 210 Q240 260 200 280" fill="none" stroke="none"/>
-				<!-- node: visitor -->
+				<!-- ambient glow -->
+				<ellipse cx="240" cy="140" rx="140" ry="100" fill="url(#b2fGlow)" class="b2f-glow"/>
+
+				<!-- flow paths -->
+				<path pathLength="1" class="b2f-draw b2f-draw--1" d="M78 70 Q110 70 130 100" stroke="url(#b2fLine)" stroke-width="2" stroke-dasharray="1" fill="none"/>
+				<path pathLength="1" class="b2f-draw b2f-draw--2" d="M170 120 Q200 120 215 100" stroke="url(#b2fLine)" stroke-width="2" stroke-dasharray="1" fill="none"/>
+				<path pathLength="1" class="b2f-draw b2f-draw--3" d="M275 100 Q300 100 320 130" stroke="url(#b2fLine)" stroke-width="2" stroke-dasharray="1" fill="none"/>
+				<path pathLength="1" class="b2f-draw b2f-draw--4" d="M355 155 Q370 175 360 195" stroke="url(#b2fLine)" stroke-width="2" stroke-dasharray="1" fill="none"/>
+				<path pathLength="1" class="b2f-draw b2f-draw--5" d="M340 220 Q280 250 200 240" stroke="url(#b2fLine)" stroke-width="2" stroke-dasharray="1" fill="none"/>
+
+				<!-- flowing particles -->
+				<circle r="3" fill="#6366F1" class="b2f-particle b2f-particle--1"><animateMotion dur="2.5s" repeatCount="indefinite" begin="0.5s"><mpath href="#b2fp1"/></animateMotion></circle>
+				<path id="b2fp1" d="M78 70 Q110 70 130 100" fill="none" stroke="none"/>
+				<circle r="2.5" fill="#8B5CF6" class="b2f-particle b2f-particle--2"><animateMotion dur="2.5s" repeatCount="indefinite" begin="1.2s"><mpath href="#b2fp2"/></animateMotion></circle>
+				<path id="b2fp2" d="M170 120 Q200 120 215 100" fill="none" stroke="none"/>
+				<circle r="3" fill="#06B6D4" class="b2f-particle b2f-particle--3"><animateMotion dur="2.5s" repeatCount="indefinite" begin="1.9s"><mpath href="#b2fp3"/></animateMotion></circle>
+				<path id="b2fp3" d="M275 100 Q300 100 320 130" fill="none" stroke="none"/>
+				<circle r="2.5" fill="#10B981" class="b2f-particle b2f-particle--4"><animateMotion dur="2.5s" repeatCount="indefinite" begin="2.6s"><mpath href="#b2fp4"/></animateMotion></circle>
+				<path id="b2fp4" d="M340 220 Q280 250 200 240" fill="none" stroke="none"/>
+
+				<!-- 1. visitor -->
 				<g class="b2f-node b2f-node--visitor">
-					<circle cx="60" cy="90" r="28" class="b2f-node-bg"/>
-					<circle cx="60" cy="82" r="7" fill="#6366F1" opacity="0.85"/>
-					<path d="M48 104 Q60 93 72 104" stroke="#6366F1" stroke-width="2" fill="none" stroke-linecap="round"/>
-					<text x="60" y="132" text-anchor="middle" class="b2f-label">بازدیدکننده</text>
+					<circle cx="55" cy="70" r="24" class="b2f-node-bg"/>
+					<circle cx="55" cy="63" r="6" fill="#6366F1" opacity="0.85"/>
+					<path d="M45 82 Q55 73 65 82" stroke="#6366F1" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+					<text x="55" y="106" text-anchor="middle" class="b2f-label">بازدیدکننده</text>
 				</g>
-				<!-- node: identify -->
+				<!-- 2. identify -->
 				<g class="b2f-node b2f-node--identify">
-					<circle cx="160" cy="160" r="22" class="b2f-node-bg"/>
-					<path pathLength="1" class="b2f-eye" d="M148 160 Q160 148 172 160 Q160 172 148 160Z" stroke="#6366F1" stroke-width="1.8" fill="none"/>
-					<circle cx="160" cy="160" r="3.5" fill="#6366F1"/>
-					<text x="160" y="200" text-anchor="middle" class="b2f-label">شناسایی</text>
+					<circle cx="150" cy="120" r="20" class="b2f-node-bg"/>
+					<path pathLength="1" class="b2f-eye" d="M139 120 Q150 110 161 120 Q150 130 139 120Z" stroke="#6366F1" stroke-width="1.6" fill="none"/>
+					<circle cx="150" cy="120" r="3" fill="#6366F1"/>
+					<text x="150" y="154" text-anchor="middle" class="b2f-label">شناسایی</text>
 				</g>
-				<!-- node: profile (dashboard mini) -->
+				<!-- 3. profile panel -->
 				<g class="b2f-node b2f-node--profile">
-					<rect x="170" y="130" width="80" height="60" rx="12" class="b2f-node-bg b2f-node-bg--panel"/>
-					<circle cx="192" cy="150" r="8" fill="url(#b2fNode)"/>
-					<rect x="206" y="145" width="28" height="5" rx="2.5" class="b2f-line-sm"/>
-					<rect x="206" y="154" width="20" height="4" rx="2" class="b2f-line-sm"/>
-					<rect x="180" y="166" width="56" height="4" rx="2" class="b2f-line-sm b2f-line-sm--faint"/>
-					<rect x="180" y="174" width="40" height="4" rx="2" class="b2f-line-sm b2f-line-sm--faint"/>
-					<text x="210" y="210" text-anchor="middle" class="b2f-label">پروفایل مشتری</text>
+					<rect x="195" y="68" width="76" height="56" rx="11" class="b2f-node-bg b2f-node-bg--panel"/>
+					<circle cx="216" cy="86" r="7" fill="url(#b2fNode)"/>
+					<rect x="228" y="82" width="26" height="4.5" rx="2.25" class="b2f-line-sm"/>
+					<rect x="228" y="90" width="18" height="3.5" rx="1.75" class="b2f-line-sm"/>
+					<rect x="205" y="100" width="50" height="3.5" rx="1.75" class="b2f-line-sm b2f-line-sm--faint"/>
+					<rect x="205" y="108" width="36" height="3.5" rx="1.75" class="b2f-line-sm b2f-line-sm--faint"/>
+					<text x="233" y="142" text-anchor="middle" class="b2f-label">پروفایل</text>
 				</g>
-				<!-- node: segment -->
+				<!-- 4. segment -->
 				<g class="b2f-node b2f-node--segment">
-					<circle cx="290" cy="110" r="30" class="b2f-node-bg"/>
-					<circle cx="280" cy="102" r="5" fill="#6366F1"/><circle cx="298" cy="98" r="5" fill="#06B6D4"/><circle cx="290" cy="116" r="5" fill="#8B5CF6"/>
-					<circle cx="290" cy="110" r="20" class="b2f-seg-ring"/>
-					<text x="290" y="156" text-anchor="middle" class="b2f-label">بخش‌بندی</text>
+					<circle cx="340" cy="110" r="26" class="b2f-node-bg"/>
+					<circle cx="332" cy="103" r="4.5" fill="#6366F1"/><circle cx="348" cy="100" r="4.5" fill="#06B6D4"/><circle cx="340" cy="116" r="4.5" fill="#8B5CF6"/>
+					<circle cx="340" cy="110" r="17" class="b2f-seg-ring"/>
+					<text x="340" y="148" text-anchor="middle" class="b2f-label">بخش‌بندی</text>
 				</g>
-				<!-- node: automation -->
+				<!-- 5. automation -->
 				<g class="b2f-node b2f-node--auto">
-					<rect x="330" y="160" width="70" height="44" rx="12" class="b2f-node-bg"/>
-					<polygon points="358,172 348,188 356,188 350,202 368,184 360,184 368,172" fill="#6366F1" opacity="0.85"/>
-					<text x="365" y="222" text-anchor="middle" class="b2f-label">اتوماسیون</text>
+					<rect x="325" y="175" width="60" height="40" rx="10" class="b2f-node-bg"/>
+					<polygon points="350,185 341,200 348,200 343,212 360,196 353,196 360,185" fill="#6366F1" opacity="0.85"/>
+					<text x="355" y="232" text-anchor="middle" class="b2f-label">اتوماسیون</text>
 				</g>
-				<!-- node: channels -->
+				<!-- 6. channels -->
 				<g class="b2f-node b2f-node--chan">
-					<rect x="160" y="270" width="80" height="36" rx="10" class="b2f-node-bg"/>
-					<circle cx="178" cy="288" r="4" fill="#6366F1"/><circle cx="192" cy="288" r="4" fill="#06B6D4"/><circle cx="206" cy="288" r="4" fill="#F59E0B"/><circle cx="220" cy="288" r="4" fill="#EC4899"/>
-					<text x="200" y="322" text-anchor="middle" class="b2f-label">کانال‌ها</text>
+					<rect x="155" y="220" width="72" height="32" rx="9" class="b2f-node-bg"/>
+					<circle cx="170" cy="236" r="3.5" fill="#6366F1"/><circle cx="182" cy="236" r="3.5" fill="#06B6D4"/><circle cx="194" cy="236" r="3.5" fill="#F59E0B"/><circle cx="206" cy="236" r="3.5" fill="#EC4899"/>
+					<text x="191" y="268" text-anchor="middle" class="b2f-label">کانال‌ها</text>
 				</g>
-				<!-- node: sale -->
+				<!-- 7. sale -->
 				<g class="b2f-node b2f-node--sale">
-					<rect x="300" y="280" width="120" height="52" rx="14" class="b2f-node-bg b2f-node-bg--sale"/>
-					<circle cx="330" cy="306" r="12" fill="#10B981" opacity="0.15"/>
-					<path pathLength="1" class="b2f-check" d="M324 306 l4 4 8-10" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-					<text x="370" y="310" text-anchor="middle" class="b2f-label b2f-label--sale">فروش موفق</text>
+					<rect x="60" y="200" width="90" height="40" rx="11" class="b2f-node-bg b2f-node-bg--sale"/>
+					<circle cx="82" cy="220" r="9" fill="#10B981" opacity="0.15"/>
+					<path pathLength="1" class="b2f-check" d="M77 220 l3.5 3.5 7-8" stroke="#10B981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+					<text x="115" y="224" text-anchor="middle" class="b2f-label b2f-label--sale">فروش موفق</text>
 				</g>
+
 				<!-- floating accent dots -->
-				<circle class="b2f-dot b2f-dot--1" cx="120" cy="50" r="3" fill="#6366F1"/>
-				<circle class="b2f-dot b2f-dot--2" cx="400" cy="100" r="2.5" fill="#06B6D4"/>
-				<circle class="b2f-dot b2f-dot--3" cx="40" cy="220" r="2" fill="#8B5CF6"/>
-				<circle class="b2f-dot b2f-dot--4" cx="440" cy="260" r="2.5" fill="#10B981"/>
+				<circle class="b2f-dot b2f-dot--1" cx="100" cy="35" r="2.5" fill="#6366F1"/>
+				<circle class="b2f-dot b2f-dot--2" cx="400" cy="60" r="2" fill="#06B6D4"/>
+				<circle class="b2f-dot b2f-dot--3" cx="30" cy="170" r="2" fill="#8B5CF6"/>
+				<circle class="b2f-dot b2f-dot--4" cx="430" cy="250" r="2" fill="#10B981"/>
 			</svg>
 		</div>
 	</div>
