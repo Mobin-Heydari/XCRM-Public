@@ -457,6 +457,133 @@
 .xcrm-b2__footer-links a { font-size:0.8rem; font-weight:600; color:var(--x-text-highlight); text-decoration:none; transition:color var(--x-dur-180) ease; }
 .xcrm-b2__footer-links a:hover { color:var(--x-primary); }
 
+/* ══════════════════════════════════════════
+   HERO UPGRADES — mesh, particles, stats, new nodes
+   ══════════════════════════════════════════ */
+.xcrm-b2__mesh { position:absolute; inset:0; width:100%; height:100%; opacity:0.25; pointer-events:none; }
+.b2mesh-line { stroke:var(--x-primary); stroke-width:0.8; opacity:0.15; }
+.b2mesh-dot { fill:var(--x-primary); opacity:0.2; animation:b2-float-soft 6s ease-in-out infinite; }
+.b2mesh-dot:nth-child(odd) { animation-delay:-2s; }
+.b2mesh-dot:nth-child(even) { animation-delay:-4s; }
+
+.b2f-glow { opacity:0; }
+.xcrm-b2-anim .b2f-glow { animation:b2-fade 1.5s ease 0.2s forwards; }
+
+.b2f-particle { opacity:0; }
+.xcrm-b2-anim .b2f-particle { animation:b2-fade 0.5s ease forwards; }
+.xcrm-b2-anim .b2f-particle--1 { animation-delay:1.5s; }
+.xcrm-b2-anim .b2f-particle--2 { animation-delay:2s; }
+.xcrm-b2-anim .b2f-particle--3 { animation-delay:2.5s; }
+.xcrm-b2-anim .b2f-particle--4 { animation-delay:3s; }
+
+.b2f-node-bg--panel { fill:var(--x-base); stroke:var(--x-primary); stroke-width:1.5; }
+.b2f-line-sm--faint { opacity:0.15; }
+
+.b2f-seg-ring { fill:none; stroke:var(--x-primary); stroke-width:1; opacity:0; transform-origin:center; transform-box:fill-box; }
+.xcrm-b2-anim .b2f-seg-ring { animation:b2-ring-pulse 3s ease-in-out 1.2s infinite; }
+
+.b2f-eye { opacity:0; }
+.xcrm-b2-anim .b2f-eye { animation:b2-badge-pop 0.4s ease 0.8s forwards; }
+
+.xcrm-b2-anim .b2f-draw--5 { animation-delay:1.6s !important; }
+.xcrm-b2-anim .b2f-dot--4 { animation:b2-dot-pop 0.3s ease 1.8s forwards, b2-float-soft 3.5s ease-in-out 2.2s infinite; }
+
+.b2f-node-bg--sale { stroke:var(--x-success); stroke-width:1.5; }
+
+/* Hero stats strip */
+.xcrm-b2__hero-stats { display:flex; align-items:center; gap:20px; margin-top:28px; }
+.xcrm-b2__hero-stat { display:flex; flex-direction:column; align-items:center; gap:2px; }
+.xcrm-b2__hero-stat-n { font-size:1.4rem; font-weight:800; background:var(--x-gradient-primary); -webkit-background-clip:text; -webkit-text-fill-color:transparent; background-clip:text; line-height:1.2; }
+.xcrm-b2__hero-stat-l { font-size:0.72rem; font-weight:600; color:var(--x-text-muted); white-space:nowrap; }
+.xcrm-b2__hero-stat-sep { width:1px; height:28px; background:var(--x-border); }
+
+/* ══════════════════════════════════════════
+   CHALLENGES UPGRADES — per-card mini SVGs
+   ══════════════════════════════════════════ */
+.xcrm-b2__card--visual { padding-top:0; }
+.xcrm-b2__card-svg { margin:0 -22px 16px; padding:14px 18px 0; border-bottom:1px solid var(--x-border-subtle); overflow:hidden; }
+.xcrm-b2__card-svg svg { display:block; width:100%; height:auto; }
+
+/* Card 1: scattered boxes */
+.b2ch-box { fill:var(--x-surface); stroke:var(--x-border); stroke-width:1.5; opacity:0; transform-origin:center; transform-box:fill-box; }
+[data-reveal].is-visible .b2ch-box--1 { animation:b2-badge-pop 0.4s ease 0.2s forwards; }
+[data-reveal].is-visible .b2ch-box--2 { animation:b2-badge-pop 0.4s ease 0.3s forwards; }
+[data-reveal].is-visible .b2ch-box--3 { animation:b2-badge-pop 0.4s ease 0.4s forwards; }
+[data-reveal].is-visible .b2ch-box--4 { animation:b2-badge-pop 0.4s ease 0.5s forwards; }
+[data-reveal].is-visible .b2ch-box--5 { animation:b2-badge-pop 0.4s ease 0.6s forwards; }
+[data-reveal].is-visible .b2ch-box--6 { animation:b2-badge-pop 0.4s ease 0.7s forwards; }
+.b2ch-link { stroke:var(--x-border); stroke-width:1.5; stroke-linecap:round; stroke-dasharray:1; stroke-dashoffset:1; }
+[data-reveal].is-visible .b2ch-link--1 { animation:b2-draw 0.5s ease 0.8s forwards; }
+[data-reveal].is-visible .b2ch-link--2 { animation:b2-draw 0.5s ease 0.95s forwards; }
+[data-reveal].is-visible .b2ch-link--3 { animation:b2-draw 0.5s ease 1.1s forwards; }
+
+/* Card 2: lost opportunity chart */
+.b2ch-chart-line { stroke:var(--x-primary); stroke-dasharray:1; stroke-dashoffset:1; }
+[data-reveal].is-visible .b2ch-chart-line { animation:b2-draw 1s ease 0.2s forwards; }
+.b2ch-chart-dot { fill:var(--x-primary); opacity:0; transform-origin:center; transform-box:fill-box; }
+[data-reveal].is-visible .b2ch-chart-dot { animation:b2-badge-pop 0.35s ease 1s forwards; }
+.b2ch-break { stroke-dasharray:1; stroke-dashoffset:1; }
+[data-reveal].is-visible .b2ch-break { animation:b2-draw 0.3s ease 1.3s forwards; }
+.b2ch-alert-bg { fill:var(--x-error-soft); stroke:var(--x-error); stroke-width:1; opacity:0; }
+.b2ch-alert-t { fill:var(--x-error); font-size:7px; font-weight:700; font-family:var(--x-font-sans); }
+[data-reveal].is-visible .b2ch-alert-bg { animation:b2-badge-pop 0.35s ease 1.5s forwards; }
+
+/* Card 3: wrong targeting */
+.b2ch-target-ring { fill:none; stroke:var(--x-border); stroke-width:1.5; opacity:0; transform-origin:center; transform-box:fill-box; }
+.b2ch-target-ring--2 { stroke:var(--x-border-subtle); stroke-dasharray:4 4; }
+.b2ch-target-center { fill:var(--x-primary); opacity:0; transform-origin:center; transform-box:fill-box; }
+[data-reveal].is-visible .b2ch-target-ring { animation:b2-ring-pulse 2.5s ease-in-out 0.3s infinite; opacity:0.5; }
+[data-reveal].is-visible .b2ch-target-ring--2 { animation-delay:0.8s; }
+[data-reveal].is-visible .b2ch-target-center { animation:b2-badge-pop 0.35s ease 0.5s forwards; }
+.b2ch-arrow { stroke:var(--x-primary); stroke-dasharray:1; stroke-dashoffset:1; }
+.b2ch-arrow--miss { stroke:var(--x-error); }
+[data-reveal].is-visible .b2ch-arrow--1 { animation:b2-draw 0.4s ease 0.7s forwards; }
+[data-reveal].is-visible .b2ch-arrow--2 { animation:b2-draw 0.4s ease 0.85s forwards; }
+[data-reveal].is-visible .b2ch-arrow--3 { animation:b2-draw 0.4s ease 1s forwards; }
+[data-reveal].is-visible .b2ch-arrow--miss { animation:b2-draw 0.4s ease 1.2s forwards; }
+
+/* Card 4: blind decisions bars */
+.b2ch-bar { opacity:0; transform-origin:center bottom; transform-box:fill-box; }
+.b2ch-bar--1 { fill:var(--x-border); } .b2ch-bar--2 { fill:var(--x-border); } .b2ch-bar--3 { fill:var(--x-border); } .b2ch-bar--4 { fill:var(--x-primary); opacity:0.5; }
+[data-reveal].is-visible .b2ch-bar { animation:b2-bar-grow 0.6s var(--x-ease-standard) forwards; }
+[data-reveal].is-visible .b2ch-bar--1 { animation-delay:0.2s; } [data-reveal].is-visible .b2ch-bar--2 { animation-delay:0.32s; }
+[data-reveal].is-visible .b2ch-bar--3 { animation-delay:0.44s; } [data-reveal].is-visible .b2ch-bar--4 { animation-delay:0.56s; }
+.b2ch-qmark { stroke:var(--x-warn); stroke-dasharray:1; stroke-dashoffset:1; }
+[data-reveal].is-visible .b2ch-qmark { animation:b2-draw 0.6s ease 0.8s forwards; }
+
+/* ══════════════════════════════════════════
+   SEGMENTATION UPGRADES — funnel, particles, pulses
+   ══════════════════════════════════════════ */
+.b2s-glow { opacity:0; }
+[data-reveal].is-visible .b2s-glow { animation:b2-fade 1.2s ease 0.3s forwards; }
+
+.b2s-funnel-body, .b2s-funnel-spout { stroke:var(--x-primary); stroke-dasharray:1; stroke-dashoffset:1; }
+.b2s-funnel-t { fill:var(--x-text-muted); font-size:10px; font-weight:700; font-family:var(--x-font-sans); opacity:0; }
+[data-reveal].is-visible .b2s-funnel-body { animation:b2-draw 0.6s ease 0.3s forwards; }
+[data-reveal].is-visible .b2s-funnel-spout { animation:b2-draw 0.4s ease 0.7s forwards; }
+[data-reveal].is-visible .b2s-funnel-t { animation:b2-fade 0.4s ease 0.6s forwards; }
+
+.b2s-cluster-pulse { fill:none; stroke-width:1; opacity:0; transform-origin:center; transform-box:fill-box; }
+.b2s-cluster-pulse--a { stroke:var(--x-primary); } .b2s-cluster-pulse--b { stroke:var(--x-cyan); } .b2s-cluster-pulse--c { stroke:var(--x-warn); }
+[data-reveal].is-visible .b2s-cluster-pulse--a { animation:b2-ring-pulse 3s ease-in-out 1s infinite; }
+[data-reveal].is-visible .b2s-cluster-pulse--b { animation:b2-ring-pulse 3s ease-in-out 1.5s infinite; }
+[data-reveal].is-visible .b2s-cluster-pulse--c { animation:b2-ring-pulse 3s ease-in-out 2s infinite; }
+
+.b2s-particle { opacity:0; }
+[data-reveal].is-visible .b2s-particle { animation:b2-fade 0.4s ease forwards; }
+[data-reveal].is-visible .b2s-particle--i1 { animation-delay:1s; }
+[data-reveal].is-visible .b2s-particle--i2 { animation-delay:1.5s; }
+[data-reveal].is-visible .b2s-particle--1 { animation-delay:1.2s; }
+[data-reveal].is-visible .b2s-particle--2 { animation-delay:1.6s; }
+[data-reveal].is-visible .b2s-particle--3 { animation-delay:2s; }
+[data-reveal].is-visible .b2s-particle--4 { animation-delay:2.2s; }
+[data-reveal].is-visible .b2s-particle--5 { animation-delay:2.6s; }
+
+.b2s-camp-check { stroke-dasharray:1; stroke-dashoffset:1; }
+[data-reveal].is-visible .b2s-camp-check { animation:b2-draw 0.4s ease 2s forwards; }
+.b2s-camp-pulse { fill:none; stroke:var(--x-primary); stroke-width:1.5; opacity:0; transform-origin:center; transform-box:fill-box; }
+[data-reveal].is-visible .b2s-camp-pulse { animation:b2-ring-pulse 2.5s ease-in-out 2.2s infinite; }
+
 /* ── Responsive ── */
 @media (max-width:1024px) {
   .xcrm-b2__grid-4, .xcrm-b2__ind-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
@@ -476,8 +603,10 @@
   .xcrm-b2__grid-4, .xcrm-b2__ind-grid, .xcrm-b2__steps { grid-template-columns:1fr; }
   .xcrm-b2__hero-actions { flex-direction:column; align-items:stretch; }
   .xcrm-b2__hero-actions .xcrm-b2__btn { width:100%; }
+  .xcrm-b2__hero-stats { flex-wrap:wrap; gap:14px; justify-content:center; }
   .xcrm-b2__final-actions { flex-direction:column; align-items:stretch; }
   .xcrm-b2__footer-inner { flex-direction:column; text-align:center; }
+  .xcrm-b2__mesh { display:none; }
 }
 
 /* ── Reduced motion ── */
@@ -496,9 +625,14 @@
   .xcrm-b2__ring, .xcrm-b2__orb, .xcrm-b2__deco, .xcrm-b2__final-box, .xcrm-b2__pricing-box::before {
     animation:none !important; opacity:1 !important; transform:none !important;
   }
-  .b2f-draw, .b2f-check, .b2p-tl-line, .b2fu-bell-path, .b2fu-link, .b2s-flow, .b2a-line, .b2c-flow, .b2t-link, .b2i-cap-tassel, .b2i-hand, .b2i-ms-a, .b2i-clip-line, .b2h-spoke, .b2st-draw, .b2fc-line {
+  .b2f-draw, .b2f-check, .b2f-eye, .b2p-tl-line, .b2fu-bell-path, .b2fu-link, .b2s-flow, .b2s-funnel-body, .b2s-funnel-spout, .b2s-camp-check, .b2a-line, .b2c-flow, .b2t-link, .b2i-cap-tassel, .b2i-hand, .b2i-ms-a, .b2i-clip-line, .b2h-spoke, .b2st-draw, .b2fc-line, .b2ch-link, .b2ch-chart-line, .b2ch-break, .b2ch-arrow, .b2ch-qmark {
     stroke-dashoffset:0 !important;
   }
+  .b2f-particle, .b2s-particle, .b2s-funnel-t, .b2f-glow, .b2s-glow, .b2ch-alert-bg, .b2ch-chart-dot, .b2ch-target-center, .b2f-seg-ring, .b2s-cluster-pulse, .b2s-camp-pulse, .b2ch-box, .b2ch-bar, .b2f-node-bg, .b2f-label {
+    opacity:1 !important;
+  }
+  .b2f-particle, .b2s-particle { display:none; }
+  .xcrm-b2__mesh { display:none; }
   .xcrm-b2__card:hover, .xcrm-b2__step:hover, .xcrm-b2__ind-card:hover, .xcrm-b2__btn:hover {
     transform:none !important;
   }
