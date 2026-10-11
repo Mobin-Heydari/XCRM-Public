@@ -87,6 +87,17 @@ function hello_elementor_child_scripts_styles() {
 		HELLO_ELEMENTOR_CHILD_VERSION
 	);
 
+	// For Business v2 landing (/for-buisness/)
+	wp_enqueue_style(
+		'xcrm-business2-style',
+		get_stylesheet_directory_uri() . '/assets/css/xcrm-business2.css',
+		[
+			'xcrm-design-system',
+			'xcrm-home-style',
+		],
+		HELLO_ELEMENTOR_CHILD_VERSION
+	);
+
 }
 add_action( 'wp_enqueue_scripts', 'hello_elementor_child_scripts_styles', 20 );
 
@@ -121,6 +132,24 @@ function xcrm_for_business_template( $template ) {
 
 	if ( $uri === '/for-business' || substr( $uri, -13 ) === '/for-business' ) {
 		$custom = get_stylesheet_directory() . '/page-xcrm-for-business.php';
+		if ( file_exists( $custom ) ) {
+			return $custom;
+		}
+	}
+
+	return $template;
+}
+
+/**
+ * Force /for-buisness/ to render the For Business v2 template.
+ */
+add_filter( 'template_include', 'xcrm_for_buisness2_template' );
+function xcrm_for_buisness2_template( $template ) {
+	$uri = isset( $_SERVER['REQUEST_URI'] ) ? wp_parse_url( wp_unslash( $_SERVER['REQUEST_URI'] ), PHP_URL_PATH ) : '';
+	$uri = untrailingslashit( (string) $uri );
+
+	if ( $uri === '/for-buisness' || substr( $uri, -13 ) === '/for-buisness' ) {
+		$custom = get_stylesheet_directory() . '/xcrm-page-for-buisness2.php';
 		if ( file_exists( $custom ) ) {
 			return $custom;
 		}
