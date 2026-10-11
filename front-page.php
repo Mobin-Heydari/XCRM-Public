@@ -70,7 +70,7 @@ $for_business  = home_url( '/for-business/' );
 					</span>
 				</button>
 
-				<a href="<?php echo esc_url( $for_marketers ); ?>" class="hp__btn hp__btn--sm hp__btn--primary">
+				<a href="https://dashboard.xcrmforosh.com/" class="hp__btn hp__btn--sm hp__btn--primary">
 					ورود
 				</a>
 
