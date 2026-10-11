@@ -566,87 +566,130 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 			<p class="xcrm-b2__desc">فیلتر بر اساس ویژگی‌ها، اطلاعات تماس، تعاملات و شرایط کسب‌وکار — برای ارتباطات هدفمند.</p>
 		</div>
 		<div class="xcrm-b2__seg-visual" data-reveal="up" aria-hidden="true">
-			<svg class="xcrm-b2-svg" viewBox="0 0 760 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<svg class="xcrm-b2-svg" viewBox="0 0 820 360" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<defs>
-					<linearGradient id="b2sG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#10B981" stop-opacity="0.08"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0.04"/></linearGradient>
-					<linearGradient id="b2sFlowA" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
-					<linearGradient id="b2sFlowB" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#06B6D4"/><stop offset="100%" stop-color="#22D3EE"/></linearGradient>
-					<linearGradient id="b2sFlowC" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#F59E0B"/><stop offset="100%" stop-color="#FBBF24"/></linearGradient>
-					<radialGradient id="b2sGlow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.15"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0"/></radialGradient>
+					<linearGradient id="b2sG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.07"/><stop offset="100%" stop-color="#06B6D4" stop-opacity="0.04"/></linearGradient>
+					<linearGradient id="b2sInA" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#8B5CF6"/></linearGradient>
+					<linearGradient id="b2sInB" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#06B6D4"/><stop offset="100%" stop-color="#22D3EE"/></linearGradient>
+					<linearGradient id="b2sInC" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#F59E0B"/><stop offset="100%" stop-color="#FBBF24"/></linearGradient>
+					<radialGradient id="b2sGlow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.12"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0"/></radialGradient>
+					<filter id="b2sSoft"><feGaussianBlur stdDeviation="10"/></filter>
 				</defs>
-				<rect x="10" y="10" width="740" height="300" rx="22" fill="url(#b2sG)"/>
+				<rect x="10" y="10" width="800" height="340" rx="24" fill="url(#b2sG)"/>
 				<!-- ambient glow -->
-				<ellipse cx="380" cy="160" rx="200" ry="120" fill="url(#b2sGlow)" class="b2s-glow"/>
+				<ellipse cx="410" cy="180" rx="260" ry="140" fill="url(#b2sGlow)" class="b2s-glow" filter="url(#b2sSoft)"/>
 
-				<!-- SOURCE: all customers -->
-				<text x="90" y="50" text-anchor="middle" class="b2s-label">همه مشتریان</text>
-				<circle cx="90" cy="140" r="52" class="b2s-cluster b2s-cluster--src"/>
-				<circle cx="72" cy="128" r="7" class="b2s-node b2s-node--src"/><circle cx="108" cy="124" r="7" class="b2s-node b2s-node--src"/><circle cx="90" cy="156" r="7" class="b2s-node b2s-node--src"/><circle cx="68" cy="148" r="6" class="b2s-node b2s-node--src"/><circle cx="112" cy="148" r="6" class="b2s-node b2s-node--src"/><circle cx="90" cy="116" r="5" class="b2s-node b2s-node--src"/>
-
-				<!-- FILTER FUNNEL (intermediate step) -->
-				<g class="b2s-funnel">
-					<path pathLength="1" class="b2s-funnel-body" d="M160 100 L230 100 L210 160 L180 160 Z" stroke-width="2" fill="none"/>
-					<path pathLength="1" class="b2s-funnel-spout" d="M185 160 L185 180 L205 180 L205 160" stroke-width="2" fill="none"/>
-					<text x="195" y="90" text-anchor="middle" class="b2s-funnel-t">فیلتر</text>
+				<!-- ═══════ PHASE 1: SOURCE (all customers) ═══════ -->
+				<g class="b2s-src">
+					<!-- outer ring -->
+					<circle cx="90" cy="180" r="60" class="b2s-src-ring"/>
+					<circle cx="90" cy="180" r="68" class="b2s-src-ring b2s-src-ring--2"/>
+					<!-- core -->
+					<circle cx="90" cy="180" r="48" class="b2s-src-core"/>
+					<!-- customer dots inside -->
+					<circle cx="72" cy="168" r="6" class="b2s-dot b2s-dot--src"/>
+					<circle cx="108" cy="164" r="6" class="b2s-dot b2s-dot--src"/>
+					<circle cx="90" cy="196" r="6" class="b2s-dot b2s-dot--src"/>
+					<circle cx="68" cy="188" r="5" class="b2s-dot b2s-dot--src"/>
+					<circle cx="112" cy="188" r="5" class="b2s-dot b2s-dot--src"/>
+					<circle cx="90" cy="158" r="4" class="b2s-dot b2s-dot--src"/>
+					<!-- label -->
+					<text x="90" y="262" text-anchor="middle" class="b2s-title">همه مشتریان</text>
+					<text x="90" y="278" text-anchor="middle" class="b2s-sub">پایگاه داده</text>
 				</g>
-				<!-- input flow to funnel -->
-				<path pathLength="1" class="b2s-flow b2s-flow--in" d="M145 140 Q160 140 170 130" stroke="url(#b2sFlowA)" stroke-width="2.5" stroke-dasharray="1" fill="none"/>
 
-				<!-- flowing particles: source → funnel -->
-				<circle r="3" fill="#6366F1" class="b2s-particle b2s-particle--i1"><animateMotion dur="2.5s" repeatCount="indefinite" begin="0.3s"><mpath href="#b2spi1"/></animateMotion></circle>
-				<path id="b2spi1" d="M145 140 Q160 140 170 130" fill="none" stroke="none"/>
-				<circle r="2.5" fill="#8B5CF6" class="b2s-particle b2s-particle--i2"><animateMotion dur="2.5s" repeatCount="indefinite" begin="1.1s"><mpath href="#b2spi1"/></animateMotion></circle>
+				<!-- ═══════ PHASE 2: FILTER ENGINE ═══════ -->
+				<g class="b2s-engine">
+					<!-- engine frame -->
+					<rect x="200" y="100" width="130" height="160" rx="16" class="b2s-engine-frame"/>
+					<rect x="200" y="100" width="130" height="32" rx="16" class="b2s-engine-header"/>
+					<text x="265" y="121" text-anchor="middle" class="b2s-engine-t">موتور فیلتر</text>
+					<!-- filter conditions -->
+					<g class="b2s-cond b2s-cond--1"><rect x="212" y="145" width="106" height="24" rx="6" class="b2s-cond-bg"/><text x="265" y="161" text-anchor="middle" class="b2s-cond-t">برچسب = ویژه</text></g>
+					<g class="b2s-cond b2s-cond--2"><rect x="212" y="177" width="106" height="24" rx="6" class="b2s-cond-bg"/><text x="265" y="193" text-anchor="middle" class="b2s-cond-t">خرید &gt; ۳ بار</text></g>
+					<g class="b2s-cond b2s-cond--3"><rect x="212" y="209" width="106" height="24" rx="6" class="b2s-cond-bg"/><text x="265" y="225" text-anchor="middle" class="b2s-cond-t">آخرین فعالیت &lt; ۳۰ روز</text></g>
+					<!-- AND badges -->
+					<text x="340" y="166" class="b2s-and">و</text>
+					<text x="340" y="198" class="b2s-and">و</text>
+				</g>
 
-				<!-- flows: funnel → groups -->
-				<path pathLength="1" class="b2s-flow b2s-flow--1" d="M205 130 Q260 80 320 70" stroke="url(#b2sFlowA)" stroke-width="2" stroke-dasharray="1" fill="none"/>
-				<path pathLength="1" class="b2s-flow b2s-flow--2" d="M195 160 H320" stroke="url(#b2sFlowB)" stroke-width="2" stroke-dasharray="1" fill="none"/>
-				<path pathLength="1" class="b2s-flow b2s-flow--3" d="M205 170 Q260 210 320 220" stroke="url(#b2sFlowC)" stroke-width="2" stroke-dasharray="1" fill="none"/>
+				<!-- ═══════ PHASE 3: SEGMENT GROUPS ═══════ -->
+				<!-- Group A: پرخرید -->
+				<g class="b2s-group b2s-group--a">
+					<circle cx="470" cy="80" r="42" class="b2s-g-circle"/>
+					<circle cx="470" cy="80" r="48" class="b2s-g-pulse"/>
+					<circle cx="458" cy="70" r="5.5" class="b2s-dot b2s-dot--a"/>
+					<circle cx="484" cy="66" r="5.5" class="b2s-dot b2s-dot--a"/>
+					<circle cx="470" cy="90" r="5.5" class="b2s-dot b2s-dot--a"/>
+					<circle cx="454" cy="84" r="4.5" class="b2s-dot b2s-dot--a"/>
+					<g class="b2s-g-lbl"><rect x="428" y="128" width="84" height="22" rx="7" class="b2s-g-lbl-bg"/><text x="470" y="143" text-anchor="middle" class="b2s-g-lbl-t">پرخرید</text></g>
+				</g>
+				<!-- Group B: جدید -->
+				<g class="b2s-group b2s-group--b">
+					<circle cx="470" cy="180" r="38" class="b2s-g-circle"/>
+					<circle cx="470" cy="180" r="44" class="b2s-g-pulse"/>
+					<circle cx="460" cy="172" r="5.5" class="b2s-dot b2s-dot--b"/>
+					<circle cx="482" cy="168" r="5.5" class="b2s-dot b2s-dot--b"/>
+					<circle cx="470" cy="192" r="5.5" class="b2s-dot b2s-dot--b"/>
+					<g class="b2s-g-lbl"><rect x="442" y="224" width="56" height="22" rx="7" class="b2s-g-lbl-bg"/><text x="470" y="239" text-anchor="middle" class="b2s-g-lbl-t">جدید</text></g>
+				</g>
+				<!-- Group C: در معرض ریزش -->
+				<g class="b2s-group b2s-group--c">
+					<circle cx="470" cy="280" r="40" class="b2s-g-circle"/>
+					<circle cx="470" cy="280" r="46" class="b2s-g-pulse"/>
+					<circle cx="458" cy="272" r="5.5" class="b2s-dot b2s-dot--c"/>
+					<circle cx="484" cy="270" r="5.5" class="b2s-dot b2s-dot--c"/>
+					<circle cx="470" cy="292" r="5.5" class="b2s-dot b2s-dot--c"/>
+					<g class="b2s-g-lbl"><rect x="418" y="326" width="104" height="22" rx="7" class="b2s-g-lbl-bg"/><text x="470" y="341" text-anchor="middle" class="b2s-g-lbl-t">در معرض ریزش</text></g>
+				</g>
 
-				<!-- flowing particles: funnel → groups -->
-				<circle r="3" fill="#6366F1" class="b2s-particle b2s-particle--1"><animateMotion dur="2.8s" repeatCount="indefinite" begin="0.5s"><mpath href="#b2sp1"/></animateMotion></circle>
-				<path id="b2sp1" d="M205 130 Q260 80 320 70" fill="none" stroke="none"/>
-				<circle r="3" fill="#06B6D4" class="b2s-particle b2s-particle--2"><animateMotion dur="2.8s" repeatCount="indefinite" begin="1.3s"><mpath href="#b2sp2"/></animateMotion></circle>
-				<path id="b2sp2" d="M195 160 H320" fill="none" stroke="none"/>
-				<circle r="3" fill="#F59E0B" class="b2s-particle b2s-particle--3"><animateMotion dur="2.8s" repeatCount="indefinite" begin="2.1s"><mpath href="#b2sp3"/></animateMotion></circle>
-				<path id="b2sp3" d="M205 170 Q260 210 320 220" fill="none" stroke="none"/>
+				<!-- ═══════ PHASE 4: TARGETED CAMPAIGN ═══════ -->
+				<g class="b2s-camp">
+					<rect x="600" y="130" width="180" height="100" rx="18" class="b2s-camp-frame"/>
+					<rect x="600" y="130" width="180" height="32" rx="18" class="b2s-camp-header"/>
+					<text x="690" y="151" text-anchor="middle" class="b2s-camp-header-t">کمپین هدفمند</text>
+					<!-- channel icons -->
+					<g class="b2s-c-ch b2s-c-ch--1"><rect x="616" y="176" width="44" height="22" rx="7" class="b2s-c-ch-bg"/><text x="638" y="191" text-anchor="middle" class="b2s-c-ch-t">پیامک</text></g>
+					<g class="b2s-c-ch b2s-c-ch--2"><rect x="668" y="176" width="44" height="22" rx="7" class="b2s-c-ch-bg"/><text x="690" y="191" text-anchor="middle" class="b2s-c-ch-t">تلگرام</text></g>
+					<g class="b2s-c-ch b2s-c-ch--3"><rect x="720" y="176" width="44" height="22" rx="7" class="b2s-c-ch-bg"/><text x="742" y="191" text-anchor="middle" class="b2s-c-ch-t">ایمیل</text></g>
+					<!-- status -->
+					<circle cx="620" cy="218" r="5" fill="#10B981"/>
+					<text x="632" y="222" class="b2s-camp-status">در حال ارسال</text>
+				</g>
 
-				<!-- GROUP A: پرخرید -->
-				<circle cx="380" cy="70" r="44" class="b2s-cluster b2s-cluster--a"/>
-				<circle cx="380" cy="70" r="50" class="b2s-cluster-pulse b2s-cluster-pulse--a"/>
-				<circle cx="368" cy="60" r="6" class="b2s-node b2s-node--a"/><circle cx="394" cy="56" r="6" class="b2s-node b2s-node--a"/><circle cx="380" cy="82" r="6" class="b2s-node b2s-node--a"/><circle cx="364" cy="76" r="5" class="b2s-node b2s-node--a"/>
-				<g class="b2s-lbl b2s-lbl--a"><rect x="338" y="16" width="84" height="24" rx="8" class="b2s-lbl-bg"/><text x="380" y="32" text-anchor="middle" class="b2s-lbl-t">پرخرید</text></g>
+				<!-- ═══════ FLOW PATHS ═══════ -->
+				<!-- source → engine -->
+				<path pathLength="1" class="b2s-flow b2s-flow--in" d="M150 180 H195" stroke="url(#b2sInA)" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+				<!-- engine → groups (3 paths) -->
+				<path pathLength="1" class="b2s-flow b2s-flow--1" d="M335 140 Q400 90 425 80" stroke="url(#b2sInA)" stroke-width="2" stroke-linecap="round" fill="none"/>
+				<path pathLength="1" class="b2s-flow b2s-flow--2" d="M335 180 H425" stroke="url(#b2sInB)" stroke-width="2" stroke-linecap="round" fill="none"/>
+				<path pathLength="1" class="b2s-flow b2s-flow--3" d="M335 220 Q400 270 425 280" stroke="url(#b2sInC)" stroke-width="2" stroke-linecap="round" fill="none"/>
+				<!-- groups → campaign (3 paths) -->
+				<path pathLength="1" class="b2s-flow b2s-flow--4" d="M515 80 Q560 100 595 140" stroke="url(#b2sInA)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+				<path pathLength="1" class="b2s-flow b2s-flow--5" d="M512 180 H595" stroke="url(#b2sInB)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+				<path pathLength="1" class="b2s-flow b2s-flow--6" d="M515 280 Q560 260 595 220" stroke="url(#b2sInC)" stroke-width="1.5" stroke-linecap="round" fill="none"/>
 
-				<!-- GROUP B: جدید -->
-				<circle cx="380" cy="160" r="40" class="b2s-cluster b2s-cluster--b"/>
-				<circle cx="380" cy="160" r="46" class="b2s-cluster-pulse b2s-cluster-pulse--b"/>
-				<circle cx="370" cy="152" r="6" class="b2s-node b2s-node--b"/><circle cx="392" cy="148" r="6" class="b2s-node b2s-node--b"/><circle cx="380" cy="172" r="6" class="b2s-node b2s-node--b"/>
-				<g class="b2s-lbl b2s-lbl--b"><rect x="348" y="206" width="64" height="24" rx="8" class="b2s-lbl-bg"/><text x="380" y="222" text-anchor="middle" class="b2s-lbl-t">جدید</text></g>
+				<!-- ═══════ FLOWING PARTICLES ═══════ -->
+				<!-- source → engine -->
+				<circle r="3.5" fill="#6366F1" class="b2s-particle b2s-particle--1"><animateMotion dur="2.2s" repeatCount="indefinite" begin="0.2s"><mpath href="#b2sp1"/></animateMotion></circle>
+				<path id="b2sp1" d="M150 180 H195" fill="none" stroke="none"/>
+				<circle r="3" fill="#8B5CF6" class="b2s-particle b2s-particle--2"><animateMotion dur="2.2s" repeatCount="indefinite" begin="1.1s"><mpath href="#b2sp1"/></animateMotion></circle>
 
-				<!-- GROUP C: در معرض ریزش -->
-				<circle cx="380" cy="250" r="42" class="b2s-cluster b2s-cluster--c"/>
-				<circle cx="380" cy="250" r="48" class="b2s-cluster-pulse b2s-cluster-pulse--c"/>
-				<circle cx="368" cy="242" r="6" class="b2s-node b2s-node--c"/><circle cx="394" cy="240" r="6" class="b2s-node b2s-node--c"/><circle cx="380" cy="262" r="6" class="b2s-node b2s-node--c"/>
-				<g class="b2s-lbl b2s-lbl--c"><rect x="330" y="298" width="100" height="24" rx="8" class="b2s-lbl-bg"/><text x="380" y="314" text-anchor="middle" class="b2s-lbl-t">در معرض ریزش</text></g>
+				<!-- engine → groups -->
+				<circle r="3.5" fill="#6366F1" class="b2s-particle b2s-particle--3"><animateMotion dur="2.5s" repeatCount="indefinite" begin="0.4s"><mpath href="#b2sp2"/></animateMotion></circle>
+				<path id="b2sp2" d="M335 140 Q400 90 425 80" fill="none" stroke="none"/>
+				<circle r="3" fill="#06B6D4" class="b2s-particle b2s-particle--4"><animateMotion dur="2.5s" repeatCount="indefinite" begin="1.2s"><mpath href="#b2sp3"/></animateMotion></circle>
+				<path id="b2sp3" d="M335 180 H425" fill="none" stroke="none"/>
+				<circle r="3.5" fill="#F59E0B" class="b2s-particle b2s-particle--5"><animateMotion dur="2.5s" repeatCount="indefinite" begin="2s"><mpath href="#b2sp4"/></animateMotion></circle>
+				<path id="b2sp4" d="M335 220 Q400 270 425 280" fill="none" stroke="none"/>
 
-				<!-- flows: groups → campaign -->
-				<path pathLength="1" class="b2s-flow b2s-flow--4" d="M425 70 Q500 70 540 120" stroke="url(#b2sFlowA)" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
-				<path pathLength="1" class="b2s-flow b2s-flow--5" d="M420 160 H540" stroke="url(#b2sFlowB)" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
-				<path pathLength="1" class="b2s-flow b2s-flow--6" d="M425 250 Q500 250 540 200" stroke="url(#b2sFlowC)" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
-
-				<!-- flowing particles: groups → campaign -->
-				<circle r="2.5" fill="#6366F1" class="b2s-particle b2s-particle--4"><animateMotion dur="2.5s" repeatCount="indefinite" begin="1s"><mpath href="#b2sp4"/></animateMotion></circle>
-				<path id="b2sp4" d="M425 70 Q500 70 540 120" fill="none" stroke="none"/>
-				<circle r="2.5" fill="#06B6D4" class="b2s-particle b2s-particle--5"><animateMotion dur="2.5s" repeatCount="indefinite" begin="1.8s"><mpath href="#b2sp5"/></animateMotion></circle>
-				<path id="b2sp5" d="M420 160 H540" fill="none" stroke="none"/>
-
-				<!-- CAMPAIGN node -->
-				<rect x="540" y="100" width="160" height="90" rx="16" class="b2s-camp"/>
-				<circle cx="575" cy="130" r="10" fill="#6366F1" opacity="0.2"/>
-				<path pathLength="1" class="b2s-camp-check" d="M570 130 l4 4 8-10" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-				<text x="630" y="135" text-anchor="middle" class="b2s-camp-t">کمپین هدفمند</text>
-				<text x="630" y="155" text-anchor="middle" class="b2s-camp-s">ارسال به گروه انتخابی</text>
-				<!-- campaign pulse rings -->
-				<circle cx="575" cy="130" r="16" class="b2s-camp-pulse"/>
+				<!-- groups → campaign -->
+				<circle r="3" fill="#6366F1" class="b2s-particle b2s-particle--6"><animateMotion dur="2.5s" repeatCount="indefinite" begin="0.8s"><mpath href="#b2sp5"/></animateMotion></circle>
+				<path id="b2sp5" d="M515 80 Q560 100 595 140" fill="none" stroke="none"/>
+				<circle r="2.5" fill="#06B6D4" class="b2s-particle b2s-particle--7"><animateMotion dur="2.5s" repeatCount="indefinite" begin="1.6s"><mpath href="#b2sp6"/></animateMotion></circle>
+				<path id="b2sp6" d="M512 180 H595" fill="none" stroke="none"/>
+				<circle r="3" fill="#F59E0B" class="b2s-particle b2s-particle--8"><animateMotion dur="2.5s" repeatCount="indefinite" begin="2.4s"><mpath href="#b2sp7"/></animateMotion></circle>
+				<path id="b2sp7" d="M515 280 Q560 260 595 220" fill="none" stroke="none"/>
 			</svg>
 		</div>
 		<p class="xcrm-b2__note" data-reveal="up">نوع شرط‌ها به اطلاعات ثبت‌شده و رویدادهای در دسترس بستگی دارد.</p>
