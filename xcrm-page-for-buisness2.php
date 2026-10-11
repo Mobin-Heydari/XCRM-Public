@@ -225,72 +225,152 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 			<p class="xcrm-b2__eyebrow">چالش‌های کسب‌وکارها</p>
 			<h2 class="xcrm-b2__h2">مشکلات واقعی که xCRM حل می‌کند</h2>
 		</div>
-		<div class="xcrm-b2__grid-4">
-			<!-- Card 1: Scattered data -->
-			<article class="xcrm-b2__card xcrm-b2__card--visual" data-reveal="up">
-				<div class="xcrm-b2__card-svg" aria-hidden="true">
-					<svg viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<rect x="10" y="10" width="30" height="22" rx="4" class="b2ch-box b2ch-box--1"/>
-						<rect x="50" y="18" width="26" height="18" rx="4" class="b2ch-box b2ch-box--2"/>
-						<rect x="84" y="8" width="24" height="20" rx="4" class="b2ch-box b2ch-box--3"/>
-						<rect x="16" y="48" width="28" height="18" rx="4" class="b2ch-box b2ch-box--4"/>
-						<rect x="56" y="44" width="22" height="22" rx="4" class="b2ch-box b2ch-box--5"/>
-						<rect x="88" y="50" width="20" height="16" rx="4" class="b2ch-box b2ch-box--6"/>
-						<path pathLength="1" class="b2ch-link b2ch-link--1" d="M25 32 L63 26" stroke-dasharray="1"/>
-						<path pathLength="1" class="b2ch-link b2ch-link--2" d="M76 27 L96 18" stroke-dasharray="1"/>
-						<path pathLength="1" class="b2ch-link b2ch-link--3" d="M30 48 L67 42" stroke-dasharray="1"/>
-					</svg>
-				</div>
-				<h3 class="xcrm-b2__card-title">پراکندگی اطلاعات مشتریان</h3>
-				<p class="xcrm-b2__card-desc">اطلاعات تماس، سوابق و ویژگی‌های مشتریان در ابزارهای مختلف پراکنده است.</p>
-			</article>
-			<!-- Card 2: Lost opportunity -->
-			<article class="xcrm-b2__card xcrm-b2__card--visual" data-reveal="up" data-reveal-delay="80">
-				<div class="xcrm-b2__card-svg" aria-hidden="true">
-					<svg viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path pathLength="1" class="b2ch-chart-line" d="M15 60 L35 50 L55 55 L75 30 L95 20" stroke-width="2" stroke-linecap="round" fill="none"/>
-						<circle class="b2ch-chart-dot" cx="95" cy="20" r="5"/>
-						<path pathLength="1" class="b2ch-break" d="M70 35 L78 25" stroke="#F04438" stroke-width="2.5" stroke-linecap="round"/>
-						<path pathLength="1" class="b2ch-break" d="M72 25 L80 35" stroke="#F04438" stroke-width="2.5" stroke-linecap="round"/>
-						<rect x="82" y="40" width="30" height="18" rx="6" class="b2ch-alert-bg"/>
-						<text x="97" y="53" text-anchor="middle" class="b2ch-alert-t">فرصت از دست رفت</text>
-					</svg>
-				</div>
-				<h3 class="xcrm-b2__card-title">از دست رفتن فرصت‌های فروش</h3>
-				<p class="xcrm-b2__card-desc">فرصت‌های فروش بدون پیگیری منظم فراموش می‌شوند و درآمد از دست می‌رود.</p>
-			</article>
-			<!-- Card 3: Wrong targeting -->
-			<article class="xcrm-b2__card xcrm-b2__card--visual" data-reveal="up" data-reveal-delay="160">
-				<div class="xcrm-b2__card-svg" aria-hidden="true">
-					<svg viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<circle cx="60" cy="40" r="28" class="b2ch-target-ring"/>
-						<circle cx="60" cy="40" r="18" class="b2ch-target-ring b2ch-target-ring--2"/>
-						<circle cx="60" cy="40" r="8" class="b2ch-target-center"/>
-						<path pathLength="1" class="b2ch-arrow b2ch-arrow--1" d="M20 20 L50 35" stroke-width="2" stroke-linecap="round"/>
-						<path pathLength="1" class="b2ch-arrow b2ch-arrow--2" d="M100 18 L72 32" stroke-width="2" stroke-linecap="round"/>
-						<path pathLength="1" class="b2ch-arrow b2ch-arrow--3" d="M22 62 L48 48" stroke-width="2" stroke-linecap="round"/>
-						<path pathLength="1" class="b2ch-arrow b2ch-arrow--miss" d="M100 62 L78 52" stroke="#F04438" stroke-width="2" stroke-linecap="round"/>
-					</svg>
-				</div>
-				<h3 class="xcrm-b2__card-title">ارتباطات غیرهدفمند</h3>
-				<p class="xcrm-b2__card-desc">پیام‌های عمومی به همه مشتریان ارسال می‌شود و نرخ تعامل کاهش می‌یابد.</p>
-			</article>
-			<!-- Card 4: Blind decisions -->
-			<article class="xcrm-b2__card xcrm-b2__card--visual" data-reveal="up" data-reveal-delay="240">
-				<div class="xcrm-b2__card-svg" aria-hidden="true">
-					<svg viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<rect x="15" y="50" width="16" height="20" rx="3" class="b2ch-bar b2ch-bar--1"/>
-						<rect x="38" y="38" width="16" height="32" rx="3" class="b2ch-bar b2ch-bar--2"/>
-						<rect x="61" y="44" width="16" height="26" rx="3" class="b2ch-bar b2ch-bar--3"/>
-						<rect x="84" y="30" width="16" height="40" rx="3" class="b2ch-bar b2ch-bar--4"/>
-						<path pathLength="1" class="b2ch-qmark" d="M88 18 Q92 10 98 14 Q102 18 96 22 Q92 26 92 30" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-						<circle cx="92" cy="36" r="2" fill="#F59E0B"/>
-					</svg>
-				</div>
-				<h3 class="xcrm-b2__card-title">دشواری تحلیل عملکرد</h3>
-				<p class="xcrm-b2__card-desc">بدون داده‌های ساختاریافته، تصمیم‌گیری بر اساس حدس و گمان انجام می‌شود.</p>
-			</article>
-		</div>
+
+		<!-- Challenge 1: Scattered data -->
+		<article class="xcrm-b2__chal" data-reveal="up">
+			<div class="xcrm-b2__chal-visual">
+				<svg class="xcrm-b2-svg" viewBox="0 0 380 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<defs><linearGradient id="b2ch1g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.1"/><stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.04"/></linearGradient></defs>
+					<rect x="10" y="10" width="360" height="240" rx="20" fill="url(#b2ch1g)"/>
+					<!-- scattered app windows -->
+					<g class="b2ch1-win b2ch1-win--1"><rect x="30" y="40" width="90" height="60" rx="8" class="b2ch1-frame"/><rect x="30" y="40" width="90" height="16" rx="8" class="b2ch1-bar"/><circle cx="42" cy="48" r="2.5" fill="#F04438" opacity="0.6"/><circle cx="50" cy="48" r="2.5" fill="#F59E0B" opacity="0.6"/><rect x="40" y="64" width="50" height="5" rx="2.5" class="b2ch1-line"/><rect x="40" y="74" width="35" height="4" rx="2" class="b2ch1-line"/><rect x="40" y="84" width="42" height="4" rx="2" class="b2ch1-line"/></g>
+					<g class="b2ch1-win b2ch1-win--2"><rect x="150" y="30" width="80" height="55" rx="8" class="b2ch1-frame"/><rect x="150" y="30" width="80" height="14" rx="8" class="b2ch1-bar"/><rect x="160" y="52" width="45" height="5" rx="2.5" class="b2ch1-line"/><rect x="160" y="62" width="30" height="4" rx="2" class="b2ch1-line"/></g>
+					<g class="b2ch1-win b2ch1-win--3"><rect x="270" y="50" width="85" height="58" rx="8" class="b2ch1-frame"/><rect x="270" y="50" width="85" height="14" rx="8" class="b2ch1-bar"/><rect x="280" y="72" width="50" height="5" rx="2.5" class="b2ch1-line"/><rect x="280" y="82" width="38" height="4" rx="2" class="b2ch1-line"/><rect x="280" y="92" width="44" height="4" rx="2" class="b2ch1-line"/></g>
+					<g class="b2ch1-win b2ch1-win--4"><rect x="50" y="150" width="85" height="55" rx="8" class="b2ch1-frame"/><rect x="50" y="150" width="85" height="14" rx="8" class="b2ch1-bar"/><rect x="60" y="172" width="48" height="5" rx="2.5" class="b2ch1-line"/><rect x="60" y="182" width="32" height="4" rx="2" class="b2ch1-line"/></g>
+					<g class="b2ch1-win b2ch1-win--5"><rect x="170" y="140" width="90" height="60" rx="8" class="b2ch1-frame"/><rect x="170" y="140" width="90" height="14" rx="8" class="b2ch1-bar"/><rect x="180" y="162" width="55" height="5" rx="2.5" class="b2ch1-line"/><rect x="180" y="172" width="40" height="4" rx="2" class="b2ch1-line"/><rect x="180" y="182" width="48" height="4" rx="2" class="b2ch1-line"/></g>
+					<!-- broken connections -->
+					<path pathLength="1" class="b2ch1-link b2ch1-link--1" d="M120 70 L150 58" stroke-dasharray="1"/>
+					<path pathLength="1" class="b2ch1-link b2ch1-link--2" d="M230 58 L270 68" stroke-dasharray="1"/>
+					<path pathLength="1" class="b2ch1-link b2ch1-link--3" d="M92 100 L170 148" stroke-dasharray="1"/>
+					<path pathLength="1" class="b2ch1-link b2ch1-link--4" d="M230 170 L270 110" stroke-dasharray="1"/>
+					<!-- question marks floating -->
+					<text class="b2ch1-q b2ch1-q--1" x="130" y="120" fill="#F59E0B" font-size="16" font-weight="800" font-family="inherit">؟</text>
+					<text class="b2ch1-q b2ch1-q--2" x="260" y="130" fill="#6366F1" font-size="14" font-weight="800" font-family="inherit">؟</text>
+					<text class="b2ch1-q b2ch1-q--3" x="100" y="220" fill="#06B6D4" font-size="12" font-weight="800" font-family="inherit">؟</text>
+				</svg>
+			</div>
+			<div class="xcrm-b2__chal-body">
+				<span class="xcrm-b2__chal-num" aria-hidden="true">۰۱</span>
+				<h3 class="xcrm-b2__chal-title">پراکندگی اطلاعات مشتریان</h3>
+				<p class="xcrm-b2__chal-desc">اطلاعات تماس، سوابق خرید، یادداشت‌های تیم فروش و ویژگی‌های اختصاصی مشتریان در ابزارهای مختلف پراکنده است. تیم شما مجبور است بین اکسل، ایمیل، شبکه‌های اجتماعی و یادداشت‌های جداگانه جستجو کند — و هر بار بخشی از اطلاعات مهم را از دست می‌دهد.</p>
+				<ul class="xcrm-b2__chal-tags"><li>اتلاف زمان جستجو</li><li>اطلاعات ناقص</li><li>هماهنگی ضعیف تیم</li></ul>
+			</div>
+		</article>
+
+		<!-- Challenge 2: Lost opportunities -->
+		<article class="xcrm-b2__chal xcrm-b2__chal--rev" data-reveal="up">
+			<div class="xcrm-b2__chal-visual">
+				<svg class="xcrm-b2-svg" viewBox="0 0 380 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<defs><linearGradient id="b2ch2g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F04438" stop-opacity="0.08"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0.04"/></linearGradient></defs>
+					<rect x="10" y="10" width="360" height="240" rx="20" fill="url(#b2ch2g)"/>
+					<!-- rising chart that breaks -->
+					<path pathLength="1" class="b2ch2-line" d="M40 200 L90 170 L140 180 L190 120 L240 100 L290 60" stroke="#6366F1" stroke-width="3" stroke-linecap="round" fill="none"/>
+					<circle class="b2ch2-dot" cx="40" cy="200" r="4" fill="#6366F1"/>
+					<circle class="b2ch2-dot" cx="90" cy="170" r="4" fill="#6366F1"/>
+					<circle class="b2ch2-dot" cx="140" cy="180" r="4" fill="#6366F1"/>
+					<circle class="b2ch2-dot" cx="190" cy="120" r="4" fill="#6366F1"/>
+					<circle class="b2ch2-dot" cx="240" cy="100" r="4" fill="#6366F1"/>
+					<!-- break X -->
+					<path pathLength="1" class="b2ch2-break" d="M275 75 L295 55" stroke="#F04438" stroke-width="3" stroke-linecap="round"/>
+					<path pathLength="1" class="b2ch2-break" d="M277 55 L297 75" stroke="#F04438" stroke-width="3" stroke-linecap="round"/>
+					<!-- faded continuation -->
+					<path pathLength="1" class="b2ch2-fade" d="M295 60 L330 50" stroke="#F04438" stroke-width="2" stroke-dasharray="4 4" fill="none"/>
+					<!-- alert badge -->
+					<g class="b2ch2-alert">
+						<rect x="230" y="100" width="120" height="36" rx="10" class="b2ch2-alert-bg"/>
+						<text x="290" y="123" text-anchor="middle" class="b2ch2-alert-t">فرصت از دست رفت!</text>
+					</g>
+					<!-- floating clock -->
+					<g class="b2ch2-clock">
+						<circle cx="70" cy="60" r="22" class="b2ch2-clock-face"/>
+						<path pathLength="1" class="b2ch2-clock-hand" d="M70 60 L70 46" stroke="#F04438" stroke-width="2" stroke-linecap="round"/>
+						<path pathLength="1" class="b2ch2-clock-hand" d="M70 60 L80 60" stroke="#F04438" stroke-width="1.5" stroke-linecap="round"/>
+					</g>
+					<!-- lost opportunity cards fading -->
+					<g class="b2ch2-ghost b2ch2-ghost--1"><rect x="50" y="130" width="40" height="20" rx="5" class="b2ch2-ghost-bg"/><text x="70" y="144" text-anchor="middle" class="b2ch2-ghost-t">فرصت ۱</text></g>
+					<g class="b2ch2-ghost b2ch2-ghost--2"><rect x="100" y="100" width="40" height="20" rx="5" class="b2ch2-ghost-bg"/><text x="120" y="114" text-anchor="middle" class="b2ch2-ghost-t">فرصت ۲</text></g>
+				</svg>
+			</div>
+			<div class="xcrm-b2__chal-body">
+				<span class="xcrm-b2__chal-num" aria-hidden="true">۰۲</span>
+				<h3 class="xcrm-b2__chal-title">از دست رفتن فرصت‌های فروش</h3>
+				<p class="xcrm-b2__chal-desc">وقتی پیگیری منظم وجود ندارد، فرصت‌های فروش به‌آرامی فراموش می‌شوند. مشتری علاقه‌مند دیروز، فردا پاسخ نمی‌گیرد و رقیب جای شما را می‌گیرد. بدون یادآوری و مسئول مشخص، هر فرصت در معرض از دست رفتن است.</p>
+				<ul class="xcrm-b2__chal-tags"><li>فراموشی پیگیری</li><li>از دست رفتن درآمد</li><li>مزیت رقیب</li></ul>
+			</div>
+		</article>
+
+		<!-- Challenge 3: Untargeted communication -->
+		<article class="xcrm-b2__chal" data-reveal="up">
+			<div class="xcrm-b2__chal-visual">
+				<svg class="xcrm-b2-svg" viewBox="0 0 380 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<defs><linearGradient id="b2ch3g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#EC4899" stop-opacity="0.08"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0.04"/></linearGradient></defs>
+					<rect x="10" y="10" width="360" height="240" rx="20" fill="url(#b2ch3g)"/>
+					<!-- center: broadcast source -->
+					<circle cx="190" cy="130" r="24" class="b2ch3-source"/>
+					<text x="190" y="135" text-anchor="middle" fill="#fff" font-size="10" font-weight="800" font-family="inherit">شما</text>
+					<!-- broadcast waves -->
+					<path pathLength="1" class="b2ch3-wave b2ch3-wave--1" d="M220 110 Q260 130 220 150" stroke="#6366F1" stroke-width="2" fill="none"/>
+					<path pathLength="1" class="b2ch3-wave b2ch3-wave--2" d="M230 95 Q290 130 230 165" stroke="#6366F1" stroke-width="2" fill="none"/>
+					<path pathLength="1" class="b2ch3-wave b2ch3-wave--3" d="M240 80 Q320 130 240 180" stroke="#6366F1" stroke-width="2" fill="none"/>
+					<!-- recipients (most uninterested) -->
+					<g class="b2ch3-user b2ch3-user--1"><circle cx="300" cy="60" r="14" class="b2ch3-user-bg"/><text x="300" y="65" text-anchor="middle" class="b2ch3-user-t">الف</text></g>
+					<g class="b2ch3-user b2ch3-user--2"><circle cx="320" cy="120" r="14" class="b2ch3-user-bg"/><text x="320" y="125" text-anchor="middle" class="b2ch3-user-t">ب</text></g>
+					<g class="b2ch3-user b2ch3-user--3"><circle cx="310" cy="190" r="14" class="b2ch3-user-bg"/><text x="310" y="195" text-anchor="middle" class="b2ch3-user-t">ج</text></g>
+					<!-- X marks (not interested) -->
+					<g class="b2ch3-x b2ch3-x--1"><circle cx="300" cy="60" r="16" class="b2ch3-x-ring"/><path d="M295 55 l10 10M305 55 l-10 10" stroke="#F04438" stroke-width="1.5" stroke-linecap="round"/></g>
+					<g class="b2ch3-x b2ch3-x--2"><circle cx="320" cy="120" r="16" class="b2ch3-x-ring"/><path d="M315 115 l10 10M325 115 l-10 10" stroke="#F04438" stroke-width="1.5" stroke-linecap="round"/></g>
+					<g class="b2ch3-x b2ch3-x--3"><circle cx="310" cy="190" r="16" class="b2ch3-x-ring"/><path d="M305 185 l10 10M315 185 l-10 10" stroke="#F04438" stroke-width="1.5" stroke-linecap="round"/></g>
+					<!-- engagement counter -->
+					<g class="b2ch3-counter">
+						<rect x="40" y="180" width="100" height="40" rx="10" class="b2ch3-counter-bg"/>
+						<text x="90" y="198" text-anchor="middle" class="b2ch3-counter-l">نرخ تعامل</text>
+						<text x="90" y="214" text-anchor="middle" class="b2ch3-counter-v">۲٪</text>
+					</g>
+				</svg>
+			</div>
+			<div class="xcrm-b2__chal-body">
+				<span class="xcrm-b2__chal-num" aria-hidden="true">۰۳</span>
+				<h3 class="xcrm-b2__chal-title">ارتباطات غیرهدفمند</h3>
+				<p class="xcrm-b2__chal-desc">ارسال یک پیام عمومی به همه مشتریان بدون در نظر گرفتن رفتار و ویژگی‌هایشان، نرخ تعامل را به شدت کاهش می‌دهد. مشتریان پیام‌های بی‌ربط را نادیده می‌گیرند و حتی ممکن است برند شما را مزاحم بدانند.</p>
+				<ul class="xcrm-b2__chal-tags"><li>نرخ تعامل پایین</li><li>هزینه هدررفته</li><li>آسیب به برند</li></ul>
+			</div>
+		</article>
+
+		<!-- Challenge 4: Blind decisions -->
+		<article class="xcrm-b2__chal xcrm-b2__chal--rev" data-reveal="up">
+			<div class="xcrm-b2__chal-visual">
+				<svg class="xcrm-b2-svg" viewBox="0 0 380 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<defs><linearGradient id="b2ch4g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F59E0B" stop-opacity="0.08"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0.04"/></linearGradient></defs>
+					<rect x="10" y="10" width="360" height="240" rx="20" fill="url(#b2ch4g)"/>
+					<!-- bars with question marks -->
+					<rect x="50" y="160" width="40" height="50" rx="6" class="b2ch4-bar b2ch4-bar--1"/>
+					<text x="70" y="150" text-anchor="middle" fill="#F59E0B" font-size="14" font-weight="800" font-family="inherit">؟</text>
+					<rect x="110" y="130" width="40" height="80" rx="6" class="b2ch4-bar b2ch4-bar--2"/>
+					<text x="130" y="120" text-anchor="middle" fill="#F59E0B" font-size="14" font-weight="800" font-family="inherit">؟</text>
+					<rect x="170" y="145" width="40" height="65" rx="6" class="b2ch4-bar b2ch4-bar--3"/>
+					<text x="190" y="135" text-anchor="middle" fill="#F59E0B" font-size="14" font-weight="800" font-family="inherit">؟</text>
+					<rect x="230" y="100" width="40" height="110" rx="6" class="b2ch4-bar b2ch4-bar--4"/>
+					<text x="250" y="90" text-anchor="middle" fill="#F59E0B" font-size="14" font-weight="800" font-family="inherit">؟</text>
+					<rect x="290" y="140" width="40" height="70" rx="6" class="b2ch4-bar b2ch4-bar--5"/>
+					<text x="310" y="130" text-anchor="middle" fill="#F59E0B" font-size="14" font-weight="800" font-family="inherit">؟</text>
+					<!-- blindfolded person -->
+					<g class="b2ch4-person">
+						<circle cx="190" cy="55" r="18" class="b2ch4-person-head"/>
+						<rect x="172" y="50" width="36" height="10" rx="3" fill="#F04438" opacity="0.6"/>
+						<path d="M175 75 Q190 65 205 75" stroke="var(--x-text-muted)" stroke-width="2" fill="none" stroke-linecap="round"/>
+					</g>
+					<!-- axis -->
+					<line x1="40" y1="220" x2="340" y2="220" stroke="var(--x-border)" stroke-width="1.5"/>
+					<text x="190" y="245" text-anchor="middle" class="b2ch4-axis-t">بدون داده، تصمیم کور است</text>
+				</svg>
+			</div>
+			<div class="xcrm-b2__chal-body">
+				<span class="xcrm-b2__chal-num" aria-hidden="true">۰۴</span>
+				<h3 class="xcrm-b2__chal-title">دشواری تحلیل عملکرد</h3>
+				<p class="xcrm-b2__chal-desc">بدون داده‌های ساختاریافته از رفتار مشتریان، مسیر خرید و عملکرد کمپین‌ها، تصمیم‌گیری بر اساس حدس و گمان انجام می‌شود. کدام کمپین مؤثر بود؟ کدام مشتری در معرض ریزش است؟ کدام محصول پرفروش است؟ بدون تحلیل، پاسخ این سؤالات مشخص نیست.</p>
+				<ul class="xcrm-b2__chal-tags"><li>تصمیم کور</li><li>اتلاف بودجه</li><li>عدم شفافیت</li></ul>
+			</div>
+		</article>
 	</div>
 </section>
 
@@ -341,12 +421,53 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 			<h2 class="xcrm-b2__h2">مسیر هر فرصت فروش را شفاف دنبال کنید</h2>
 			<p class="xcrm-b2__desc">مراحل فروش را تعریف کنید، وضعیت فرصت‌ها را تغییر دهید و مسئول هر کار را مشخص کنید.</p>
 		</div>
-		<div class="xcrm-b2__kanban" data-reveal="up" aria-hidden="true">
-			<div class="xcrm-b2__kcol"><header><span>سرنخ جدید</span><em>۳</em></header><div class="xcrm-b2__ktask"><strong>شرکت آریا</strong><span>تماس اولیه</span></div><div class="xcrm-b2__ktask"><strong>فروشگاه پارس</strong><span>درخواست دمو</span></div></div>
-			<div class="xcrm-b2__kcol"><header><span>در حال پیگیری</span><em>۲</em></header><div class="xcrm-b2__ktask xcrm-b2__ktask--active"><strong>استارتاپ رها</strong><span>ارسال پیشنهاد</span></div><div class="xcrm-b2__ktask"><strong>شرکت کیان</strong><span>جلسه حضوری</span></div></div>
-			<div class="xcrm-b2__kcol"><header><span>مذاکره</span><em>۲</em></header><div class="xcrm-b2__ktask"><strong>برند مهر</strong><span>شروط قرارداد</span></div><div class="xcrm-b2__ktask"><strong>هلدینگ سپهر</strong><span>تخفیف سالانه</span></div></div>
-			<div class="xcrm-b2__kcol"><header><span>آماده تصمیم</span><em>۱</em></header><div class="xcrm-b2__ktask"><strong>آژانس نور</strong><span>تأیید مدیرعامل</span></div></div>
-			<div class="xcrm-b2__kcol xcrm-b2__kcol--done"><header><span>نهایی‌شده</span><em>۲</em></header><div class="xcrm-b2__ktask"><strong>فروشگاه لونا</strong><span>قرارداد امضاشده</span></div></div>
+		<div class="xcrm-b2__kanban-wrap" data-reveal="up" aria-hidden="true">
+			<div class="xcrm-b2__kanban">
+				<!-- Stage 1: سرنخ جدید -->
+				<div class="xcrm-b2__kcol">
+					<header><span>سرنخ جدید</span><em class="b2k-count b2k-count--1">۳</em></header>
+					<div class="xcrm-b2__ktask b2k-card b2k-card--a"><strong>شرکت آریا</strong><span>تماس اولیه</span></div>
+					<div class="xcrm-b2__ktask b2k-card b2k-card--b"><strong>فروشگاه پارس</strong><span>درخواست دمو</span></div>
+					<div class="xcrm-b2__ktask b2k-card b2k-card--c"><strong>گروه نوین</strong><span>فرم وب‌سایت</span></div>
+					<!-- incoming new card (infinite) -->
+					<div class="xcrm-b2__ktask b2k-new b2k-new--1"><strong>شرکت آریانا</strong><span>سرنخ جدید</span></div>
+				</div>
+				<!-- Stage 2: در حال پیگیری -->
+				<div class="xcrm-b2__kcol">
+					<header><span>در حال پیگیری</span><em class="b2k-count b2k-count--2">۲</em></header>
+					<div class="xcrm-b2__ktask xcrm-b2__ktask--active b2k-card b2k-card--d"><strong>استارتاپ رها</strong><span>ارسال پیشنهاد</span></div>
+					<div class="xcrm-b2__ktask b2k-card b2k-card--e"><strong>شرکت کیان</strong><span>جلسه حضوری</span></div>
+					<!-- moving in card -->
+					<div class="xcrm-b2__ktask b2k-move b2k-move--1"><strong>شرکت آریا</strong><span>پیگیری</span></div>
+				</div>
+				<!-- Stage 3: مذاکره -->
+				<div class="xcrm-b2__kcol">
+					<header><span>مذاکره</span><em class="b2k-count b2k-count--3">۲</em></header>
+					<div class="xcrm-b2__ktask b2k-card b2k-card--f"><strong>برند مهر</strong><span>شروط قرارداد</span></div>
+					<div class="xcrm-b2__ktask b2k-card b2k-card--g"><strong>هلدینگ سپهر</strong><span>تخفیف سالانه</span></div>
+					<div class="xcrm-b2__ktask b2k-move b2k-move--2"><strong>استارتاپ رها</strong><span>مذاکره</span></div>
+				</div>
+				<!-- Stage 4: آماده تصمیم -->
+				<div class="xcrm-b2__kcol">
+					<header><span>آماده تصمیم</span><em class="b2k-count b2k-count--4">۱</em></header>
+					<div class="xcrm-b2__ktask b2k-card b2k-card--h"><strong>آژانس نور</strong><span>تأیید مدیرعامل</span></div>
+					<div class="xcrm-b2__ktask b2k-move b2k-move--3"><strong>برند مهر</strong><span>تصمیم نهایی</span></div>
+				</div>
+				<!-- Stage 5: نهایی‌شده -->
+				<div class="xcrm-b2__kcol xcrm-b2__kcol--done">
+					<header><span>نهایی‌شده</span><em class="b2k-count b2k-count--5">۲</em></header>
+					<div class="xcrm-b2__ktask b2k-card b2k-card--i"><strong>فروشگاه لونا</strong><span>قرارداد امضاشده</span></div>
+					<div class="xcrm-b2__ktask b2k-card b2k-card--j"><strong>شرکت پارمیس</strong><span>شروع پشتیبانی</span></div>
+					<div class="xcrm-b2__ktask b2k-win b2k-win--1"><strong>آژانس نور</strong><span>✓ فروش موفق</span></div>
+				</div>
+			</div>
+			<!-- animated flow arrows between columns -->
+			<div class="b2k-arrows" aria-hidden="true">
+				<svg class="b2k-arrow b2k-arrow--1" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+				<svg class="b2k-arrow b2k-arrow--2" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+				<svg class="b2k-arrow b2k-arrow--3" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+				<svg class="b2k-arrow b2k-arrow--4" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+			</div>
 		</div>
 		<p class="xcrm-b2__note" data-reveal="up">نام مراحل صرفاً نمونه‌اند و متناسب با فرآیند فروش شما قابل تنظیم‌اند.</p>
 	</div>
@@ -605,99 +726,154 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 			<p class="xcrm-b2__eyebrow">کاربرد xCRM در صنایع مختلف</p>
 			<h2 class="xcrm-b2__h2">متناسب با مدل کسب‌وکار خود از امکانات xCRM استفاده کنید</h2>
 		</div>
-		<div class="xcrm-b2__ind-grid">
-			<article class="xcrm-b2__ind-card" data-reveal="up">
-				<div class="xcrm-b2__ind-visual">
-					<svg class="xcrm-b2-svg" viewBox="0 0 300 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-						<defs><linearGradient id="b2i1g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.1"/><stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.04"/></linearGradient></defs>
-						<rect x="10" y="10" width="280" height="160" rx="18" fill="url(#b2i1g)"/>
-						<rect x="40" y="28" width="220" height="124" rx="10" class="b2i-frame"/>
-						<circle cx="56" cy="42" r="3.5" fill="#F04438" opacity="0.5"/><circle cx="66" cy="42" r="3.5" fill="#F59E0B" opacity="0.5"/><circle cx="76" cy="42" r="3.5" fill="#10B981" opacity="0.5"/>
-						<rect x="50" y="54" width="52" height="38" rx="5" class="b2i-tile b2i-tile--1"/>
-						<rect x="110" y="54" width="52" height="38" rx="5" class="b2i-tile b2i-tile--2"/>
-						<rect x="170" y="54" width="52" height="38" rx="5" class="b2i-tile b2i-tile--3"/>
-						<rect x="58" y="106" width="140" height="8" rx="4" class="b2i-fbar b2i-fbar--1"/>
-						<rect x="74" y="120" width="108" height="8" rx="4" class="b2i-fbar b2i-fbar--2"/>
-						<rect x="90" y="134" width="76" height="8" rx="4" class="b2i-fbar b2i-fbar--3"/>
-						<circle cx="230" cy="64" r="7" class="b2i-ping"/><circle cx="230" cy="64" r="3.5" fill="#10B981"/>
-					</svg>
-				</div>
-				<div class="xcrm-b2__ind-body">
-					<h3 class="xcrm-b2__ind-title">فروشگاه‌های اینترنتی</h3>
-					<p class="xcrm-b2__ind-desc">رفتار بازدیدکنندگان، رویدادهای محصولات، بخش‌بندی مشتریان و اطلاعات قیف خرید را بررسی کنید.</p>
-					<div class="xcrm-b2__tags"><span>ردیابی وب</span><span>قیف خرید</span><span>بخش‌بندی</span></div>
-				</div>
-			</article>
-			<article class="xcrm-b2__ind-card" data-reveal="up" data-reveal-delay="80">
-				<div class="xcrm-b2__ind-visual">
-					<svg class="xcrm-b2-svg" viewBox="0 0 300 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-						<defs><linearGradient id="b2i2g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#06B6D4" stop-opacity="0.1"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0.04"/></linearGradient></defs>
-						<rect x="10" y="10" width="280" height="160" rx="18" fill="url(#b2i2g)"/>
-						<g class="b2i-cap">
-							<path pathLength="1" class="b2i-cap-top" d="M150 42 L100 62 L150 82 L200 62 Z" fill="#6366F1" opacity="0.85"/>
-							<path pathLength="1" class="b2i-cap-tassel" d="M200 62 V88" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
-							<circle class="b2i-cap-ball" cx="200" cy="93" r="4" fill="#6366F1"/>
-						</g>
-						<rect x="80" y="108" width="140" height="10" rx="5" class="b2i-lbar b2i-lbar--1"/>
-						<rect x="96" y="124" width="108" height="10" rx="5" class="b2i-lbar b2i-lbar--2"/>
-						<rect x="112" y="140" width="76" height="10" rx="5" class="b2i-lbar b2i-lbar--3"/>
-					</svg>
-				</div>
-				<div class="xcrm-b2__ind-body">
-					<h3 class="xcrm-b2__ind-title">آموزش و دوره‌های آنلاین</h3>
-					<p class="xcrm-b2__ind-desc">سرنخ‌های ثبت‌نام، پیگیری متقاضیان، مراحل فروش و یادآوری‌های تیم را ساختارمند مدیریت کنید.</p>
-					<div class="xcrm-b2__tags"><span>پروفایل</span><span>پایپ‌لاین</span><span>یادآوری</span></div>
-				</div>
-			</article>
-			<article class="xcrm-b2__ind-card" data-reveal="up" data-reveal-delay="160">
-				<div class="xcrm-b2__ind-visual">
-					<svg class="xcrm-b2-svg" viewBox="0 0 300 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-						<defs><linearGradient id="b2i3g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#10B981" stop-opacity="0.08"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0.04"/></linearGradient></defs>
-						<rect x="10" y="10" width="280" height="160" rx="18" fill="url(#b2i3g)"/>
-						<rect x="70" y="30" width="160" height="56" rx="12" class="b2i-deal"/>
-						<circle cx="110" cy="50" r="10" fill="#6366F1" opacity="0.8"/><circle cx="190" cy="50" r="10" fill="#06B6D4" opacity="0.8"/>
-						<path pathLength="1" class="b2i-hand" d="M122 56 Q150 68 178 56" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-						<g class="b2i-ms b2i-ms--1"><rect x="50" y="108" width="52" height="22" rx="6" class="b2i-ms-bg"/><text x="76" y="123" text-anchor="middle" class="b2i-ms-t">سرنخ</text></g>
-						<path pathLength="1" class="b2i-ms-a b2i-ms-a--1" d="M106 119 H120"/>
-						<g class="b2i-ms b2i-ms--2"><rect x="124" y="108" width="52" height="22" rx="6" class="b2i-ms-bg"/><text x="150" y="123" text-anchor="middle" class="b2i-ms-t">مذاکره</text></g>
-						<path pathLength="1" class="b2i-ms-a b2i-ms-a--2" d="M180 119 H194"/>
-						<g class="b2i-ms b2i-ms--3"><rect x="198" y="108" width="52" height="22" rx="6" fill="#10B981"/><text x="224" y="123" text-anchor="middle" fill="#fff" font-size="8" font-weight="700" font-family="inherit">بسته</text></g>
-					</svg>
-				</div>
-				<div class="xcrm-b2__ind-body">
-					<h3 class="xcrm-b2__ind-title">شرکت‌های فروش و بازاریابی</h3>
-					<p class="xcrm-b2__ind-desc">فرصت‌های فروش، سوابق تعامل، مراحل مذاکره و مسئولیت‌های اعضای تیم را مدیریت کنید.</p>
-					<div class="xcrm-b2__tags"><span>پایپ‌لاین</span><span>گزارش فعالیت</span><span>دسترسی تیمی</span></div>
-				</div>
-			</article>
-			<article class="xcrm-b2__ind-card" data-reveal="up" data-reveal-delay="240">
-				<div class="xcrm-b2__ind-visual">
-					<svg class="xcrm-b2-svg" viewBox="0 0 300 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-						<defs><linearGradient id="b2i4g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F59E0B" stop-opacity="0.08"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0.04"/></linearGradient></defs>
-						<rect x="10" y="10" width="280" height="160" rx="18" fill="url(#b2i4g)"/>
-						<rect x="80" y="25" width="140" height="130" rx="10" class="b2i-clip"/>
-						<rect x="125" y="20" width="50" height="14" rx="5" class="b2i-clip-tab"/>
-						<g class="b2i-ct b2i-ct--1"><circle cx="100" cy="58" r="5" class="b2i-ct-dot b2i-ct-dot--done"/><rect x="112" y="55" width="70" height="6" rx="3" class="b2i-ct-l"/></g>
-						<g class="b2i-ct b2i-ct--2"><circle cx="100" cy="78" r="5" class="b2i-ct-dot b2i-ct-dot--done"/><rect x="112" y="75" width="56" height="6" rx="3" class="b2i-ct-l"/></g>
-						<g class="b2i-ct b2i-ct--3"><circle cx="100" cy="98" r="5" class="b2i-ct-dot b2i-ct-dot--active"/><rect x="112" y="95" width="64" height="6" rx="3" class="b2i-ct-l"/></g>
-						<g class="b2i-ct b2i-ct--4"><circle cx="100" cy="118" r="5" class="b2i-ct-dot"/><rect x="112" y="115" width="48" height="6" rx="3" class="b2i-ct-l"/></g>
-						<circle cx="250" cy="50" r="12" fill="#6366F1" opacity="0.7"/>
-						<circle cx="250" cy="50" r="16" class="b2i-ring"/>
-						<path pathLength="1" class="b2i-clip-line" d="M236 50 H220"/>
-					</svg>
-				</div>
-				<div class="xcrm-b2__ind-body">
-					<h3 class="xcrm-b2__ind-title">خدمات و کسب‌وکارهای مبتنی بر مشتری</h3>
-					<p class="xcrm-b2__ind-desc">اطلاعات مشتریان، پیگیری درخواست‌ها و سوابق تعاملات را در یک فرآیند منظم دنبال کنید.</p>
-					<div class="xcrm-b2__tags"><span>پروفایل</span><span>یادآوری</span><span>ویژگی سفارشی</span></div>
-				</div>
-			</article>
-		</div>
+
+		<!-- Industry 1: E-commerce -->
+		<article class="xcrm-b2__ind-sec" data-reveal="up">
+			<div class="xcrm-b2__ind-sec-visual">
+				<svg class="xcrm-b2-svg" viewBox="0 0 380 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<defs><linearGradient id="b2i1g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.1"/><stop offset="100%" stop-color="#8B5CF6" stop-opacity="0.04"/></linearGradient></defs>
+					<rect x="10" y="10" width="360" height="240" rx="20" fill="url(#b2i1g)"/>
+					<!-- browser frame -->
+					<rect x="40" y="30" width="300" height="200" rx="12" class="b2i1-frame"/>
+					<circle cx="58" cy="46" r="4" fill="#F04438" opacity="0.5"/><circle cx="70" cy="46" r="4" fill="#F59E0B" opacity="0.5"/><circle cx="82" cy="46" r="4" fill="#10B981" opacity="0.5"/>
+					<!-- product grid -->
+					<rect x="55" y="60" width="70" height="50" rx="6" class="b2i1-tile b2i1-tile--1"/>
+					<rect x="135" y="60" width="70" height="50" rx="6" class="b2i1-tile b2i1-tile--2"/>
+					<rect x="215" y="60" width="70" height="50" rx="6" class="b2i1-tile b2i1-tile--3"/>
+					<rect x="55" y="120" width="70" height="50" rx="6" class="b2i1-tile b2i1-tile--4"/>
+					<rect x="135" y="120" width="70" height="50" rx="6" class="b2i1-tile b2i1-tile--5"/>
+					<rect x="215" y="120" width="70" height="50" rx="6" class="b2i1-tile b2i1-tile--6"/>
+					<!-- cursor -->
+					<g class="b2i1-cursor"><path d="M155 100 l0 16 4-3 3 7 4-2-3-7 6-1z" fill="#6366F1"/></g>
+					<!-- funnel bars -->
+					<rect x="70" y="185" width="200" height="10" rx="5" class="b2i1-fbar b2i1-fbar--1"/>
+					<rect x="95" y="200" width="150" height="10" rx="5" class="b2i1-fbar b2i1-fbar--2"/>
+					<rect x="120" y="215" width="100" height="10" rx="5" class="b2i1-fbar b2i1-fbar--3"/>
+					<!-- tracking ping -->
+					<circle cx="290" cy="75" r="10" class="b2i1-ping"/><circle cx="290" cy="75" r="5" fill="#10B981"/>
+					<!-- visitor counter chip -->
+					<g class="b2i1-chip"><rect x="240" y="48" width="80" height="22" rx="8" class="b2i1-chip-bg"/><text x="280" y="63" text-anchor="middle" class="b2i1-chip-t">بازدیدکننده</text></g>
+				</svg>
+			</div>
+			<div class="xcrm-b2__ind-sec-body">
+				<span class="xcrm-b2__ind-sec-num" aria-hidden="true">۰۱</span>
+				<h3 class="xcrm-b2__ind-sec-title">فروشگاه‌های اینترنتی</h3>
+				<p class="xcrm-b2__ind-sec-desc">رفتار بازدیدکنندگان، رویدادهای محصولات، بخش‌بندی مشتریان و اطلاعات قیف خرید را بررسی کنید. بدانید مشتریان کجا سبد را رها می‌کنند، کدام محصولات پربازدید هستند و چگونه می‌توانید نرخ تبدیل را افزایش دهید.</p>
+				<ul class="xcrm-b2__ind-sec-tags"><li>ردیابی وب‌سایت</li><li>قیف خرید</li><li>بخش‌بندی مشتریان</li><li>بازیابی سبد خرید</li></ul>
+			</div>
+		</article>
+
+		<!-- Industry 2: Education -->
+		<article class="xcrm-b2__ind-sec xcrm-b2__ind-sec--rev" data-reveal="up">
+			<div class="xcrm-b2__ind-sec-visual">
+				<svg class="xcrm-b2-svg" viewBox="0 0 380 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<defs><linearGradient id="b2i2g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#06B6D4" stop-opacity="0.1"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0.04"/></linearGradient></defs>
+					<rect x="10" y="10" width="360" height="240" rx="20" fill="url(#b2i2g)"/>
+					<!-- graduation cap -->
+					<g class="b2i2-cap">
+						<path pathLength="1" class="b2i2-cap-top" d="M190 50 L120 80 L190 110 L260 80 Z" fill="#6366F1" opacity="0.85"/>
+						<path pathLength="1" class="b2i2-cap-tassel" d="M260 80 V120" stroke="#6366F1" stroke-width="2.5" stroke-linecap="round"/>
+						<circle class="b2i2-cap-ball" cx="260" cy="126" r="5" fill="#6366F1"/>
+						<path pathLength="1" class="b2i2-cap-base" d="M150 95 V120 C150 135 230 135 230 120 V95" stroke="#6366F1" stroke-width="2" fill="none" stroke-linecap="round"/>
+					</g>
+					<!-- lead funnel -->
+					<rect x="80" y="155" width="220" height="12" rx="6" class="b2i2-lbar b2i2-lbar--1"/>
+					<rect x="105" y="175" width="170" height="12" rx="6" class="b2i2-lbar b2i2-lbar--2"/>
+					<rect x="130" y="195" width="120" height="12" rx="6" class="b2i2-lbar b2i2-lbar--3"/>
+					<rect x="155" y="215" width="70" height="12" rx="6" class="b2i2-lbar b2i2-lbar--4"/>
+					<!-- bell notification -->
+					<g class="b2i2-bell">
+						<path pathLength="1" d="M310 55 c-10 0-17 7-17 17 v12 l-6 8 h46 l-6-8 v-12 c0-10-7-17-17-17z" stroke="#F59E0B" stroke-width="2" fill="none" stroke-linecap="round"/>
+						<circle cx="310" cy="100" r="4" fill="#F59E0B"/>
+					</g>
+					<g class="b2i2-nbadge"><circle cx="325" cy="52" r="10" fill="#F04438"/><text x="325" y="56" text-anchor="middle" fill="#fff" font-size="8" font-weight="800" font-family="inherit">۵</text></g>
+					<!-- student avatars -->
+					<g class="b2i2-student b2i2-student--1"><circle cx="70" cy="80" r="14" fill="#6366F1" opacity="0.7"/><text x="70" y="85" text-anchor="middle" fill="#fff" font-size="10" font-weight="800" font-family="inherit">الف</text></g>
+					<g class="b2i2-student b2i2-student--2"><circle cx="100" cy="65" r="12" fill="#06B6D4" opacity="0.7"/><text x="100" y="70" text-anchor="middle" fill="#fff" font-size="9" font-weight="800" font-family="inherit">ب</text></g>
+					<g class="b2i2-student b2i2-student--3"><circle cx="80" cy="110" r="11" fill="#10B981" opacity="0.7"/><text x="80" y="114" text-anchor="middle" fill="#fff" font-size="8" font-weight="800" font-family="inherit">ج</text></g>
+				</svg>
+			</div>
+			<div class="xcrm-b2__ind-sec-body">
+				<span class="xcrm-b2__ind-sec-num" aria-hidden="true">۰۲</span>
+				<h3 class="xcrm-b2__ind-sec-title">آموزش و دوره‌های آنلاین</h3>
+				<p class="xcrm-b2__ind-sec-desc">سرنخ‌های ثبت‌نام، پیگیری متقاضیان، مراحل فروش و یادآوری‌های تیم را ساختارمند مدیریت کنید. بدانید کدام دوره‌ها بیشترین تقاضا را دارند و متقاضیان در کدام مرحله رها می‌کنند.</p>
+				<ul class="xcrm-b2__ind-sec-tags"><li>مدیریت سرنخ</li><li>پایپ‌لاین فروش</li><li>یادآوری ثبت‌نام</li><li>تحلیل دوره‌ها</li></ul>
+			</div>
+		</article>
+
+		<!-- Industry 3: B2B -->
+		<article class="xcrm-b2__ind-sec" data-reveal="up">
+			<div class="xcrm-b2__ind-sec-visual">
+				<svg class="xcrm-b2-svg" viewBox="0 0 380 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<defs><linearGradient id="b2i3g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#10B981" stop-opacity="0.08"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0.04"/></linearGradient></defs>
+					<rect x="10" y="10" width="360" height="240" rx="20" fill="url(#b2i3g)"/>
+					<!-- handshake / deal -->
+					<rect x="80" y="40" width="220" height="70" rx="14" class="b2i3-deal"/>
+					<circle cx="130" cy="65" r="14" fill="#6366F1" opacity="0.8"/><circle cx="250" cy="65" r="14" fill="#06B6D4" opacity="0.8"/>
+					<path pathLength="1" class="b2i3-hand" d="M148 75 Q190 95 232 75" stroke="#10B981" stroke-width="3" stroke-linecap="round" fill="none"/>
+					<text x="190" y="102" text-anchor="middle" class="b2i3-deal-t">قرارداد امضاشده</text>
+					<!-- pipeline stages -->
+					<g class="b2i3-stage b2i3-stage--1"><rect x="40" y="140" width="70" height="28" rx="8" class="b2i3-stage-bg"/><text x="75" y="158" text-anchor="middle" class="b2i3-stage-t">سرنخ</text></g>
+					<path pathLength="1" class="b2i3-arrow b2i3-arrow--1" d="M114 154 H130"/>
+					<g class="b2i3-stage b2i3-stage--2"><rect x="134" y="140" width="70" height="28" rx="8" class="b2i3-stage-bg"/><text x="169" y="158" text-anchor="middle" class="b2i3-stage-t">مذاکره</text></g>
+					<path pathLength="1" class="b2i3-arrow b2i3-arrow--2" d="M208 154 H224"/>
+					<g class="b2i3-stage b2i3-stage--3"><rect x="228" y="140" width="70" height="28" rx="8" fill="#10B981"/><text x="263" y="158" text-anchor="middle" fill="#fff" font-size="9" font-weight="700" font-family="inherit">بسته</text></g>
+					<!-- activity timeline -->
+					<circle cx="60" cy="200" r="5" class="b2i3-adot b2i3-adot--1"/>
+					<circle cx="100" cy="200" r="5" class="b2i3-adot b2i3-adot--2"/>
+					<circle cx="140" cy="200" r="5" class="b2i3-adot b2i3-adot--3"/>
+					<circle cx="180" cy="200" r="5" class="b2i3-adot b2i3-adot--4"/>
+					<circle cx="220" cy="200" r="5" class="b2i3-adot b2i3-adot--5"/>
+					<path pathLength="1" class="b2i3-timeline" d="M60 200 H220" stroke="var(--x-border)" stroke-width="2" stroke-dasharray="1" fill="none"/>
+					<!-- check badge -->
+					<g class="b2i3-check"><circle cx="310" cy="65" r="18" fill="#ECFDF5"/><path pathLength="1" d="M302 65 l5 5 10-12" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+				</svg>
+			</div>
+			<div class="xcrm-b2__ind-sec-body">
+				<span class="xcrm-b2__ind-sec-num" aria-hidden="true">۰۳</span>
+				<h3 class="xcrm-b2__ind-sec-title">شرکت‌های فروش و بازاریابی B2B</h3>
+				<p class="xcrm-b2__ind-sec-desc">فرصت‌های فروش، سوابق تعامل، مراحل مذاکره و مسئولیت‌های اعضای تیم را مدیریت کنید. قراردادها را از سرنخ تا امضا دنبال کنید و هر فعالیت فروش را ثبت کنید.</p>
+				<ul class="xcrm-b2__ind-sec-tags"><li>پایپ‌لاین فروش</li><li>گزارش فعالیت</li><li>دسترسی تیمی</li><li>تاریخچه تعامل</li></ul>
+			</div>
+		</article>
+
+		<!-- Industry 4: Services -->
+		<article class="xcrm-b2__ind-sec xcrm-b2__ind-sec--rev" data-reveal="up">
+			<div class="xcrm-b2__ind-sec-visual">
+				<svg class="xcrm-b2-svg" viewBox="0 0 380 260" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<defs><linearGradient id="b2i4g" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#F59E0B" stop-opacity="0.08"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0.04"/></linearGradient></defs>
+					<rect x="10" y="10" width="360" height="240" rx="20" fill="url(#b2i4g)"/>
+					<!-- clipboard -->
+					<rect x="100" y="30" width="180" height="200" rx="12" class="b2i4-clip"/>
+					<rect x="160" y="24" width="60" height="16" rx="6" class="b2i4-clip-tab"/>
+					<!-- tasks -->
+					<g class="b2i4-task b2i4-task--1"><circle cx="125" cy="70" r="7" class="b2i4-tdot b2i4-tdot--done"/><rect x="140" y="66" width="100" height="7" rx="3.5" class="b2i4-tline"/><text x="260" y="74" text-anchor="end" fill="#10B981" font-size="8" font-weight="700" font-family="inherit">✓</text></g>
+					<g class="b2i4-task b2i4-task--2"><circle cx="125" cy="100" r="7" class="b2i4-tdot b2i4-tdot--done"/><rect x="140" y="96" width="80" height="7" rx="3.5" class="b2i4-tline"/><text x="260" y="104" text-anchor="end" fill="#10B981" font-size="8" font-weight="700" font-family="inherit">✓</text></g>
+					<g class="b2i4-task b2i4-task--3"><circle cx="125" cy="130" r="7" class="b2i4-tdot b2i4-tdot--active"/><rect x="140" y="126" width="90" height="7" rx="3.5" class="b2i4-tline"/><text x="260" y="134" text-anchor="end" fill="#6366F1" font-size="8" font-weight="700" font-family="inherit">●</text></g>
+					<g class="b2i4-task b2i4-task--4"><circle cx="125" cy="160" r="7" class="b2i4-tdot"/><rect x="140" y="156" width="70" height="7" rx="3.5" class="b2i4-tline"/></g>
+					<g class="b2i4-task b2i4-task--5"><circle cx="125" cy="190" r="7" class="b2i4-tdot"/><rect x="140" y="186" width="85" height="7" rx="3.5" class="b2i4-tline"/></g>
+					<!-- customer profile mini -->
+					<circle cx="310" cy="70" r="16" fill="#6366F1" opacity="0.75"/>
+					<circle cx="310" cy="70" r="22" class="b2i4-ring"/>
+					<path pathLength="1" class="b2i4-clip-line" d="M290 70 H280"/>
+					<!-- custom field pills -->
+					<g class="b2i4-pill b2i4-pill--1"><rect x="40" y="80" width="45" height="20" rx="10" class="b2i4-pill-bg"/><text x="62" y="94" text-anchor="middle" class="b2i4-pill-t">VIP</text></g>
+					<g class="b2i4-pill b2i4-pill--2"><rect x="40" y="110" width="45" height="20" rx="10" class="b2i4-pill-bg"/><text x="62" y="124" text-anchor="middle" class="b2i4-pill-t">ویژه</text></g>
+				</svg>
+			</div>
+			<div class="xcrm-b2__ind-sec-body">
+				<span class="xcrm-b2__ind-sec-num" aria-hidden="true">۰۴</span>
+				<h3 class="xcrm-b2__ind-sec-title">خدمات و کسب‌وکارهای مبتنی بر مشتری</h3>
+				<p class="xcrm-b2__ind-sec-desc">اطلاعات مشتریان، پیگیری درخواست‌ها و سوابق تعاملات را در یک فرآیند منظم دنبال کنید. هر درخواست، هر تماس و هر یادداشت در پروفایل مشتری ثبت می‌شود.</p>
+				<ul class="xcrm-b2__ind-sec-tags"><li>پروفایل مشتری</li><li>یادآوری و پیگیری</li><li>ویژگی سفارشی</li><li>سوابق تعامل</li></ul>
+			</div>
+		</article>
 	</div>
 </section>
 
 <!-- ══════════ 11. INTEGRATIONS ══════════ -->
 <section class="xcrm-b2__section" id="integrations">
+	<div class="xcrm-b2__deco xcrm-b2__deco--purple" style="top:10%;right:-5%;" aria-hidden="true"></div>
 	<div class="xcrm-b2__inner">
 		<div class="xcrm-b2__head" data-reveal="up">
 			<p class="xcrm-b2__eyebrow">یکپارچه‌سازی‌ها</p>
@@ -705,31 +881,50 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 			<p class="xcrm-b2__desc">با استفاده از ابزارهای اتصال و توسعه موجود، داده‌های مشتریان و رویدادهای سایت را به xCRM منتقل کنید.</p>
 		</div>
 		<div class="xcrm-b2__hub-visual" data-reveal="up" aria-hidden="true">
-			<svg class="xcrm-b2-svg" viewBox="0 0 700 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<svg class="xcrm-b2-svg" viewBox="0 0 760 320" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<defs>
 					<linearGradient id="b2hG" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.08"/><stop offset="100%" stop-color="#06B6D4" stop-opacity="0.04"/></linearGradient>
 					<radialGradient id="b2hCore" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#6366F1"/><stop offset="100%" stop-color="#8B5CF6"/></radialGradient>
+					<radialGradient id="b2hGlow" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#6366F1" stop-opacity="0.2"/><stop offset="100%" stop-color="#6366F1" stop-opacity="0"/></radialGradient>
 				</defs>
-				<rect x="10" y="10" width="680" height="280" rx="22" fill="url(#b2hG)"/>
+				<rect x="10" y="10" width="740" height="300" rx="22" fill="url(#b2hG)"/>
+				<!-- ambient glow -->
+				<ellipse cx="380" cy="160" rx="160" ry="120" fill="url(#b2hGlow)" class="b2h-glow"/>
 				<!-- center xCRM -->
-				<circle cx="350" cy="150" r="44" fill="url(#b2hCore)" class="b2h-core"/>
-				<text x="350" y="155" text-anchor="middle" fill="#fff" font-size="14" font-weight="800" font-family="inherit">xCRM</text>
-				<circle cx="350" cy="150" r="54" class="b2h-ring"/>
-				<circle cx="350" cy="150" r="66" class="b2h-ring b2h-ring--2"/>
-				<!-- spokes -->
-				<path pathLength="1" class="b2h-spoke b2h-spoke--1" d="M306 130 L180 70" stroke="#6366F1" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
-				<path pathLength="1" class="b2h-spoke b2h-spoke--2" d="M306 150 H160" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
-				<path pathLength="1" class="b2h-spoke b2h-spoke--3" d="M306 170 L180 230" stroke="#10B981" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
-				<path pathLength="1" class="b2h-spoke b2h-spoke--4" d="M394 130 L520 70" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
-				<path pathLength="1" class="b2h-spoke b2h-spoke--5" d="M394 150 H540" stroke="#EC4899" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
-				<path pathLength="1" class="b2h-spoke b2h-spoke--6" d="M394 170 L520 230" stroke="#8B5CF6" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
+				<circle cx="380" cy="160" r="46" fill="url(#b2hCore)" class="b2h-core"/>
+				<text x="380" y="165" text-anchor="middle" fill="#fff" font-size="15" font-weight="800" font-family="inherit">xCRM</text>
+				<circle cx="380" cy="160" r="56" class="b2h-ring"/>
+				<circle cx="380" cy="160" r="70" class="b2h-ring b2h-ring--2"/>
+				<!-- spokes with flowing particles -->
+				<path pathLength="1" class="b2h-spoke b2h-spoke--1" d="M334 140 L200 75" stroke="#6366F1" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
+				<path pathLength="1" class="b2h-spoke b2h-spoke--2" d="M334 160 H180" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
+				<path pathLength="1" class="b2h-spoke b2h-spoke--3" d="M334 180 L200 245" stroke="#10B981" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
+				<path pathLength="1" class="b2h-spoke b2h-spoke--4" d="M426 140 L560 75" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
+				<path pathLength="1" class="b2h-spoke b2h-spoke--5" d="M426 160 H580" stroke="#EC4899" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
+				<path pathLength="1" class="b2h-spoke b2h-spoke--6" d="M426 180 L560 245" stroke="#8B5CF6" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
+				<!-- flowing particles along spokes -->
+				<circle r="2.5" fill="#6366F1" class="b2h-particle b2h-particle--1"><animateMotion dur="3s" repeatCount="indefinite" begin="0.5s"><mpath href="#b2hp1"/></animateMotion></circle>
+				<path id="b2hp1" d="M334 140 L200 75" fill="none" stroke="none"/>
+				<circle r="2.5" fill="#06B6D4" class="b2h-particle b2h-particle--2"><animateMotion dur="3s" repeatCount="indefinite" begin="1.2s"><mpath href="#b2hp2"/></animateMotion></circle>
+				<path id="b2hp2" d="M334 160 H180" fill="none" stroke="none"/>
+				<circle r="2.5" fill="#10B981" class="b2h-particle b2h-particle--3"><animateMotion dur="3s" repeatCount="indefinite" begin="1.9s"><mpath href="#b2hp3"/></animateMotion></circle>
+				<path id="b2hp3" d="M426 160 H580" fill="none" stroke="none"/>
+				<circle r="2.5" fill="#F59E0B" class="b2h-particle b2h-particle--4"><animateMotion dur="3s" repeatCount="indefinite" begin="2.6s"><mpath href="#b2hp4"/></animateMotion></circle>
+				<path id="b2hp4" d="M426 140 L560 75" fill="none" stroke="none"/>
 				<!-- satellite nodes -->
-				<g class="b2h-node b2h-node--1"><rect x="100" y="50" width="100" height="36" rx="10" class="b2h-node-bg"/><text x="150" y="73" text-anchor="middle" class="b2h-node-t">مرورگر SDK</text></g>
-				<g class="b2h-node b2h-node--2"><rect x="80" y="132" width="80" height="36" rx="10" class="b2h-node-bg"/><text x="120" y="155" text-anchor="middle" class="b2h-node-t">API</text></g>
-				<g class="b2h-node b2h-node--3"><rect x="100" y="210" width="100" height="36" rx="10" class="b2h-node-bg"/><text x="150" y="233" text-anchor="middle" class="b2h-node-t">وردپرس</text></g>
-				<g class="b2h-node b2h-node--4"><rect x="500" y="50" width="100" height="36" rx="10" class="b2h-node-bg"/><text x="550" y="73" text-anchor="middle" class="b2h-node-t">n8n</text></g>
-				<g class="b2h-node b2h-node--5"><rect x="540" y="132" width="80" height="36" rx="10" class="b2h-node-bg"/><text x="580" y="155" text-anchor="middle" class="b2h-node-t">تلگرام</text></g>
-				<g class="b2h-node b2h-node--6"><rect x="500" y="210" width="100" height="36" rx="10" class="b2h-node-bg"/><text x="550" y="233" text-anchor="middle" class="b2h-node-t">پیامک</text></g>
+				<g class="b2h-node b2h-node--1"><rect x="120" y="55" width="110" height="38" rx="10" class="b2h-node-bg"/><text x="175" y="79" text-anchor="middle" class="b2h-node-t">مرورگر SDK</text></g>
+				<g class="b2h-node b2h-node--2"><rect x="100" y="142" width="80" height="36" rx="10" class="b2h-node-bg"/><text x="140" y="165" text-anchor="middle" class="b2h-node-t">API</text></g>
+				<g class="b2h-node b2h-node--3"><rect x="120" y="226" width="110" height="38" rx="10" class="b2h-node-bg"/><text x="175" y="250" text-anchor="middle" class="b2h-node-t">وردپرس</text></g>
+				<g class="b2h-node b2h-node--4"><rect x="530" y="55" width="110" height="38" rx="10" class="b2h-node-bg"/><text x="585" y="79" text-anchor="middle" class="b2h-node-t">n8n</text></g>
+				<g class="b2h-node b2h-node--5"><rect x="580" y="142" width="80" height="36" rx="10" class="b2h-node-bg"/><text x="620" y="165" text-anchor="middle" class="b2h-node-t">تلگرام</text></g>
+				<g class="b2h-node b2h-node--6"><rect x="530" y="226" width="110" height="38" rx="10" class="b2h-node-bg"/><text x="585" y="250" text-anchor="middle" class="b2h-node-t">پیامک</text></g>
+				<!-- pulse rings on nodes -->
+				<circle cx="175" cy="74" r="22" class="b2h-npulse b2h-npulse--1"/>
+				<circle cx="140" cy="160" r="20" class="b2h-npulse b2h-npulse--2"/>
+				<circle cx="175" cy="245" r="22" class="b2h-npulse b2h-npulse--3"/>
+				<circle cx="585" cy="74" r="22" class="b2h-npulse b2h-npulse--4"/>
+				<circle cx="620" cy="160" r="20" class="b2h-npulse b2h-npulse--5"/>
+				<circle cx="585" cy="245" r="22" class="b2h-npulse b2h-npulse--6"/>
 			</svg>
 		</div>
 		<div class="xcrm-b2__center-cta" data-reveal="up"><a href="#start" class="xcrm-b2__text-link">مشاهده ابزارهای اتصال <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg></a></div>
@@ -746,34 +941,65 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 		<ol class="xcrm-b2__steps">
 			<li class="xcrm-b2__step" data-reveal="up">
 				<span class="xcrm-b2__step-num" aria-hidden="true">۱</span>
-				<div>
-					<svg class="xcrm-b2__step-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="6" class="b2st-frame"/><path pathLength="1" class="b2st-draw" d="M10 16 l4 4 8-10" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+				<div class="xcrm-b2__step-body">
+					<svg class="xcrm-b2__step-svg" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+						<rect x="20" y="15" width="80" height="50" rx="8" class="b2st-card"/>
+						<circle cx="45" cy="35" r="8" fill="#6366F1" opacity="0.8"/>
+						<rect x="58" y="30" width="28" height="5" rx="2.5" class="b2st-line"/>
+						<rect x="58" y="40" width="20" height="4" rx="2" class="b2st-line"/>
+						<path pathLength="1" class="b2st-check" d="M35 55 l6 6 12-14" stroke="#10B981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+						<circle class="b2st-pulse" cx="90" cy="25" r="8"/>
+					</svg>
 					<h3>ایجاد حساب و تنظیمات اولیه</h3>
-					<p>اطلاعات شرکت و تنظیمات اولیه را تکمیل کنید.</p>
+					<p>اطلاعات شرکت، لوگو و تنظیمات اولیه فضای کاری را تکمیل کنید.</p>
 				</div>
 			</li>
 			<li class="xcrm-b2__step" data-reveal="up" data-reveal-delay="100">
 				<span class="xcrm-b2__step-num" aria-hidden="true">۲</span>
-				<div>
-					<svg class="xcrm-b2__step-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="6" class="b2st-frame"/><path pathLength="1" class="b2st-draw" d="M10 16 h12 M16 10 v12" stroke-width="2.5" stroke-linecap="round"/></svg>
+				<div class="xcrm-b2__step-body">
+					<svg class="xcrm-b2__step-svg" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+						<rect x="15" y="20" width="50" height="40" rx="6" class="b2st-card"/>
+						<text x="40" y="44" text-anchor="middle" class="b2st-file-t">CSV</text>
+						<path pathLength="1" class="b2st-arrow" d="M70 40 H95" stroke="#6366F1" stroke-width="2" stroke-linecap="round"/>
+						<path pathLength="1" class="b2st-arrow-head" d="M90 35 l5 5-5 5" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+						<rect x="70" y="25" width="35" height="30" rx="6" class="b2st-card b2st-card--target"/>
+						<circle cx="87" cy="37" r="4" fill="#10B981" opacity="0.6"/>
+						<circle class="b2st-pulse" cx="30" cy="18" r="6"/>
+					</svg>
 					<h3>ثبت یا اتصال اطلاعات مشتریان</h3>
-					<p>اطلاعات را از CSV، Excel، JSON یا API وارد کنید.</p>
+					<p>اطلاعات را از CSV، Excel، JSON یا API وارد کنید و فیلدها را نگاشت کنید.</p>
 				</div>
 			</li>
 			<li class="xcrm-b2__step" data-reveal="up" data-reveal-delay="200">
 				<span class="xcrm-b2__step-num" aria-hidden="true">۳</span>
-				<div>
-					<svg class="xcrm-b2__step-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="6" class="b2st-frame"/><circle cx="12" cy="14" r="3" class="b2st-dot"/><circle cx="20" cy="14" r="3" class="b2st-dot"/><path pathLength="1" class="b2st-draw" d="M8 22 Q16 18 24 22" stroke-width="2" stroke-linecap="round"/></svg>
+				<div class="xcrm-b2__step-body">
+					<svg class="xcrm-b2__step-svg" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+						<circle cx="60" cy="40" r="28" class="b2st-ring b2st-ring--1"/>
+						<circle cx="60" cy="40" r="18" class="b2st-ring b2st-ring--2"/>
+						<circle cx="60" cy="40" r="8" fill="#6366F1" opacity="0.8"/>
+						<circle cx="40" cy="25" r="4" fill="#06B6D4" opacity="0.7"/>
+						<circle cx="80" cy="25" r="4" fill="#10B981" opacity="0.7"/>
+						<circle cx="40" cy="55" r="4" fill="#F59E0B" opacity="0.7"/>
+						<circle cx="80" cy="55" r="4" fill="#EC4899" opacity="0.7"/>
+						<circle class="b2st-pulse" cx="60" cy="40" r="14"/>
+					</svg>
 					<h3>پیکربندی بخش‌بندی و ارتباطات</h3>
-					<p>بخش‌بندی‌ها و کانال‌های ارتباطی موردنیاز را تنظیم کنید.</p>
+					<p>بخش‌بندی‌ها و کانال‌های ارتباطی موردنیاز را تنظیم و فعال کنید.</p>
 				</div>
 			</li>
 			<li class="xcrm-b2__step" data-reveal="up" data-reveal-delay="300">
 				<span class="xcrm-b2__step-num" aria-hidden="true">۴</span>
-				<div>
-					<svg class="xcrm-b2__step-icon" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true"><rect x="4" y="4" width="24" height="24" rx="6" class="b2st-frame"/><path pathLength="1" class="b2st-draw" d="M8 22 l4-4 4 4 8-10" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+				<div class="xcrm-b2__step-body">
+					<svg class="xcrm-b2__step-svg" viewBox="0 0 120 80" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+						<rect x="15" y="50" width="18" height="15" rx="3" class="b2st-bar b2st-bar--1"/>
+						<rect x="40" y="38" width="18" height="27" rx="3" class="b2st-bar b2st-bar--2"/>
+						<rect x="65" y="44" width="18" height="21" rx="3" class="b2st-bar b2st-bar--3"/>
+						<rect x="90" y="28" width="18" height="37" rx="3" class="b2st-bar b2st-bar--4"/>
+						<path pathLength="1" class="b2st-line-chart" d="M24 45 L49 32 L74 38 L99 22" stroke="#6366F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+						<circle class="b2st-pulse" cx="99" cy="22" r="5"/>
+					</svg>
 					<h3>بررسی داده‌ها و شروع استفاده</h3>
-					<p>داده‌ها را بررسی کنید و از قابلیت‌های موجود استفاده کنید.</p>
+					<p>داده‌ها را بررسی کنید، گزارش‌ها را ببینید و از قابلیت‌های موجود استفاده کنید.</p>
 				</div>
 			</li>
 		</ol>
