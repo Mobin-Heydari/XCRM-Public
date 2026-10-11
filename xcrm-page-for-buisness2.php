@@ -980,7 +980,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 					<circle cx="84" cy="58" r="6" fill="#6366F1" opacity="0.8"/>
 					<circle cx="98" cy="58" r="6" fill="#06B6D4" opacity="0.6"/>
 					<circle cx="112" cy="58" r="6" fill="#10B981" opacity="0.5"/>
-					<text x="290" y="62" text-anchor="end" class="b2s1-header-t">تنظیمات فضای کاری</text>
+					<text x="190" y="62" text-anchor="end" class="b2s1-header-t">تنظیمات فضای کاری</text>
 					<!-- avatar -->
 					<circle cx="115" cy="110" r="24" fill="url(#b2s1av)" class="b2s1-avatar"/>
 					<circle cx="115" cy="110" r="30" class="b2s1-ring"/>
@@ -992,7 +992,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 					<rect x="195" y="150" width="100" height="28" rx="8" class="b2s1-field b2s1-field--2"/>
 					<rect x="80" y="190" width="215" height="28" rx="8" class="b2s1-field b2s1-field--3"/>
 					<!-- checkmark -->
-					<g class="b2s1-check"><circle cx="300" cy="55" r="14" fill="#ECFDF5"/><path pathLength="1" d="M294 55 l4 4 8-10" stroke="#10B981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
+					<g class="b2s1-check"><circle cx="300" cy="58" r="14" fill="#012517"/><path pathLength="1" d="M294 55 l4 4 8-10" stroke="#10B981" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/></g>
 					<!-- floating gear -->
 					<g class="b2s1-gear">
 						<circle cx="330" cy="120" r="12" fill="none" stroke="#6366F1" stroke-width="2"/>
@@ -1065,12 +1065,12 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 					<rect x="40" y="40" width="200" height="180" rx="12" class="b2s3-panel"/>
 					<text x="140" y="65" text-anchor="middle" class="b2s3-panel-t">ساخت بخش مشتریان</text>
 					<!-- condition rows -->
-					<g class="b2s3-cond b2s3-cond--1"><rect x="55" y="80" width="170" height="30" rx="8" class="b2s3-cond-bg"/><text x="65" y="99" class="b2s3-cond-t">برچسب = ویژه</text></g>
-					<g class="b2s3-cond b2s3-cond--2"><rect x="55" y="120" width="170" height="30" rx="8" class="b2s3-cond-bg"/><text x="65" y="139" class="b2s3-cond-t">آخرین خرید &lt; ۳۰ روز</text></g>
-					<g class="b2s3-cond b2s3-cond--3"><rect x="55" y="160" width="170" height="30" rx="8" class="b2s3-cond-bg"/><text x="65" y="179" class="b2s3-cond-t">ارزش سفارش &gt; ۱ میلیون</text></g>
+					<g class="b2s3-cond b2s3-cond--1"><rect x="55" y="80" width="170" height="30" rx="8" class="b2s3-cond-bg"/><text x="165" y="99" class="b2s3-cond-t">برچسب = ویژه</text></g>
+					<g class="b2s3-cond b2s3-cond--2"><rect x="55" y="120" width="170" height="30" rx="8" class="b2s3-cond-bg"/><text x="165" y="139" class="b2s3-cond-t">آخرین خرید &lt; ۳۰ روز</text></g>
+					<g class="b2s3-cond b2s3-cond--3"><rect x="55" y="160" width="170" height="30" rx="8" class="b2s3-cond-bg"/><text x="165" y="179" class="b2s3-cond-t">ارزش سفارش &gt; ۱ میلیون</text></g>
 					<!-- AND badges -->
-					<circle cx="230" cy="95" r="10" class="b2s3-logic"/><text x="230" y="99" text-anchor="middle" class="b2s3-logic-t">و</text>
-					<circle cx="230" cy="135" r="10" class="b2s3-logic"/><text x="230" y="139" text-anchor="middle" class="b2s3-logic-t">و</text>
+					<!-- <circle cx="230" cy="95" r="10" class="b2s3-logic"/><text x="230" y="99" text-anchor="middle" class="b2s3-logic-t">و</text>
+					<circle cx="230" cy="135" r="10" class="b2s3-logic"/><text x="230" y="139" text-anchor="middle" class="b2s3-logic-t">و</text> -->
 					<!-- channel icons -->
 					<g class="b2s3-chan b2s3-chan--sms"><rect x="270" y="60" width="80" height="36" rx="10" class="b2s3-chan-bg"/><text x="310" y="83" text-anchor="middle" class="b2s3-chan-t">پیامک</text></g>
 					<g class="b2s3-chan b2s3-chan--tg"><rect x="270" y="110" width="80" height="36" rx="10" class="b2s3-chan-bg"/><text x="310" y="133" text-anchor="middle" class="b2s3-chan-t">تلگرام</text></g>
@@ -1080,8 +1080,8 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 					<path pathLength="1" class="b2s3-flow b2s3-flow--2" d="M245 135 H270" stroke="#06B6D4" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
 					<path pathLength="1" class="b2s3-flow b2s3-flow--3" d="M245 175 Q258 192 270 178" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="1" fill="none"/>
 					<!-- activate toggle -->
-					<g class="b2s3-toggle"><rect x="100" y="210" width="80" height="28" rx="14" class="b2s3-toggle-bg"/><circle cx="155" cy="224" r="10" fill="#10B981"/><text x="140" y="229" text-anchor="middle" class="b2s3-toggle-t">فعال</text></g>
-					<circle class="b2s3-dot b2s3-dot--1" cx="30" cy="100" r="3" fill="#10B981"/>
+					<g class="b2s3-toggle"><rect x="100" y="210" width="80" height="28" rx="14" class="b2s3-toggle-bg"/><text x="140" y="229" text-anchor="middle" class="b2s3-toggle-t">فعال</text></g>
+					<!-- <circle class="b2s3-dot b2s3-dot--1" cx="30" cy="100" r="3" fill="#10B981"/> -->
 					<circle class="b2s3-dot b2s3-dot--2" cx="360" cy="220" r="2.5" fill="#6366F1"/>
 				</svg>
 			</div>
@@ -1103,11 +1103,11 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 					<rect x="30" y="30" width="320" height="200" rx="14" class="b2s4-frame"/>
 					<rect x="30" y="30" width="320" height="28" rx="14" class="b2s4-header"/>
 					<circle cx="48" cy="44" r="4" fill="#F04438" opacity="0.5"/><circle cx="58" cy="44" r="4" fill="#F59E0B" opacity="0.5"/><circle cx="68" cy="44" r="4" fill="#10B981" opacity="0.5"/>
-					<text x="320" y="49" text-anchor="end" class="b2s4-header-t">داشبورد تحلیلی</text>
+					<text x="290" y="49" text-anchor="end" class="b2s4-header-t">داشبورد تحلیلی</text>
 					<!-- KPI cards -->
-					<g class="b2s4-kpi b2s4-kpi--1"><rect x="45" y="70" width="85" height="50" rx="8" class="b2s4-kpi-bg"/><text x="87" y="90" text-anchor="middle" class="b2s4-kpi-l">بازدیدکنندگان</text><text x="87" y="110" text-anchor="middle" class="b2s4-kpi-v">۱۲,۴۰۰</text></g>
-					<g class="b2s4-kpi b2s4-kpi--2"><rect x="145" y="70" width="85" height="50" rx="8" class="b2s4-kpi-bg"/><text x="187" y="90" text-anchor="middle" class="b2s4-kpi-l">نرخ تبدیل</text><text x="187" y="110" text-anchor="middle" class="b2s4-kpi-v">۳.۲٪</text></g>
-					<g class="b2s4-kpi b2s4-kpi--3"><rect x="245" y="70" width="85" height="50" rx="8" class="b2s4-kpi-bg"/><text x="287" y="90" text-anchor="middle" class="b2s4-kpi-l">فروش ماه</text><text x="287" y="110" text-anchor="middle" class="b2s4-kpi-v">۸۴.۵M</text></g>
+					<g class="b2s4-kpi b2s4-kpi--1"><rect x="45" y="170" width="85" height="50" rx="8" class="b2s4-kpi-bg"/><text x="87" y="190" text-anchor="middle" class="b2s4-kpi-l">بازدیدکنندگان</text><text x="87" y="210" text-anchor="middle" class="b2s4-kpi-v">۱۲,۴۰۰</text></g>
+					<g class="b2s4-kpi b2s4-kpi--2"><rect x="145" y="170" width="85" height="50" rx="8" class="b2s4-kpi-bg"/><text x="187" y="190" text-anchor="middle" class="b2s4-kpi-l">نرخ تبدیل</text><text x="187" y="210" text-anchor="middle" class="b2s4-kpi-v">۳.۲٪</text></g>
+					<g class="b2s4-kpi b2s4-kpi--3"><rect x="245" y="170" width="85" height="50" rx="8" class="b2s4-kpi-bg"/><text x="287" y="190" text-anchor="middle" class="b2s4-kpi-l">فروش ماه</text><text x="287" y="210" text-anchor="middle" class="b2s4-kpi-v">۸۴.۵M</text></g>
 					<!-- chart bars -->
 					<rect class="b2s4-bar b2s4-bar--1" x="55" y="175" width="30" height="35" rx="5" fill="url(#b2s4bar)" style="--i:0"/>
 					<rect class="b2s4-bar b2s4-bar--2" x="100" y="155" width="30" height="55" rx="5" fill="url(#b2s4bar)" style="--i:1"/>
