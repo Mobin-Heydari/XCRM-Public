@@ -108,71 +108,112 @@
 
 /* Hero flow SVG */
 .xcrm-b2-flow { display:block; width:100%; height:auto; }
-.b2f-draw { stroke-dasharray:1; stroke-dashoffset:1; }
-.xcrm-b2-anim .b2f-draw { animation:b2-draw 1.1s var(--x-ease-standard) forwards; }
-.xcrm-b2-anim .b2f-draw--1 { animation-delay:0.3s; }
-.xcrm-b2-anim .b2f-draw--2 { animation-delay:0.55s; }
-.xcrm-b2-anim .b2f-draw--3 { animation-delay:0.8s; }
-.xcrm-b2-anim .b2f-draw--4 { animation-delay:1.05s; }
-.xcrm-b2-anim .b2f-draw--5 { animation-delay:1.3s; }
-.xcrm-b2-anim .b2f-draw--6 { animation-delay:1.55s; }
 
-/* Decorative rings */
-.b2f-deco-ring { fill:none; stroke:var(--x-primary); stroke-width:0.8; opacity:0; transform-origin:center; transform-box:fill-box; }
-.b2f-deco-ring--1 { stroke-dasharray:6 8; }
-.b2f-deco-ring--2 { stroke-dasharray:3 10; }
-.xcrm-b2-anim .b2f-deco-ring--1 { animation:b2-ring-pulse 8s ease-in-out 0.5s infinite; opacity:0.3; }
-.xcrm-b2-anim .b2f-deco-ring--2 { animation:b2-ring-pulse 10s ease-in-out 1.5s infinite; opacity:0.2; }
+/* Orbital rings */
+.b2f-orbit { fill:none; stroke:var(--x-primary); stroke-width:0.8; opacity:0; transform-origin:center; transform-box:fill-box; }
+.b2f-orbit--1 { stroke-dasharray:8 10; }
+.b2f-orbit--2 { stroke-dasharray:4 12; }
+.b2f-orbit--3 { stroke-dasharray:2 14; }
+.xcrm-b2-anim .b2f-orbit--1 { animation:b2-ring-pulse 8s ease-in-out 0.3s infinite; opacity:0.35; }
+.xcrm-b2-anim .b2f-orbit--2 { animation:b2-ring-pulse 10s ease-in-out 1.2s infinite; opacity:0.22; }
+.xcrm-b2-anim .b2f-orbit--3 { animation:b2-ring-pulse 12s ease-in-out 2.1s infinite; opacity:0.14; }
 
-/* Node outer rings */
-.b2f-node-ring { fill:none; stroke:var(--x-primary); stroke-width:1; opacity:0; transform-origin:center; transform-box:fill-box; }
-.b2f-node-ring--green { stroke:var(--x-success); }
-.xcrm-b2-anim .b2f-node--visitor .b2f-node-ring { animation:b2-ring-pulse 4s ease-in-out 0.5s infinite; }
-.xcrm-b2-anim .b2f-node--identify .b2f-node-ring { animation:b2-ring-pulse 4s ease-in-out 0.8s infinite; }
-.xcrm-b2-anim .b2f-node--segment .b2f-node-ring { animation:b2-ring-pulse 4s ease-in-out 1.1s infinite; }
-.xcrm-b2-anim .b2f-node--auto .b2f-node-ring { animation:b2-ring-pulse 4s ease-in-out 1.4s infinite; }
-.xcrm-b2-anim .b2f-node--sale .b2f-node-ring { animation:b2-ring-pulse 4s ease-in-out 1.7s infinite; }
+/* Hub core */
+.b2f-hub-core { opacity:0; transform-origin:center; transform-box:fill-box; }
+.xcrm-b2-anim .b2f-hub-core { animation:b2-badge-pop 0.6s ease 0.15s forwards; }
+.b2f-hub-ring { fill:none; stroke:rgba(255,255,255,0.3); stroke-width:1.5; opacity:0; transform-origin:center; transform-box:fill-box; }
+.b2f-hub-ring--2 { stroke-dasharray:4 6; }
+.xcrm-b2-anim .b2f-hub-ring { animation:b2-ring-pulse 3s ease-in-out 0.5s infinite; }
+.xcrm-b2-anim .b2f-hub-ring--2 { animation-delay:1s; }
 
-/* Profile panel header bar */
-.b2f-panel-header { fill:var(--x-primary); opacity:0.12; }
+/* Connection paths */
+.b2f-link { stroke-dasharray:1; stroke-dashoffset:1; }
+.xcrm-b2-anim .b2f-link { animation:b2-draw 1s var(--x-ease-standard) forwards; }
+.xcrm-b2-anim .b2f-link--1 { animation-delay:0.3s; }
+.xcrm-b2-anim .b2f-link--2 { animation-delay:0.45s; }
+.xcrm-b2-anim .b2f-link--3 { animation-delay:0.6s; }
+.xcrm-b2-anim .b2f-link--4 { animation-delay:0.75s; }
+.xcrm-b2-anim .b2f-link--5 { animation-delay:0.9s; }
+.xcrm-b2-anim .b2f-link--6 { animation-delay:1.05s; }
 
-/* Plus decorations */
-.b2f-plus { opacity:0; }
-.xcrm-b2-anim .b2f-plus--1 { animation:b2-badge-pop 0.4s ease 2s forwards, b2-float-soft 4s ease-in-out 2.6s infinite; }
-.xcrm-b2-anim .b2f-plus--2 { animation:b2-badge-pop 0.4s ease 2.2s forwards, b2-float-soft 4.5s ease-in-out 2.8s infinite; }
-.xcrm-b2-anim .b2f-plus--3 { animation:b2-badge-pop 0.4s ease 2.4s forwards, b2-float-soft 5s ease-in-out 3s infinite; }
-
-/* Particles */
+/* Particles (inbound + outbound) */
 .b2f-particle { opacity:0; }
 .xcrm-b2-anim .b2f-particle { animation:b2-fade 0.5s ease forwards; }
-.xcrm-b2-anim .b2f-particle--1 { animation-delay:1.5s; }
-.xcrm-b2-anim .b2f-particle--2 { animation-delay:2s; }
-.xcrm-b2-anim .b2f-particle--3 { animation-delay:2.5s; }
-.xcrm-b2-anim .b2f-particle--4 { animation-delay:3s; }
-.xcrm-b2-anim .b2f-particle--5 { animation-delay:3.5s; }
+.xcrm-b2-anim .b2f-particle--1 { animation-delay:1.3s; }
+.xcrm-b2-anim .b2f-particle--2 { animation-delay:1.6s; }
+.xcrm-b2-anim .b2f-particle--3 { animation-delay:1.9s; }
+.xcrm-b2-anim .b2f-particle--4 { animation-delay:2.2s; }
+.xcrm-b2-anim .b2f-particle--5 { animation-delay:2.5s; }
+.xcrm-b2-anim .b2f-particle--6 { animation-delay:2.8s; }
 
 /* Node backgrounds */
 .b2f-node-bg { fill:var(--x-base); stroke:var(--x-border-subtle); stroke-width:1.5; opacity:0; }
 .b2f-node-bg--panel { fill:var(--x-base); stroke:var(--x-primary); stroke-width:1.5; }
 .b2f-node-bg--sale { stroke:var(--x-success); stroke-width:1.5; }
-.xcrm-b2-anim .b2f-node--visitor .b2f-node-bg { animation:b2-badge-pop 0.5s ease 0.15s forwards; }
+.xcrm-b2-anim .b2f-node--visitor .b2f-node-bg { animation:b2-badge-pop 0.5s ease 0.2s forwards; }
 .xcrm-b2-anim .b2f-node--identify .b2f-node-bg { animation:b2-badge-pop 0.5s ease 0.4s forwards; }
-.xcrm-b2-anim .b2f-node--profile .b2f-node-bg { animation:b2-badge-pop 0.5s ease 0.65s forwards; }
-.xcrm-b2-anim .b2f-node--segment .b2f-node-bg { animation:b2-badge-pop 0.5s ease 0.9s forwards; }
-.xcrm-b2-anim .b2f-node--auto .b2f-node-bg { animation:b2-badge-pop 0.5s ease 1.15s forwards; }
-.xcrm-b2-anim .b2f-node--chan .b2f-node-bg { animation:b2-badge-pop 0.5s ease 1.4s forwards; }
-.xcrm-b2-anim .b2f-node--sale .b2f-node-bg { animation:b2-badge-pop 0.5s ease 1.65s forwards; }
+.xcrm-b2-anim .b2f-node--profile .b2f-node-bg { animation:b2-badge-pop 0.5s ease 0.6s forwards; }
+.xcrm-b2-anim .b2f-node--segment .b2f-node-bg { animation:b2-badge-pop 0.5s ease 0.8s forwards; }
+.xcrm-b2-anim .b2f-node--auto .b2f-node-bg { animation:b2-badge-pop 0.5s ease 1s forwards; }
+.xcrm-b2-anim .b2f-node--chan .b2f-node-bg { animation:b2-badge-pop 0.5s ease 1.2s forwards; }
+
+/* Node outer rings */
+.b2f-node-ring { fill:none; stroke:var(--x-primary); stroke-width:1; opacity:0; transform-origin:center; transform-box:fill-box; }
+.b2f-node-ring--green { stroke:var(--x-success); }
+.xcrm-b2-anim .b2f-node--visitor .b2f-node-ring { animation:b2-ring-pulse 4s ease-in-out 0.6s infinite; }
+.xcrm-b2-anim .b2f-node--identify .b2f-node-ring { animation:b2-ring-pulse 4s ease-in-out 0.8s infinite; }
+.xcrm-b2-anim .b2f-node--segment .b2f-node-ring { animation:b2-ring-pulse 4s ease-in-out 1s infinite; }
+.xcrm-b2-anim .b2f-node--auto .b2f-node-ring { animation:b2-ring-pulse 4s ease-in-out 1.2s infinite; }
+
+/* Panel header */
+.b2f-panel-header { fill:var(--x-primary); opacity:0.12; }
 
 /* Labels */
 .b2f-label { fill:var(--x-text-muted); font-size:10px; font-weight:700; font-family:var(--x-font-sans); opacity:0; }
-.xcrm-b2-anim .b2f-node--visitor .b2f-label { animation:b2-fade 0.4s ease 0.3s forwards; }
+.xcrm-b2-anim .b2f-node--visitor .b2f-label { animation:b2-fade 0.4s ease 0.35s forwards; }
 .xcrm-b2-anim .b2f-node--identify .b2f-label { animation:b2-fade 0.4s ease 0.55s forwards; }
-.xcrm-b2-anim .b2f-node--profile .b2f-label { animation:b2-fade 0.4s ease 0.8s forwards; }
-.xcrm-b2-anim .b2f-node--segment .b2f-label { animation:b2-fade 0.4s ease 1.05s forwards; }
-.xcrm-b2-anim .b2f-node--auto .b2f-label { animation:b2-fade 0.4s ease 1.3s forwards; }
-.xcrm-b2-anim .b2f-node--chan .b2f-label { animation:b2-fade 0.4s ease 1.55s forwards; }
-.xcrm-b2-anim .b2f-node--sale .b2f-label { animation:b2-fade 0.4s ease 1.8s forwards; }
+.xcrm-b2-anim .b2f-node--profile .b2f-label { animation:b2-fade 0.4s ease 0.75s forwards; }
+.xcrm-b2-anim .b2f-node--segment .b2f-label { animation:b2-fade 0.4s ease 0.95s forwards; }
+.xcrm-b2-anim .b2f-node--auto .b2f-label { animation:b2-fade 0.4s ease 1.15s forwards; }
+.xcrm-b2-anim .b2f-node--chan .b2f-label { animation:b2-fade 0.4s ease 1.35s forwards; }
 .b2f-label--sale { fill:var(--x-accent-success); font-weight:800; }
+
+/* Line sm */
+.b2f-line-sm { fill:var(--x-text-muted); opacity:0.3; }
+.b2f-line-sm--faint { opacity:0.15; }
+
+/* Eye */
+.b2f-eye { stroke-dasharray:1; stroke-dashoffset:1; }
+.xcrm-b2-anim .b2f-eye { animation:b2-draw 0.5s ease 0.6s forwards; }
+
+/* Seg ring */
+.b2f-seg-ring { fill:none; stroke:var(--x-primary); stroke-width:1; opacity:0; transform-origin:center; transform-box:fill-box; }
+.xcrm-b2-anim .b2f-seg-ring { animation:b2-ring-pulse 3s ease-in-out 1.1s infinite; }
+
+/* Check */
+.b2f-check { stroke-dasharray:1; stroke-dashoffset:1; }
+.xcrm-b2-anim .b2f-check { animation:b2-draw 0.4s ease 1.6s forwards; }
+
+/* Glow */
+.b2f-glow { opacity:0; }
+.xcrm-b2-anim .b2f-glow { animation:b2-fade 1.5s ease 0.2s forwards; }
+
+/* Dots */
+.b2f-dot { opacity:0; }
+.xcrm-b2-anim .b2f-dot--1 { animation:b2-dot-pop 0.3s ease 0.5s forwards, b2-float-soft 3s ease-in-out 1s infinite; }
+.xcrm-b2-anim .b2f-dot--2 { animation:b2-dot-pop 0.3s ease 0.8s forwards, b2-float-soft 3.5s ease-in-out 1.3s infinite; }
+.xcrm-b2-anim .b2f-dot--3 { animation:b2-dot-pop 0.3s ease 1.1s forwards, b2-float-soft 4s ease-in-out 1.6s infinite; }
+.xcrm-b2-anim .b2f-dot--4 { animation:b2-dot-pop 0.3s ease 1.4s forwards, b2-float-soft 3.5s ease-in-out 1.9s infinite; }
+.xcrm-b2-anim .b2f-dot--5 { animation:b2-dot-pop 0.3s ease 1.7s forwards, b2-float-soft 4s ease-in-out 2.2s infinite; }
+.xcrm-b2-anim .b2f-dot--6 { animation:b2-dot-pop 0.3s ease 2s forwards, b2-float-soft 3.5s ease-in-out 2.5s infinite; }
+.xcrm-b2-anim .b2f-dot--7 { animation:b2-dot-pop 0.3s ease 2.3s forwards, b2-float-soft 4s ease-in-out 2.8s infinite; }
+
+/* Plus decorations */
+.b2f-plus { opacity:0; }
+.xcrm-b2-anim .b2f-plus--1 { animation:b2-badge-pop 0.4s ease 1.8s forwards, b2-float-soft 4s ease-in-out 2.4s infinite; }
+.xcrm-b2-anim .b2f-plus--2 { animation:b2-badge-pop 0.4s ease 2s forwards, b2-float-soft 4.5s ease-in-out 2.6s infinite; }
+.xcrm-b2-anim .b2f-plus--3 { animation:b2-badge-pop 0.4s ease 2.2s forwards, b2-float-soft 5s ease-in-out 2.8s infinite; }
+.xcrm-b2-anim .b2f-plus--4 { animation:b2-badge-pop 0.4s ease 2.4s forwards, b2-float-soft 4.2s ease-in-out 3s infinite; }
 .b2f-label--sale { fill:var(--x-accent-success); font-weight:800; }
 .b2f-line-sm { fill:var(--x-text-muted); opacity:0.3; }
 .b2f-check { stroke-dasharray:1; stroke-dashoffset:1; }
