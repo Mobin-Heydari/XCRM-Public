@@ -98,8 +98,45 @@ function hello_elementor_child_scripts_styles() {
 		HELLO_ELEMENTOR_CHILD_VERSION
 	);
 
+	// Legal pages (/privacy-policy/ + /terms/)
+	wp_enqueue_style(
+		'xcrm-legal-style',
+		get_stylesheet_directory_uri() . '/assets/css/xcrm-legal.css',
+		[
+			'xcrm-design-system',
+			'xcrm-home-style',
+		],
+		HELLO_ELEMENTOR_CHILD_VERSION
+	);
+	wp_enqueue_script(
+		'xcrm-legal-js',
+		get_stylesheet_directory_uri() . '/assets/js/xcrm-legal.js',
+		[ 'xcrm-core-js' ],
+		HELLO_ELEMENTOR_CHILD_VERSION,
+		true
+	);
+
 }
 add_action( 'wp_enqueue_scripts', 'hello_elementor_child_scripts_styles', 20 );
+
+/**
+ * Route /privacy-policy/ and /terms/ to the shared legal page template.
+ */
+add_filter( 'template_include', 'xcrm_legal_template' );
+function xcrm_legal_template( $template ) {
+	$uri = isset( $_SERVER['REQUEST_URI'] ) ? wp_parse_url( wp_unslash( $_SERVER['REQUEST_URI'] ), PHP_URL_PATH ) : '';
+	$uri = untrailingslashit( (string) $uri );
+
+	if ( $uri === '/privacy-policy' || substr( $uri, -15 ) === '/privacy-policy'
+		|| $uri === '/terms' || substr( $uri, -6 ) === '/terms' ) {
+		$custom = get_stylesheet_directory() . '/xcrm-page-legal.php';
+		if ( file_exists( $custom ) ) {
+			return $custom;
+		}
+	}
+
+	return $template;
+}
 
 /**
  * Force /for-marketers/ to render the For Marketers template
