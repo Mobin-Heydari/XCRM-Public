@@ -120,16 +120,22 @@ function hello_elementor_child_scripts_styles() {
 add_action( 'wp_enqueue_scripts', 'hello_elementor_child_scripts_styles', 20 );
 
 /**
- * Route /privacy-policy/ and /terms/ to the shared legal page template.
+ * Route /privacy-policy/ and /terms/ to their dedicated templates.
  */
 add_filter( 'template_include', 'xcrm_legal_template' );
 function xcrm_legal_template( $template ) {
 	$uri = isset( $_SERVER['REQUEST_URI'] ) ? wp_parse_url( wp_unslash( $_SERVER['REQUEST_URI'] ), PHP_URL_PATH ) : '';
 	$uri = untrailingslashit( (string) $uri );
 
-	if ( $uri === '/privacy-policy' || substr( $uri, -15 ) === '/privacy-policy'
-		|| $uri === '/terms' || substr( $uri, -6 ) === '/terms' ) {
-		$custom = get_stylesheet_directory() . '/xcrm-page-legal.php';
+	if ( $uri === '/privacy-policy' || substr( $uri, -15 ) === '/privacy-policy' ) {
+		$custom = get_stylesheet_directory() . '/page-xcrm-privacy-policy.php';
+		if ( file_exists( $custom ) ) {
+			return $custom;
+		}
+	}
+
+	if ( $uri === '/terms' || substr( $uri, -6 ) === '/terms' ) {
+		$custom = get_stylesheet_directory() . '/page-xcrm-terms.php';
 		if ( file_exists( $custom ) ) {
 			return $custom;
 		}

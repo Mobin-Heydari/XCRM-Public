@@ -27,44 +27,8 @@ $cta_url   = home_url( '/for-marketers/' );
 <body <?php body_class( 'fm-page' ); ?>>
 <?php wp_body_open(); ?>
 
-<!-- ============ HEADER (shared with homepage) ============ -->
-<header class="hp__header">
-	<div class="hp__header-inner">
-
-		<a href="<?php echo esc_url( $home_url ); ?>" class="hp__brand" aria-label="xCRM">
-			<span class="hp__brand-icon" aria-hidden="true">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-			</span>
-			<span class="hp__brand-text">xCRM</span>
-		</a>
-
-		<nav class="hp__nav" aria-label="ناوبری اصلی">
-			<a href="#value" class="hp__nav-link">ابزار فروش</a>
-			<a href="#usecases" class="hp__nav-link">کاربردها</a>
-			<a href="#features" class="hp__nav-link">امکانات</a>
-			<a href="#steps" class="hp__nav-link">شروع</a>
-		</nav>
-
-		<div class="hp__header-actions">
-			<button
-				id="hp-theme-toggle"
-				class="hp__theme-toggle xcrm-focus"
-				type="button"
-				aria-label="تغییر حالت روشن و تاریک"
-				aria-pressed="false"
-			>
-				<span class="hp__theme-track" aria-hidden="true">
-					<span class="hp__theme-thumb">
-						<svg class="hp__theme-icon hp__theme-icon--sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-						<svg class="hp__theme-icon hp__theme-icon--moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-					</span>
-				</span>
-			</button>
-
-			<a href="#usecases" class="hp__btn hp__btn--sm hp__btn--primary">کاربردها</a>
-		</div>
-	</div>
-</header>
+<!-- ============ HEADER ============ -->
+<?php get_template_part( 'template-parts/site-header' ); ?>
 
 <main class="fm">
 
@@ -714,22 +678,7 @@ $cta_url   = home_url( '/for-marketers/' );
 	</section>
 
 	<!-- ============ FOOTER ============ -->
-	<footer class="fm__footer">
-		<div class="fm__section-inner fm__footer-inner">
-			<a href="<?php echo esc_url( $home_url ); ?>" class="hp__brand">
-				<span class="hp__brand-icon" aria-hidden="true">
-					<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-				</span>
-				<span class="hp__brand-text">xCRM</span>
-			</a>
-			<p class="fm__footer-copy">© <?php echo esc_html( gmdate( 'Y' ) ); ?> xCRM — ابزار افزایش فروش برای مارکترها.</p>
-			<div class="fm__footer-links">
-				<a href="#usecases">کاربردها</a>
-				<a href="#features">امکانات</a>
-				<a href="<?php echo esc_url( $home_url ); ?>">صفحه اصلی</a>
-			</div>
-		</div>
-	</footer>
+	<?php get_template_part( 'template-parts/site-footer' ); ?>
 
 </main>
 
