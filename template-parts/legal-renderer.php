@@ -186,13 +186,13 @@ function xcrm_legal_icon( $icons, $name, $size = 20, $cls = '' ) {
 								);
 								$tc = isset( $tone_colors[ $tone ] ) ? $tone_colors[ $tone ] : $tone_colors['primary'];
 							?>
-								<div class="xlg__callout" style="background:<?php echo esc_attr( $tc['bg'] ); ?>;border-color:<?php echo esc_attr( $tc['border' ); ?>">
-									<div class="xlg__callout-icon" style="background:<?php echo esc_attr( $tc['bg'] ); ?>;color:<?php echo esc_attr( $tc['text' ); ?>">
+								<div class="xlg__callout" style="background:<?php echo esc_attr( $tc['bg'] ); ?>;border-color:<?php echo esc_attr( $tc['border'] ); ?>">
+									<div class="xlg__callout-icon" style="background:<?php echo esc_attr( $tc['bg'] ); ?>;color:<?php echo esc_attr( $tc['text'] ); ?>">
 										<?php echo xcrm_legal_icon( $icons, $tc['icon'], 16 ); ?>
 									</div>
 									<div class="xlg__callout-body">
 										<?php if ( ! empty( $block['title'] ) ) : ?>
-										<strong class="xlg__callout-title" style="color:<?php echo esc_attr( $tc['text' ); ?>"><?php echo esc_html( $block['title'] ); ?></strong>
+										<strong class="xlg__callout-title" style="color:<?php echo esc_attr( $tc['text'] ); ?>"><?php echo esc_html( $block['title'] ); ?></strong>
 										<?php endif; ?>
 										<p><?php echo esc_html( $block['text'] ); ?></p>
 										<?php if ( ! empty( $block['link'] ) ) : ?>
