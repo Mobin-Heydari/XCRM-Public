@@ -242,7 +242,7 @@
 .fm__section-head {
   text-align: center;
   max-width: 640px;
-  margin: 0 auto clamp(40px, 6vw, 64px);
+  margin: 0 auto clamp(40px, 6vw, 4px);
 }
 
 .fm__section-title {
@@ -368,6 +368,20 @@
   color: var(--x-text-highlight);
   line-height: 1.9;
   margin: 0 0 28px;
+  transition: color 0.5s ease;
+}
+
+.fm__hero-kicker {
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  font-weight: 800;
+  color: var(--x-primary);
+  margin: -8px 0 14px;
+  transition: color 0.5s ease;
+}
+
+.fm__subtitle strong {
+  color: var(--x-text);
+  font-weight: 800;
   transition: color 0.5s ease;
 }
 
@@ -627,9 +641,19 @@
   stroke: var(--x-primary);
   stroke-width: 2.5;
   stroke-linecap: round;
+  stroke-linejoin: round;
   fill: none;
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
+}
+
+.fm-spark-dot {
+  fill: var(--x-primary);
+  opacity: 0;
+}
+
+[data-reveal].is-visible .fm-spark-dot {
+  animation: fm-dot-pop 0.45s var(--x-ease-standard) 1s forwards;
 }
 
 [data-reveal].is-visible .fm-spark-path,
@@ -640,6 +664,148 @@
 /* Fallback when already visible via data-reveal */
 [data-reveal].is-visible .fm-spark-path {
   animation-play-state: running;
+}
+
+/* Solution callout (n8n dedicated) */
+.fm__solution {
+  margin-top: 28px;
+  padding: 24px 26px !important;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.fm__solution-icon {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--x-soft-primary);
+  color: var(--x-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+.fm__solution-body h3 {
+  margin: 0 0 8px;
+  font-size: 1.02rem;
+  font-weight: 800;
+  color: var(--x-text);
+  transition: color 0.5s ease;
+}
+
+.fm__solution-body p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.9;
+  color: var(--x-text-highlight);
+  transition: color 0.5s ease;
+}
+
+.fm__solution-body strong {
+  color: var(--x-text);
+  font-weight: 800;
+  transition: color 0.5s ease;
+}
+
+/* Analysis section — 4-column grid on wide screens */
+.fm__analysis {
+  background: var(--x-surface);
+  transition: background-color 0.5s ease;
+}
+
+.fm__analysis-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* Gen-3 section */
+.fm__gen3 {
+  padding: clamp(72px, 10vw, 120px) 0;
+}
+
+.fm__quote {
+  max-width: 780px;
+  margin: 0 auto clamp(32px, 5vw, 48px);
+  padding: clamp(28px, 4vw, 40px) clamp(24px, 4vw, 44px) !important;
+  position: relative;
+}
+
+.fm__quote::before {
+  content: '«';
+  position: absolute;
+  top: 8px;
+  right: 20px;
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--x-primary);
+  opacity: 0.25;
+  font-family: Georgia, serif;
+  pointer-events: none;
+}
+
+.fm__quote p {
+  margin: 0;
+  font-size: clamp(0.95rem, 2vw, 1.08rem);
+  line-height: 2;
+  color: var(--x-text-highlight);
+  transition: color 0.5s ease;
+}
+
+.fm__quote strong {
+  color: var(--x-text);
+  font-weight: 800;
+  transition: color 0.5s ease;
+}
+
+/* Redacted / censored text — curiosity (blurred) */
+.fm__censored {
+  display: inline-block;
+  position: relative;
+  padding: 0 0.3em;
+  margin: 2px 0.1em;
+  vertical-align: baseline;
+  border-radius: 6px;
+  background: var(--x-soft-primary);
+  cursor: help;
+  transition: background-color 0.5s ease,
+    box-shadow var(--x-dur-180) var(--x-ease-standard);
+}
+
+.fm__censored > span {
+  display: inline-block;
+  filter: blur(6px);
+  color: var(--x-text);
+  font-weight: 700;
+  transition: filter var(--x-dur-220) var(--x-ease-standard);
+}
+
+.fm__censored:hover {
+  box-shadow: 0 0 0 1px var(--x-primary);
+}
+
+.fm__censored:hover > span {
+  filter: blur(4px);
+}
+
+.fm__censored.is-pinged {
+  animation: fm-censored-ping 0.55s var(--x-ease-standard);
+}
+
+@keyframes fm-censored-ping {
+  /* 0%   { transform: scale(1); }
+  35%  { transform: scale(1.06) rotate(-1deg); }
+  70%  { transform: scale(0.98); }
+  100% { transform: scale(1); } */
+}
+
+.dark .fm__censored {
+  background: rgba(99, 102, 241, 0.12);
+}
+
+.fm__gen3-grid {
+  margin-top: 8px;
 }
 
 /* ==========================================================================
@@ -1650,6 +1816,11 @@
   .fm-spark-path,
   .fm-uc-wave {
     stroke-dashoffset: 0 !important;
+  }
+
+  .fm-spark-dot {
+    opacity: 1 !important;
+    animation: none !important;
   }
 
   .fm-uc-progress-fill {
