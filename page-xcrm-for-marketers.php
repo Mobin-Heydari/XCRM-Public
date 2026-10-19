@@ -61,7 +61,7 @@ $cta_url   = home_url( '/for-marketers/' );
 				</div>
 
 				<h1 class="fm__title fm-anim fm-anim--2">
-					xCRM — ابزار افزایش <span class="text-gradient-primary">فروش واقعی</span>
+					«xCRM فروش» — ابزار افزایش <span class="text-gradient-primary">فروش واقعی</span>
 				</h1>
 
 				<p class="fm__subtitle fm-anim fm-anim--3">
@@ -74,7 +74,7 @@ $cta_url   = home_url( '/for-marketers/' );
 						مشاهده کاربردها
 						<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
 					</a>
-					<a href="#value" class="hp__btn hp__btn--ghost" data-magnetic>چرا xCRM؟</a>
+					<a href="#value" class="hp__btn hp__btn--ghost" data-magnetic>چرا «xCRM فروش»؟</a>
 				</div>
 
 				<ul class="fm__hero-points fm-anim fm-anim--5">
@@ -202,7 +202,7 @@ $cta_url   = home_url( '/for-marketers/' );
 					داده‌محور بفروشید، <span class="text-gradient-primary">حدس نزنید</span>
 				</h2>
 				<p class="fm__section-desc">
-					xCRM برای تیم‌های مارکتینگ ساخته شده — جایی که داده رفتاری مشتری،
+					«xCRM فروش» برای تیم‌های مارکتینگ ساخته شده — جایی که داده رفتاری مشتری،
 					مستقیماً به درآمد تبدیل می‌شود.
 				</p>
 			</div>
@@ -256,7 +256,7 @@ $cta_url   = home_url( '/for-marketers/' );
 					کاربردها
 				</span>
 				<h2 class="fm__section-title">
-					xCRM چه <span class="text-gradient-primary">کارهایی</span> برای فروش شما می‌کند؟
+					«xCRM فروش» چه <span class="text-gradient-primary">کارهایی</span> برای فروش شما می‌کند؟
 				</h2>
 				<p class="fm__section-desc">
 					پنج کاربرد عملی که همین امروز می‌توانید با آن‌ها شروع کنید.
@@ -306,7 +306,7 @@ $cta_url   = home_url( '/for-marketers/' );
 					<span class="fm__uc-num" aria-hidden="true">۰۱</span>
 					<h3 class="fm__uc-title">شناسایی سبد خرید رهاشده و پیام خودکار</h3>
 					<p class="fm__uc-desc">
-						لحظه‌ای که مشتری سبد را رها می‌کند، xCRM آن را می‌شناسد و یک پیام شخصی‌سازی‌شده
+						لحظه‌ای که مشتری سبد را رها می‌کند، «xCRM فروش» آن را می‌شناسد و یک پیام شخصی‌سازی‌شده
 						از همان کانالی که می‌شناسد برایش می‌فرستد — تا خرید نیمه‌تمام کامل شود.
 					</p>
 					<ul class="fm__uc-tags">
@@ -569,7 +569,7 @@ $cta_url   = home_url( '/for-marketers/' );
 			<div class="fm__section-head" data-reveal="up">
 				<span class="hp__label">
 					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-					امکانات xCRM
+					امکانات «xCRM فروش»
 				</span>
 				<h2 class="fm__section-title">
 					شش محصول، <span class="text-gradient-primary">یک پروفایل مشتری.</span>

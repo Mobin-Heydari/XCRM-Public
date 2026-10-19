@@ -28,7 +28,7 @@ function xcrm_legal_icon( $icons, $name, $size = 20, $cls = '' ) {
 	<link rel="canonical" href="<?php echo esc_url( $canonical ); ?>">
 	<meta property="og:type" content="website">
 	<meta property="og:locale" content="fa_IR">
-	<meta property="og:site_name" content="xCRM">
+	<meta property="og:site_name" content="xCRM فروش">
 	<meta property="og:title" content="<?php echo esc_attr( $page_title ); ?>">
 	<meta property="og:description" content="<?php echo esc_attr( $page_desc ); ?>">
 	<meta property="og:url" content="<?php echo esc_url( $canonical ); ?>">

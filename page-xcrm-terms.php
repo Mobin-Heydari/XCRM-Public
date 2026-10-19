@@ -17,7 +17,7 @@ require_once get_stylesheet_directory() . '/inc/legal-content.php';
 $data       = xcrm_get_legal_data( 'terms' );
 $home_url   = home_url( '/' );
 $canonical  = home_url( '/terms/' );
-$page_title = $data['title'] . ' | xCRM';
+$page_title = $data['title'] . ' | «xCRM فروش»';
 $page_desc  = $data['description'];
 
 /* Icon SVGs */

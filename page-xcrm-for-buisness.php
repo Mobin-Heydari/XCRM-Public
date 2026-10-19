@@ -18,8 +18,8 @@ $canonical = home_url( '/for-buisness/' );
 $signup_url  = '#start';
 $pricing_url = '#pricing';
 
-$page_title       = 'مدیریت مشتریان و فروش کسب‌وکارها | xCRM';
-$page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های فروش، پیگیری‌ها، بخش‌بندی مشتریان و تحلیل رفتار کاربران را در یک پلتفرم یکپارچه مدیریت کنید.';
+$page_title       = 'مدیریت مشتریان و فروش کسب‌وکارها | «xCRM فروش»';
+$page_description = 'با «xCRM فروش» اطلاعات مشتریان، فرصت‌های فروش، پیگیری‌ها، بخش‌بندی مشتریان و تحلیل رفتار کاربران را در یک پلتفرم یکپارچه مدیریت کنید.';
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -31,7 +31,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 	<link rel="canonical" href="<?php echo esc_url( $canonical ); ?>">
 	<meta property="og:type" content="website">
 	<meta property="og:locale" content="fa_IR">
-	<meta property="og:site_name" content="xCRM">
+	<meta property="og:site_name" content="xCRM فروش">
 	<meta property="og:title" content="<?php echo esc_attr( $page_title ); ?>">
 	<meta property="og:description" content="<?php echo esc_attr( $page_description ); ?>">
 	<meta property="og:url" content="<?php echo esc_url( $canonical ); ?>">
@@ -52,7 +52,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 	<?php echo wp_json_encode( array(
 		'@context' => 'https://schema.org',
 		'@type' => 'SoftwareApplication',
-		'name' => 'xCRM',
+		'name' => 'xCRM فروش',
 		'applicationCategory' => 'BusinessApplication',
 		'operatingSystem' => 'Web',
 		'description' => $page_description,
@@ -95,7 +95,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 			<h1 class="xcrm-b2__h1 xcrm-b2-anim xcrm-b2-anim--2">مشتریان را بشناسید، فروش را مدیریت کنید، رشد کنید</h1>
 			<p class="xcrm-b2__lead xcrm-b2-anim xcrm-b2-anim--3">اطلاعات مشتری، تحلیل رفتار، بخش‌بندی هوشمند و ارتباطات هدفمند — همه در یک پلتفرم یکپارچه برای کسب‌وکار شما.</p>
 			<div class="xcrm-b2__hero-actions xcrm-b2-anim xcrm-b2-anim--4">
-				<a href="<?php echo esc_url( $signup_url ); ?>" class="xcrm-b2__btn xcrm-b2__btn--primary">شروع استفاده از xCRM</a>
+				<a href="<?php echo esc_url( $signup_url ); ?>" class="xcrm-b2__btn xcrm-b2__btn--primary">شروع استفاده از «xCRM فروش»</a>
 				<a href="#profiles" class="xcrm-b2__btn xcrm-b2__btn--secondary">آشنایی با امکانات</a>
 			</div>
 			<div class="xcrm-b2__hero-stats xcrm-b2-anim xcrm-b2-anim--5">
@@ -156,7 +156,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 					<circle cx="310" cy="220" r="52" fill="url(#b2fCore)" class="b2f-hub-core"/>
 					<circle cx="310" cy="220" r="62" class="b2f-hub-ring"/>
 					<circle cx="310" cy="220" r="75" class="b2f-hub-ring b2f-hub-ring--2"/>
-					<text x="310" y="218" text-anchor="middle" fill="#fff" font-size="16" font-weight="800" font-family="inherit">xCRM</text>
+					<text x="310" y="218" text-anchor="middle" fill="#fff" font-size="16" font-weight="800" font-family="inherit">xCRM فروش</text>
 					<text x="310" y="236" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-size="8" font-weight="600" font-family="inherit">هسته مرکزی</text>
 				</g>
 
@@ -242,7 +242,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 	<div class="xcrm-b2__inner">
 		<div class="xcrm-b2__head" data-reveal="up">
 			<p class="xcrm-b2__eyebrow">چالش‌های کسب‌وکارها</p>
-			<h2 class="xcrm-b2__h2">مشکلات واقعی که xCRM حل می‌کند</h2>
+			<h2 class="xcrm-b2__h2">مشکلات واقعی که «xCRM فروش» حل می‌کند</h2>
 		</div>
 
 		<!-- Challenge 1: Scattered data -->
@@ -842,8 +842,8 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 <section class="xcrm-b2__section xcrm-b2__section--surface" id="industries">
 	<div class="xcrm-b2__inner">
 		<div class="xcrm-b2__head" data-reveal="up">
-			<p class="xcrm-b2__eyebrow">کاربرد xCRM در صنایع مختلف</p>
-			<h2 class="xcrm-b2__h2">متناسب با مدل کسب‌وکار خود از امکانات xCRM استفاده کنید</h2>
+			<p class="xcrm-b2__eyebrow">کاربرد «xCRM فروش» در صنایع مختلف</p>
+			<h2 class="xcrm-b2__h2">متناسب با مدل کسب‌وکار خود از امکانات «xCRM فروش» استفاده کنید</h2>
 		</div>
 
 		<!-- Industry 1: E-commerce -->
@@ -996,8 +996,8 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 	<div class="xcrm-b2__inner">
 		<div class="xcrm-b2__head" data-reveal="up">
 			<p class="xcrm-b2__eyebrow">یکپارچه‌سازی‌ها</p>
-			<h2 class="xcrm-b2__h2">xCRM را با زیرساخت کسب‌وکار خود هماهنگ کنید</h2>
-			<p class="xcrm-b2__desc">با استفاده از ابزارهای اتصال و توسعه موجود، داده‌های مشتریان و رویدادهای سایت را به xCRM منتقل کنید.</p>
+			<h2 class="xcrm-b2__h2">«xCRM فروش» را با زیرساخت کسب‌وکار خود هماهنگ کنید</h2>
+			<p class="xcrm-b2__desc">با استفاده از ابزارهای اتصال و توسعه موجود، داده‌های مشتریان و رویدادهای سایت را به «xCRM فروش» منتقل کنید.</p>
 		</div>
 		<div class="xcrm-b2__hub-visual" data-reveal="up" aria-hidden="true">
 			<svg class="xcrm-b2-svg" viewBox="0 0 760 320" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1011,7 +1011,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 				<ellipse cx="380" cy="160" rx="160" ry="120" fill="url(#b2hGlow)" class="b2h-glow"/>
 				<!-- center xCRM -->
 				<circle cx="380" cy="160" r="46" fill="url(#b2hCore)" class="b2h-core"/>
-				<text x="380" y="165" text-anchor="middle" fill="#fff" font-size="15" font-weight="800" font-family="inherit">xCRM</text>
+				<text x="380" y="165" text-anchor="middle" fill="#fff" font-size="15" font-weight="800" font-family="inherit">xCRM فروش</text>
 				<circle cx="380" cy="160" r="56" class="b2h-ring"/>
 				<circle cx="380" cy="160" r="70" class="b2h-ring b2h-ring--2"/>
 				<!-- spokes with flowing particles -->
@@ -1055,7 +1055,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 	<div class="xcrm-b2__deco xcrm-b2__deco--indigo" style="top:5%;left:-6%;" aria-hidden="true"></div>
 	<div class="xcrm-b2__inner">
 		<div class="xcrm-b2__head" data-reveal="up">
-			<p class="xcrm-b2__eyebrow">شروع کار با xCRM</p>
+			<p class="xcrm-b2__eyebrow">شروع کار با «xCRM فروش»</p>
 			<h2 class="xcrm-b2__h2">از ثبت اطلاعات مشتریان تا مدیریت یکپارچه‌تر</h2>
 		</div>
 
@@ -1142,7 +1142,7 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 			<div class="xcrm-b2__chal-body">
 				<span class="xcrm-b2__chal-num" aria-hidden="true">گام دوم</span>
 				<h3 class="xcrm-b2__chal-title">ثبت یا اتصال اطلاعات مشتریان</h3>
-				<p class="xcrm-b2__chal-desc">اطلاعات مشتریان موجود را از فایل‌های CSV، Excel یا JSON وارد کنید یا از طریق API متصل شوید. فیلدها را نگاشت کنید و اطلاعات را در چند دقیقه به پایگاه داده xCRM منتقل کنید.</p>
+				<p class="xcrm-b2__chal-desc">اطلاعات مشتریان موجود را از فایل‌های CSV، Excel یا JSON وارد کنید یا از طریق API متصل شوید. فیلدها را نگاشت کنید و اطلاعات را در چند دقیقه به پایگاه داده «xCRM فروش» منتقل کنید.</p>
 				<ul class="xcrm-b2__chal-tags"><li>واردکردن CSV/Excel</li><li>اتصال API</li><li>نگاشت فیلدها</li></ul>
 			</div>
 		</article>
@@ -1219,12 +1219,12 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 			<div class="xcrm-b2__chal-body">
 				<span class="xcrm-b2__chal-num" aria-hidden="true">گام چهارم</span>
 				<h3 class="xcrm-b2__chal-title">بررسی داده‌ها و شروع استفاده</h3>
-				<p class="xcrm-b2__chal-desc">داشبورد تحلیلی خود را بررسی کنید، گزارش‌های رفتار مشتریان را ببینید و بر اساس داده‌های واقعی فرآیندهای فروش و بازاریابی خود را بهبود دهید. xCRM به شما کمک می‌کند تصمیمات بهتری بگیرید.</p>
+				<p class="xcrm-b2__chal-desc">داشبورد تحلیلی خود را بررسی کنید، گزارش‌های رفتار مشتریان را ببینید و بر اساس داده‌های واقعی فرآیندهای فروش و بازاریابی خود را بهبود دهید. «xCRM فروش» به شما کمک می‌کند تصمیمات بهتری بگیرید.</p>
 				<ul class="xcrm-b2__chal-tags"><li>داشبورد تحلیلی</li><li>گزارش‌گیری</li><li>بهبود فرآیند</li></ul>
 			</div>
 		</article>
 
-		<div class="xcrm-b2__center-cta" data-reveal="up"><a href="<?php echo esc_url( $signup_url ); ?>" class="xcrm-b2__btn xcrm-b2__btn--primary">شروع استفاده از xCRM</a></div>
+		<div class="xcrm-b2__center-cta" data-reveal="up"><a href="<?php echo esc_url( $signup_url ); ?>" class="xcrm-b2__btn xcrm-b2__btn--primary">شروع استفاده از «xCRM فروش»</a></div>
 	</div>
 </section>
 
@@ -1245,13 +1245,13 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 	<div class="xcrm-b2__inner xcrm-b2__faq-wrap">
 		<div class="xcrm-b2__head" data-reveal="up">
 			<p class="xcrm-b2__eyebrow">سؤالات متداول</p>
-			<h2 class="xcrm-b2__h2">پاسخ پرسش‌های شما درباره xCRM</h2>
+			<h2 class="xcrm-b2__h2">پاسخ پرسش‌های شما درباره «xCRM فروش»</h2>
 		</div>
 		<div class="xcrm-b2__faq" data-reveal="up">
-			<details class="xcrm-b2__faq-item"><summary><span>xCRM برای چه کسب‌وکارهایی مناسب است؟</span><svg class="xcrm-b2__faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="xcrm-b2__faq-a"><p>xCRM برای کسب‌وکارهایی طراحی شده است که به مدیریت اطلاعات مشتریان، پیگیری فرصت‌های فروش، بخش‌بندی مشتریان و تحلیل رفتار کاربران نیاز دارند. امکانات موردنیاز هر کسب‌وکار به مدل فعالیت و تنظیمات آن بستگی دارد.</p></div></details>
+			<details class="xcrm-b2__faq-item"><summary><span>«xCRM فروش» برای چه کسب‌وکارهایی مناسب است؟</span><svg class="xcrm-b2__faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="xcrm-b2__faq-a"><p>«xCRM فروش» برای کسب‌وکارهایی طراحی شده است که به مدیریت اطلاعات مشتریان، پیگیری فرصت‌های فروش، بخش‌بندی مشتریان و تحلیل رفتار کاربران نیاز دارند. امکانات موردنیاز هر کسب‌وکار به مدل فعالیت و تنظیمات آن بستگی دارد.</p></div></details>
 			<details class="xcrm-b2__faq-item"><summary><span>آیا امکان مدیریت گروه‌ها و اطلاعات مشتری وجود دارد؟</span><svg class="xcrm-b2__faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="xcrm-b2__faq-a"><p>بله، امکان ایجاد بخش‌های پویا بر اساس شرایط تعریف‌شده وجود دارد. نوع بخش‌بندی قابل استفاده به اطلاعات مشتریان و رویدادهای ثبت‌شده بستگی دارد.</p></div></details>
 			<details class="xcrm-b2__faq-item"><summary><span>اتوماسیون بازاریابی چه کاربردی دارد؟</span><svg class="xcrm-b2__faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="xcrm-b2__faq-a"><p>اتوماسیون بازاریابی به شما کمک می‌کند تا بر اساس رفتار مشتریان، پیام‌ها و کمپین‌ها را به صورت خودکار ارسال کنید و پیگیری‌های منظم داشته باشید.</p></div></details>
-			<details class="xcrm-b2__faq-item"><summary><span>چه کانال‌ها و سرویس‌هایی قابل اتصال هستند؟</span><svg class="xcrm-b2__faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="xcrm-b2__faq-a"><p>xCRM قابلیت‌های ارتباطی پیامکی و تلگرامی دارد. امکانات در دسترس به تنظیمات حساب، ارائه‌دهندگان متصل و عملیات پشتیبانی‌شده بستگی دارد.</p></div></details>
+			<details class="xcrm-b2__faq-item"><summary><span>چه کانال‌ها و سرویس‌هایی قابل اتصال هستند؟</span><svg class="xcrm-b2__faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="xcrm-b2__faq-a"><p>«xCRM فروش» قابلیت‌های ارتباطی پیامکی و تلگرامی دارد. امکانات در دسترس به تنظیمات حساب، ارائه‌دهندگان متصل و عملیات پشتیبانی‌شده بستگی دارد.</p></div></details>
 			<details class="xcrm-b2__faq-item"><summary><span>چگونه می‌توان استفاده از محصول را آغاز کرد؟</span><svg class="xcrm-b2__faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="xcrm-b2__faq-a"><p>کافی است حساب ایجاد کنید، اطلاعات مشتریان را وارد کنید و تنظیمات اولیه را انجام دهید. سپس می‌توانید از قابلیت‌های موجود استفاده کنید.</p></div></details>
 			<details class="xcrm-b2__faq-item"><summary><span>چطور می‌توان دربارهٔ پلن‌ها و پشتیبانی اطلاعات گرفت؟</span><svg class="xcrm-b2__faq-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></summary><div class="xcrm-b2__faq-a"><p>برای اطلاع از جزئیات پلن‌ها و شرایط پشتیبانی، <a href="<?php echo esc_url( $pricing_url ); ?>">صفحه قیمت‌گذاری</a> را بررسی کنید یا با تیم پشتیبانی تماس بگیرید.</p></div></details>
 		</div>
@@ -1280,9 +1280,9 @@ $page_description = 'با xCRM اطلاعات مشتریان، فرصت‌های
 			</div>
 			<div class="xcrm-b2__final-content">
 				<h2 class="xcrm-b2__h2">مدیریت مشتریان را از امروز هدفمندتر کنید</h2>
-				<p class="xcrm-b2__desc">اطلاعات مشتریان، پیگیری‌های فروش و تحلیل رفتار کاربران را در یک مسیر منظم قرار دهید و امکانات xCRM را متناسب با نیاز کسب‌وکار خود بشناسید.</p>
+				<p class="xcrm-b2__desc">اطلاعات مشتریان، پیگیری‌های فروش و تحلیل رفتار کاربران را در یک مسیر منظم قرار دهید و امکانات «xCRM فروش» را متناسب با نیاز کسب‌وکار خود بشناسید.</p>
 				<div class="xcrm-b2__final-actions">
-					<a href="<?php echo esc_url( $signup_url ); ?>" class="xcrm-b2__btn xcrm-b2__btn--on-dark">شروع استفاده از xCRM</a>
+					<a href="<?php echo esc_url( $signup_url ); ?>" class="xcrm-b2__btn xcrm-b2__btn--on-dark">شروع استفاده از «xCRM فروش»</a>
 					<a href="#profiles" class="xcrm-b2__btn xcrm-b2__btn--ghost-light">آشنایی با امکانات</a>
 				</div>
 			</div>

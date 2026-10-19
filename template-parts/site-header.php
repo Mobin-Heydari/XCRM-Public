@@ -16,7 +16,7 @@ $xcrm_is_home = is_front_page();
 <header class="hp__header">
 	<div class="hp__header-inner">
 
-		<a href="<?php echo esc_url( $xcrm_home ); ?>" class="hp__brand" aria-label="xCRM">
+		<a href="<?php echo esc_url( $xcrm_home ); ?>" class="hp__brand" aria-label="xCRM فروش">
 			<span class="hp__brand-icon" aria-hidden="true">
 				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
 			</span>
@@ -25,7 +25,7 @@ $xcrm_is_home = is_front_page();
 
 		<nav class="hp__nav" aria-label="ناوبری اصلی">
 			<?php if ( $xcrm_is_home ) : ?>
-				<a href="#why" class="hp__nav-link">چرا xCRM</a>
+				<a href="#why" class="hp__nav-link">چرا «xCRM فروش»</a>
 				<a href="#features" class="hp__nav-link">امکانات</a>
 				<a href="#steps" class="hp__nav-link">شروع</a>
 				<a href="#cta" class="hp__nav-link">تماس</a>
