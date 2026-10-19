@@ -207,13 +207,13 @@ $for_business  = home_url( '/for-business/' );
 			<div class="hp__section-head" data-reveal="up">
 				<span class="hp__label">
 					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-					چرا xCRM
+					چرا «xCRM فروش»
 				</span>
 				<h2 class="hp__section-title">
 					همه‌چیز درباره مشتری، <span class="text-gradient-primary">در یک جا</span>
 				</h2>
 				<p class="hp__section-desc">
-					چه مارکتر باشید و چه صاحب کسب‌وکار — xCRM رفتار مشتری را به تصمیم تبدیل می‌کند.
+					چه مارکتر باشید و چه صاحب کسب‌وکار — «xCRM فروش» رفتار مشتری را به تصمیم تبدیل می‌کند.
 				</p>
 			</div>
 
@@ -278,7 +278,7 @@ $for_business  = home_url( '/for-business/' );
 			<div class="hp__section-head" data-reveal="up">
 				<span class="hp__label">
 					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-					امکانات xCRM
+					امکانات «xCRM فروش»
 				</span>
 				<h2 class="hp__section-title">
 					شش محصول، <span class="text-gradient-primary">یک پروفایل مشتری.</span>

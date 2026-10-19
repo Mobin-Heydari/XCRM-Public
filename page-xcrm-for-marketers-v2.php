@@ -71,7 +71,7 @@ $cta_url   = home_url( '/for-marketers/' );
 				</p>
 
 				<p class="fm__subtitle fm-anim fm-anim--3">
-					ما نسل سوم ابزار دیجیتال مارکتینگ را با عنوان (xCRM) عرضه کردیم.
+					ما نسل سوم ابزار دیجیتال مارکتینگ را با عنوان «xCRM فروش» عرضه کردیم.
 
 				</p>
 
@@ -178,10 +178,10 @@ $cta_url   = home_url( '/for-marketers/' );
 			<div class="fm__section-head" data-reveal="up">
 				<span class="hp__label">
 					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-					راز نسل سوم xCRM
+					راز نسل سوم «xCRM فروش»
 				</span>
 				<h2 class="fm__section-title">
-					چرا می‌گوییم xCRM <span class="text-gradient-primary">نسل سوم</span> مارکتینگ است؟
+					چرا می‌گوییم «xCRM فروش» <span class="text-gradient-primary">نسل سوم</span> مارکتینگ است؟
 				</h2>
 			</div>
 
@@ -351,7 +351,7 @@ $cta_url   = home_url( '/for-marketers/' );
 				<div class="fm__solution-body">
 					<h3>n8n اختصاصی — بدون واسط، بدون سقف</h3>
 					<p>
-						هر شرکت در xCRM صاحب یک <strong>n8n اختصاصی</strong> می‌شود.
+						هر شرکت در «xCRM فروش» صاحب یک <strong>n8n اختصاصی</strong> می‌شود.
 						سناریوهای اتوماسیون مارکتینگ، افیلیت، ایمیل، پیامک و چت‌بات‌ها را
 						<strong> با ده‌ها نود اختصاصی</strong>  و بدون هیچ محدودیتی طراحی کنید.
 					</p>
@@ -421,7 +421,7 @@ $cta_url   = home_url( '/for-marketers/' );
 					کاربردها
 				</span>
 				<h2 class="fm__section-title">
-					امکانات بدیهی xCRM برای <span class="text-gradient-primary">مارکترها</span>
+					امکانات بدیهی «xCRM فروش» برای <span class="text-gradient-primary">مارکترها</span>
 				</h2>
 				<p class="fm__section-desc">
 					دو کاربردی که هر روز با آن سر و کار دارید — از داده خام تا سگمنت و کمپین آماده اجرا.
@@ -570,7 +570,7 @@ $cta_url   = home_url( '/for-marketers/' );
 			<div class="fm__section-head" data-reveal="up">
 				<span class="hp__label">
 					<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
-					امکانات xCRM
+					امکانات «xCRM فروش»
 				</span>
 				<h2 class="fm__section-title">
 					شش محصول، <span class="text-gradient-primary">یک پروفایل مشتری.</span>

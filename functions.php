@@ -76,21 +76,10 @@ function hello_elementor_child_scripts_styles() {
 		HELLO_ELEMENTOR_CHILD_VERSION
 	);
 
-	// For Business landing (/for-business/)
+	// For Business landing (/for-business/) + v2 (/for-buisness/) — shared stylesheet
 	wp_enqueue_style(
 		'xcrm-business-style',
 		get_stylesheet_directory_uri() . '/assets/css/xcrm-business.css',
-		[
-			'xcrm-design-system',
-			'xcrm-home-style',
-		],
-		HELLO_ELEMENTOR_CHILD_VERSION
-	);
-
-	// For Business v2 landing (/for-buisness/)
-	wp_enqueue_style(
-		'xcrm-business2-style',
-		get_stylesheet_directory_uri() . '/assets/css/xcrm-business2.css',
 		[
 			'xcrm-design-system',
 			'xcrm-home-style',
