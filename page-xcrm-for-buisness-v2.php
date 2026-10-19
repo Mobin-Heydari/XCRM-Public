@@ -92,16 +92,16 @@ $page_description = 'چرا با وجود تبلیغات زیاد، فروش ر�
 	<div class="xcrm-b2__inner xcrm-b2__hero-inner">
 		<div class="xcrm-b2__hero-copy">
 			<p class="xcrm-b2__eyebrow xcrm-b2-anim xcrm-b2-anim--1">برای مدیران کسب‌وکار و صاحبان برند</p>
-			<h1 class="xcrm-b2__h1 xcrm-b2-anim xcrm-b2-anim--2">چرا با وجود این‌همه تبلیغات و پیام، فروش کسب‌وکارتان آن‌طور که باید رشد نمی‌کند؟</h1>
+			<h1 class="xcrm-b2__h1 xcrm-b2-anim xcrm-b2-anim--2">چرا با وجود این‌همه تبلیغات و تلاش، فروش کسب‌وکارتان آن‌طور که باید رشد نمی‌کند؟</h1>
 			<p class="xcrm-b2__lead xcrm-b2-anim xcrm-b2-anim--3">شما هزینه‌های سنگین تبلیغات را می‌پردازید و روزانه ده‌ها پیام و متقاضی جدید می‌گیرید؛ اما انتهای ماه، عدد فروش واقعی با حجم لیدها نمی‌خواند! <strong>«xCRM فروش»</strong> تمام مسیرهای ارتباطی مشتریان شما (از وب‌سایت تا دایرکت اینستاگرام و تلگرام) را در یک نقطه متمرکز می‌کند تا حتی یک لید هم هدر نرود و خریدهای نهایی شما اوج بگیرد.</p>
 			<div class="xcrm-b2__hero-actions xcrm-b2-anim xcrm-b2-anim--4">
 				<a href="<?php echo esc_url( $signup_url ); ?>" class="xcrm-b2__btn xcrm-b2__btn--primary">ثبت‌نام و شروع رایگان تحول فروش</a>
-				<a href="#profiles" class="xcrm-b2__btn xcrm-b2__btn--secondary">مشاهده دموی زنده و امکانات پنل</a>
+				<a href="#challenges" class="xcrm-b2__btn xcrm-b2__btn--secondary">xCRM فروش چه مشکلی را حل می‌کند؟</a>
 			</div>
 			<div class="xcrm-b2__hero-stats xcrm-b2-anim xcrm-b2-anim--5">
 				<div class="xcrm-b2__hero-stat"><span class="xcrm-b2__hero-stat-n">۶</span><span class="xcrm-b2__hero-stat-l">محصول یکپارچه</span></div>
 				<div class="xcrm-b2__hero-stat-sep" aria-hidden="true"></div>
-				<div class="xcrm-b2__hero-stat"><span class="xcrm-b2__hero-stat-n">۴</span><span class="xcrm-b2__hero-stat-l">کانال ارتباطی</span></div>
+				<div class="xcrm-b2__hero-stat"><span class="xcrm-b2__hero-stat-n">۵</span><span class="xcrm-b2__hero-stat-l">کانال ارتباطی</span></div>
 				<div class="xcrm-b2__hero-stat-sep" aria-hidden="true"></div>
 				<div class="xcrm-b2__hero-stat"><span class="xcrm-b2__hero-stat-n">∞</span><span class="xcrm-b2__hero-stat-l">بخش‌بندی پویا</span></div>
 			</div>
@@ -242,8 +242,8 @@ $page_description = 'چرا با وجود تبلیغات زیاد، فروش ر�
 	<div class="xcrm-b2__inner">
 		<div class="xcrm-b2__head" data-reveal="up">
 			<p class="xcrm-b2__eyebrow">ریشه اصلی مشکل</p>
-			<h2 class="xcrm-b2__h2">فرار مشتریان در فاصله بین تبلیغ تا واریز وجه</h2>
-			<p class="xcrm-b2__desc">شما سهم خودتان را انجام داده‌اید: محصول خوب آماده کرده‌اید و برای تبلیغات هزینه می‌کنید. اما در پشت صحنه، یک اتفاق تلخ رخ می‌دهد…</p>
+			<h2 class="xcrm-b2__h2">فرار مشتریان در فاصله بین جذب اولیه تا واریز وجه</h2>
+			<p class="xcrm-b2__desc">شما سهم خودتان را انجام داده‌اید: محصول خوب آماده کرده‌اید و برای تبلیغات هزینه می‌کنید، تولید محتوا دارید، اما در پشت صحنه، یک اتفاق تلخ رخ می‌دهد…</p>
 		</div>
 
 		<!-- Challenge 1: Leads disappear -->

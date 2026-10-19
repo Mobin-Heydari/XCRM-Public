@@ -290,7 +290,7 @@ $for_business  = home_url( '/for-business/' );
 
 			<div class="hp__tabs-wrap" data-reveal="up" data-reveal-delay="100">
 
-				<div class="hp__tabs" role="tablist" aria-label="امکانات xCRM">
+				<div class="hp__tabs" role="tablist" aria-label="امکانات «xCRM فروش»">
 
 					<button class="hp__tab is-active" data-tab="cdp" role="tab" aria-selected="true" type="button">
 						<span class="hp__tab-icon" aria-hidden="true">
@@ -348,7 +348,7 @@ $for_business  = home_url( '/for-business/' );
 						<div class="hp__panel-content">
 							<span class="hp__panel-tag">CDP</span>
 							<h3 class="hp__panel-title">پروفایل یکپارچه مشتری — نه فقط نام و شماره</h3>
-							<p class="hp__panel-desc">xCRM تمام رفتارها، رویدادها و تعاملات مشتری را در یک پروفایل واحد جمع می‌کند تا هر تصمیم، داده‌محور باشد.</p>
+							<p class="hp__panel-desc">«xCRM فروش» تمام رفتارها، رویدادها و تعاملات مشتری را در یک پروفایل واحد جمع می‌کند تا هر تصمیم، داده‌محور باشد.</p>
 							<ul class="hp__panel-list">
 								<li>اتصال خودکار به وب‌سایت و اپلیکیشن</li>
 								<li>تاریخچه کامل تعاملات در یک خط زمانی</li>
@@ -476,7 +476,7 @@ $for_business  = home_url( '/for-business/' );
 					<div class="hp__step-num" aria-hidden="true">۱</div>
 					<div class="hp__step-body">
 						<h3 class="hp__step-title">متصل شوید</h3>
-						<p class="hp__step-desc">وب‌سایت، فروشگاه و کانال‌های ارتباطی را در چند دقیقه به xCRM وصل کنید.</p>
+						<p class="hp__step-desc">وب‌سایت، فروشگاه و کانال‌های ارتباطی را در چند دقیقه به «xCRM فروش» وصل کنید.</p>
 					</div>
 				</li>
 				<li class="hp__step" data-reveal="up" data-reveal-delay="120">
@@ -511,7 +511,7 @@ $for_business  = home_url( '/for-business/' );
 					<h2 class="hp__cta-title">هنوز مردد هستید؟ مسیر خود را انتخاب کنید.</h2>
 					<p class="hp__cta-desc">
 						فرقی نمی‌کند مارکتر باشید یا صاحب کسب‌وکار —
-						دو دقیقه طول می‌کشد تا ببینید xCRM چه می‌تواند برای شما بکند.
+						دو دقیقه طول می‌کشد تا ببینید «xCRM فروش» چه می‌تواند برای شما بکند.
 					</p>
 					<div class="hp__cta-actions">
 						<a href="<?php echo esc_url( $for_marketers ); ?>" class="hp__btn hp__btn--primary" data-magnetic>
