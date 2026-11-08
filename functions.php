@@ -105,6 +105,17 @@ function hello_elementor_child_scripts_styles() {
 		true
 	);
 
+	// Features (/features/ directory + /features/<slug>/ detail pages)
+	wp_enqueue_style(
+		'xcrm-features-style',
+		get_stylesheet_directory_uri() . '/assets/css/xcrm-features.css',
+		[
+			'xcrm-design-system',
+			'xcrm-home-style',
+		],
+		HELLO_ELEMENTOR_CHILD_VERSION
+	);
+
 }
 add_action( 'wp_enqueue_scripts', 'hello_elementor_child_scripts_styles', 20 );
 
@@ -125,6 +136,40 @@ function xcrm_legal_template( $template ) {
 
 	if ( $uri === '/terms' || substr( $uri, -6 ) === '/terms' ) {
 		$custom = get_stylesheet_directory() . '/page-xcrm-terms.php';
+		if ( file_exists( $custom ) ) {
+			return $custom;
+		}
+	}
+
+	return $template;
+}
+
+/**
+ * Route /features/ and /features/<built-slug>/ to their templates.
+ * Unknown slugs fall through to the normal 404 template.
+ */
+add_filter( 'template_include', 'xcrm_features_template' );
+function xcrm_features_template( $template ) {
+	$uri = isset( $_SERVER['REQUEST_URI'] ) ? wp_parse_url( wp_unslash( $_SERVER['REQUEST_URI'] ), PHP_URL_PATH ) : '';
+	$uri = untrailingslashit( (string) $uri );
+
+	// Detail pages — most specific match first.
+	$detail_routes = array(
+		'/features/customer-management' => '/page-xcrm-feature-customer-management.php',
+	);
+
+	foreach ( $detail_routes as $route => $file ) {
+		if ( $uri === $route || substr( $uri, -strlen( $route ) ) === $route ) {
+			$custom = get_stylesheet_directory() . $file;
+			if ( file_exists( $custom ) ) {
+				return $custom;
+			}
+		}
+	}
+
+	// Directory.
+	if ( $uri === '/features' || substr( $uri, -9 ) === '/features' ) {
+		$custom = get_stylesheet_directory() . '/page-xcrm-features.php';
 		if ( file_exists( $custom ) ) {
 			return $custom;
 		}
