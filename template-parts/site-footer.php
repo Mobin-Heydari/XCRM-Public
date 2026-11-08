@@ -26,6 +26,7 @@ $xcrm_home = home_url( '/' );
 		</p>
 
 		<nav class="hp__footer-links" aria-label="پیوندهای کمکی">
+			<a href="<?php echo esc_url( home_url( '/features/' ) ); ?>">امکانات</a>
 			<a href="<?php echo esc_url( home_url( '/for-marketers/' ) ); ?>">برای مارکترها</a>
 			<a href="<?php echo esc_url( home_url( '/for-business/' ) ); ?>">برای کسب‌وکارها</a>
 			<a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ); ?>">حریم خصوصی</a>

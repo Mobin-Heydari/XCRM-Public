@@ -31,6 +31,7 @@ $xcrm_is_home = is_front_page();
 				<a href="#cta" class="hp__nav-link">تماس</a>
 			<?php else : ?>
 				<a href="<?php echo esc_url( $xcrm_home ); ?>" class="hp__nav-link">صفحه اصلی</a>
+				<a href="<?php echo esc_url( home_url( '/features/' ) ); ?>" class="hp__nav-link">امکانات</a>
 				<a href="<?php echo esc_url( home_url( '/for-marketers/' ) ); ?>" class="hp__nav-link">برای مارکترها</a>
 				<a href="<?php echo esc_url( home_url( '/for-business/' ) ); ?>" class="hp__nav-link">برای کسب‌وکارها</a>
 				<a href="<?php echo esc_url( home_url( '/privacy-policy/' ) ); ?>" class="hp__nav-link">حریم خصوصی</a>
