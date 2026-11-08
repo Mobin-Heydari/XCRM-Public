@@ -38,10 +38,10 @@ function xcrm_get_features() {
 		'website-tracking'      => array(
 			'slug'        => 'website-tracking',
 			'title'       => 'ردیابی وب‌سایت و SDK مرورگر',
-			'short'       => 'اسکریپت سبک SDK برای ثبت بازدیدها، رویدادها و رفتار کاربران.',
+			'short'       => 'ثبت خودکار بازدیدها، جلسات و رویدادهای وب‌سایت با اسکریپت SDK.',
 			'description' => 'با نصب یک اسکریپت در وب‌سایت، بازدیدها، رویدادها، سبد خرید و اتریبیوشن UTM را ثبت کنید تا رفتار کاربران به پروفایل مشتری وصل شود.',
 			'group'       => 'data',
-			'built'       => false,
+			'built'       => true,
 			'icon'        => '<path d="M3 5h18v14H3z"/><path d="M3 9h18"/><circle cx="6.5" cy="7" r=".5" fill="currentColor"/><circle cx="9" cy="7" r=".5" fill="currentColor"/>',
 		),
 		'analytics'             => array(

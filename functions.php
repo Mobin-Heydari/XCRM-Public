@@ -156,6 +156,7 @@ function xcrm_features_template( $template ) {
 	// Detail pages — most specific match first.
 	$detail_routes = array(
 		'/features/customer-management' => '/page-xcrm-feature-customer-management.php',
+		'/features/website-tracking'    => '/page-xcrm-feature-website-tracking.php',
 	);
 
 	foreach ( $detail_routes as $route => $file ) {

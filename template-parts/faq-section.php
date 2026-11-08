@@ -18,7 +18,7 @@ if ( empty( $ft_faq_items ) || ! is_array( $ft_faq_items ) ) {
 	return;
 }
 ?>
-<section class="ft__section" id="<?php echo esc_attr( $ft_faq_id ); ?>">
+<section class="ft__section<?php echo ! empty( $ft_faq_class ) ? ' ' . sanitize_html_class( $ft_faq_class ) : ''; ?>" id="<?php echo esc_attr( $ft_faq_id ); ?>">
 	<div class="ft__inner">
 		<div class="ft__section-head" data-reveal="up">
 			<span class="ft__label">
@@ -39,7 +39,7 @@ if ( empty( $ft_faq_items ) || ! is_array( $ft_faq_items ) ) {
 						<svg class="ft__faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
 					</summary>
 					<div class="ft__faq-a">
-						<?php echo wp_kses_post( $ft_item['a'] ); ?>
+						<p><?php echo wp_kses_post( $ft_item['a'] ); ?></p>
 					</div>
 				</details>
 			<?php endforeach; ?>

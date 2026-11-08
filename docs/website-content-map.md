@@ -460,7 +460,7 @@ Do not create one CSS file per page automatically. Group styles only when their 
 
 Update this table as each page is built and verified.
 
-**Batch note (2026-11-08):** `/features/` and `/features/customer-management/` implemented in the child theme. Routing uses the `xcrm_features_template` `template_include` filter in `functions.php` (same pattern as legal pages), so no WordPress page creation is required. Shared partials added: `template-parts/feature-card.php`, `faq-section.php`, `cta-section.php`; feature registry in `inc/features-data.php`; styles in `assets/css/xcrm-features.css` (prefix `ft-`). Header and footer now link to `/features/`. Non-built feature cards render as static cards (no dead links); they become links automatically when `built` is set to `true` and the detail template exists.
+**Batch note (2026-11-08):** `/features/`, `/features/customer-management/` and `/features/website-tracking/` implemented in the child theme. Routing uses the `xcrm_features_template` `template_include` filter in `functions.php` (same pattern as legal pages), so no WordPress page creation is required. Shared partials added: `template-parts/feature-card.php`, `faq-section.php`, `cta-section.php`; feature registry in `inc/features-data.php`; styles in `assets/css/xcrm-features.css` (prefix `ft-`). Header and footer now link to `/features/`. Non-built feature cards render as static cards (no dead links); they become links automatically when `built` is set to `true` and the detail template exists. Website-tracking code examples were reviewed against the real SDK source (`xcrm.min.js` v1.1.0, loaded from the live site's `xcrm-forosh` WordPress plugin) — method names, tag attributes (`cpid`, `consent`, `user-url`, `api-nonce`, `auto-track`, `fingerprint`, `web-vitals`, `error-tracking`), batch limits (50/5s), session timeout (30 min), UTM window (30 min) and the identify priority chain all match the implementation.
 
 | Route | Status | Content approved | Product claims checked | Design complete | QA passed |
 |---|---|---|---|---|---|
@@ -469,7 +469,7 @@ Update this table as each page is built and verified.
 | `/for-business/` | Existing | Pending review | Pending | Existing | Pending |
 | `/features/` | Implemented (2026-11-08) | Yes | Yes | Yes | Static QA passed; live QA pending deploy |
 | `/features/customer-management/` | Implemented (2026-11-08) | Yes | Yes | Yes | Static QA passed; live QA pending deploy |
-| `/features/website-tracking/` | Proposed P1 | No | No | No | No |
+| `/features/website-tracking/` | Implemented (2026-11-08) | Yes | Yes (against real SDK v1.1.0 source) | Yes | Static QA passed; live QA pending deploy |
 | `/features/analytics/` | Proposed P1 | No | No | No | No |
 | `/features/segmentation/` | Proposed P1 | No | No | No | No |
 | `/features/sales-pipeline/` | Proposed P1 | No | No | No | No |
