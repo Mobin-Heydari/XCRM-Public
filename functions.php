@@ -157,6 +157,7 @@ function xcrm_features_template( $template ) {
 	$detail_routes = array(
 		'/features/customer-management' => '/page-xcrm-feature-customer-management.php',
 		'/features/website-tracking'    => '/page-xcrm-feature-website-tracking.php',
+		'/features/analytics'           => '/page-xcrm-feature-analytics.php',
 	);
 
 	foreach ( $detail_routes as $route => $file ) {
