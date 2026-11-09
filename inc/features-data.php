@@ -68,7 +68,7 @@ function xcrm_get_features() {
 			'short'       => 'کانبان مراحل فروش، فعالیت‌ها، یادآوری‌ها و تحلیل قیف.',
 			'description' => 'فرصت‌های فروش را در مراحل قابل تنظیم دنبال کنید، فعالیت‌ها و یادآوری‌ها را به اعضای تیم تخصیص دهید و عملکرد مراحل را تحلیل کنید.',
 			'group'       => 'data',
-			'built'       => false,
+			'built'       => true,
 			'icon'        => '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/><path d="M15 3v18"/>',
 		),
 		'automation'            => array(
