@@ -59,7 +59,7 @@ function xcrm_get_features() {
 			'short'       => 'سگمنت‌های ایستا و پویا با شرط‌های رفتاری و رویدادی.',
 			'description' => 'مشتریان را با شرط‌های ترکیبی AND/OR، ویژگی‌ها و رویدادهای ثبت‌شده گروه‌بندی کنید؛ سگمنت‌های پویا به‌صورت خودکار به‌روز می‌شوند.',
 			'group'       => 'data',
-			'built'       => false,
+			'built'       => true,
 			'icon'        => '<path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/>',
 		),
 		'sales-pipeline'        => array(
