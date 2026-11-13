@@ -21,8 +21,8 @@ $canonical  = home_url( '/features/' );
 $dash_url   = 'https://dashboard.xcrmforosh.com/';
 $groups     = xcrm_get_feature_groups();
 
-$page_title       = 'امکانات «xCRM فروش» — مدیریت مشتری، تحلیل، اتوماسیون و فروش';
-$page_description = 'فهرست کامل قابلیت‌های «xCRM فروش»: مدیریت مشتریان، ردیابی وب‌سایت، تحلیل رفتار، بخش‌بندی، قیف فروش، اتوماسیون بازاریابی، ارتباط با مشتری و گردش‌کار اختصاصی n8n.';
+	$page_title       = 'امکانات «xCRM فروش» — مدیریت مشتری، تحلیل، اتوماسیون و فروش';
+	$page_description = 'فهرست کامل قابلیت‌های «xCRM فروش» در چهار دسته: داده و تحلیل مشتری، اتوماسیون بازاریابی، یکپارچه‌سازی و زیرساخت توسعه، و مدیریت کسب‌وکار — با پیوند به صفحهٔ جزئیات هر قابلیت.';
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -112,7 +112,7 @@ $page_description = 'فهرست کامل قابلیت‌های «xCRM فروش»
 
 	<!-- ============ CAPABILITY GROUPS ============ -->
 	<?php foreach ( $groups as $ft_group_index => $ft_group ) : ?>
-	<section class="ft__section<?php echo 1 === (int) $ft_group_index % 2 ? ' ft__section--surface' : ''; ?>" id="group-<?php echo esc_attr( $ft_group['key'] ); ?>">
+	<section class="ft__section<?php echo 0 === (int) $ft_group_index % 2 ? ' ft__section--surface' : ''; ?>" id="group-<?php echo esc_attr( $ft_group['key'] ); ?>">
 		<div class="ft__inner">
 			<div class="ft__section-head" data-reveal="up">
 				<span class="ft__label">
