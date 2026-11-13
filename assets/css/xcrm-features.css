@@ -4715,6 +4715,164 @@
   flex-shrink: 0;
 }
 
+/* ── Template gallery cards ── */
+.ft__tcard {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+.ft__tcard-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.ft__tcard-cat {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.69rem;
+  font-weight: 900;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: var(--x-soft-primary);
+  color: var(--x-primary);
+}
+.dark .ft__tcard-cat { color: #a5b4fc; }
+.ft__tcard-cat--attr { background: var(--x-soft-info); color: var(--x-info); }
+.ft__tcard-cat--seg { background: var(--x-soft-success); color: var(--x-success); }
+.ft__tcard-cat--pipe { background: var(--x-soft-warn); color: var(--x-warn); }
+.ft__tcard-cat--camp { background: var(--x-soft-purple); color: var(--x-purple); }
+.ft__tcard-cat--flow { background: var(--x-soft-error); color: var(--x-error); }
+.ft__tcard-star {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.67rem;
+  font-weight: 900;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--x-soft-warn);
+  color: var(--x-warn);
+  white-space: nowrap;
+}
+.ft__tcard-name {
+  margin: 0;
+  font-size: 1.02rem;
+  font-weight: 900;
+  color: var(--x-text);
+  line-height: 1.55;
+}
+.ft__tcard-purpose {
+  margin: 0;
+  font-size: 0.79rem;
+  color: var(--x-text-highlight);
+  line-height: 1.8;
+}
+.ft__tcard-scenario {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+  font-size: 0.74rem;
+  line-height: 1.75;
+  color: var(--x-text-muted);
+  padding: 9px 12px;
+  border-radius: var(--x-radius-sm);
+  background: var(--x-surface);
+  border: 1px solid var(--x-border-subtle);
+}
+.ft__tcard-scenario b { color: var(--x-text); font-weight: 800; }
+.ft__tcard-preview {
+  border: 1px dashed var(--x-border);
+  border-radius: var(--x-radius-md);
+  background: var(--x-bg);
+  padding: 11px 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.ft__tcard-preview-label {
+  font-size: 0.66rem;
+  font-weight: 900;
+  color: var(--x-text-muted);
+  letter-spacing: 0.02em;
+}
+.ft__tcard-skel {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ft__tcard-skel span {
+  display: block;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--x-border-subtle);
+}
+.dark .ft__tcard-skel span { background: var(--x-border); }
+.ft__tcard-skel span:nth-child(1) { width: 72%; }
+.ft__tcard-skel span:nth-child(2) { width: 90%; }
+.ft__tcard-skel span:nth-child(3) { width: 55%; }
+.ft__tcard-chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+.ft__tcard-chain span {
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: var(--x-soft-primary);
+  color: var(--x-primary);
+  white-space: nowrap;
+}
+.dark .ft__tcard-chain span { color: #a5b4fc; }
+.ft__tcard-chain svg {
+  color: var(--x-text-muted);
+  opacity: 0.6;
+  flex-shrink: 0;
+}
+.ft__tcard-foot {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--x-border-subtle);
+}
+.ft__tcard-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.74rem;
+  font-weight: 900;
+  padding: 8px 15px;
+  border-radius: var(--x-radius-sm);
+  background: var(--x-primary);
+  color: #fff;
+}
+.ft__tcard-btn--ghost {
+  background: transparent;
+  color: var(--x-text-muted);
+  border: 1px solid var(--x-border);
+}
+.ft__tcard-done {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.72rem;
+  font-weight: 900;
+  padding: 7px 13px;
+  border-radius: 999px;
+  background: var(--x-soft-success);
+  color: var(--x-success);
+  margin-inline-start: auto;
+}
+
 /* ══════════════════════════════════════════
    RESPONSIVE
    ══════════════════════════════════════════ */
@@ -4755,6 +4913,8 @@
   .ft__arch { flex-direction: column; }
   .ft__arch-arrow { transform: rotate(90deg); align-self: center; }
   .ft__inst-foot { flex-direction: column; align-items: stretch; }
+  .ft__tcard-foot { flex-wrap: wrap; }
+  .ft__tcard-done { margin-inline-start: 0; }
 }
 
 @media (max-width: 480px) {

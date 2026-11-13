@@ -163,6 +163,7 @@ function xcrm_features_template( $template ) {
 		'/features/automation'          => '/page-xcrm-feature-automation.php',
 		'/features/communication'       => '/page-xcrm-feature-communication.php',
 		'/features/workflow-automation' => '/page-xcrm-feature-workflow-automation.php',
+		'/features/templates'           => '/page-xcrm-feature-templates.php',
 	);
 
 	foreach ( $detail_routes as $route => $file ) {
