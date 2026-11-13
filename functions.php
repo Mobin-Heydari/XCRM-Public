@@ -164,6 +164,10 @@ function xcrm_features_template( $template ) {
 		'/features/communication'       => '/page-xcrm-feature-communication.php',
 		'/features/workflow-automation' => '/page-xcrm-feature-workflow-automation.php',
 		'/features/templates'           => '/page-xcrm-feature-templates.php',
+		'/features/team-management'     => '/page-xcrm-feature-team-management.php',
+		'/features/revenue-attribution' => '/page-xcrm-feature-revenue-attribution.php',
+		'/features/identity-resolution' => '/page-xcrm-feature-identity-resolution.php',
+		'/features/event-management'    => '/page-xcrm-feature-event-management.php',
 	);
 
 	foreach ( $detail_routes as $route => $file ) {
