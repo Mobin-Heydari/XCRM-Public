@@ -95,7 +95,7 @@ function xcrm_get_features() {
 			'short'       => 'یک محیط n8n اختصاصی برای هر شرکت، همراه با گره‌های متصل به xCRM.',
 			'description' => 'برای هر شرکت یک کانتینر و پایگاه‌دادهٔ n8n اختصاصی در نظر گرفته می‌شود؛ گردش‌کارها با وب‌هوک و شش گرهٔ اختصاصی به داده‌های CRM وصل می‌شوند.',
 			'group'       => 'infra',
-			'built'       => false,
+			'built'       => true,
 			'icon'        => '<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><path d="M10 6.5h4a3.5 3.5 0 0 1 3.5 3.5v4"/>',
 		),
 		'templates'             => array(

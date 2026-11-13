@@ -162,6 +162,7 @@ function xcrm_features_template( $template ) {
 		'/features/sales-pipeline'      => '/page-xcrm-feature-sales-pipeline.php',
 		'/features/automation'          => '/page-xcrm-feature-automation.php',
 		'/features/communication'       => '/page-xcrm-feature-communication.php',
+		'/features/workflow-automation' => '/page-xcrm-feature-workflow-automation.php',
 	);
 
 	foreach ( $detail_routes as $route => $file ) {
