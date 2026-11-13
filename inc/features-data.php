@@ -86,7 +86,7 @@ function xcrm_get_features() {
 			'short'       => 'پیامک، ایمیل، Push و تلگرام با تنظیمات و پنجرهٔ ارسال.',
 			'description' => 'کانال‌های پیامک، ایمیل، Push و تلگرام را با تنظیمات شرکتی، ارائه‌دهندهٔ متصل و پنجرهٔ مجاز ارسال مدیریت کنید و پیامک زمان‌بندی‌شده ارسال کنید.',
 			'group'       => 'marketing',
-			'built'       => false,
+			'built'       => true,
 			'icon'        => '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>',
 		),
 		'workflow-automation'   => array(

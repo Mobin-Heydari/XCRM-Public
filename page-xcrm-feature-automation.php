@@ -847,7 +847,12 @@ $page_description = 'کمپین‌ها را زمان‌بندی کنید یا ب
 	$ft_faq_id     = 'faq';
 	$ft_faq_title  = 'پرسش‌های متداول دربارهٔ اتوماسیون بازاریابی';
 	$ft_faq_intro  = 'دقیقاً همان چیزی که تیم‌های بازاریابی قبل از ساخت اولین اتوماسیون می‌پرسند.';
-	get_template_part( 'template-parts/faq-section' );
+	get_template_part( 'template-parts/faq-section', null, array(
+		'ft_faq_id'    => $ft_faq_id,
+		'ft_faq_title' => $ft_faq_title,
+		'ft_faq_intro' => $ft_faq_intro,
+		'ft_faq_items' => $ft_faq_items,
+	) );
 	?>
 
 	<?php
@@ -858,7 +863,15 @@ $page_description = 'کمپین‌ها را زمان‌بندی کنید یا ب
 	$ft_cta_secondary_url   = $features;
 	$ft_cta_secondary_label = 'بازگشت به فهرست امکانات';
 	$ft_cta_note          = 'بدون نیاز به کارت اعتباری';
-	get_template_part( 'template-parts/cta-section' );
+	get_template_part( 'template-parts/cta-section', null, array(
+		'ft_cta_title'           => $ft_cta_title,
+		'ft_cta_desc'            => $ft_cta_desc,
+		'ft_cta_primary_url'     => $ft_cta_primary_url,
+		'ft_cta_primary_label'   => $ft_cta_primary_label,
+		'ft_cta_secondary_url'   => $ft_cta_secondary_url,
+		'ft_cta_secondary_label' => $ft_cta_secondary_label,
+		'ft_cta_note'            => $ft_cta_note,
+	) );
 	?>
 
 </main>
