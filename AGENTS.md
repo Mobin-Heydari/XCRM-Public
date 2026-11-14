@@ -18,10 +18,10 @@ WordPress **child theme** of Hello Elementor. Persian/RTL marketing pages for xC
 ## 2. File map
 
 ```
-functions.php                        # Enqueues + RTL filter + /features/ + /privacy-policy/ + /terms/ routes
+functions.php                        # Enqueues + asset registration + RTL filter + /features/ + /privacy-policy/ + /terms/ routes
 style.css                            # Theme header only (WP requires it)
 front-page.php                       # ⭐ Homepage (question + persona links + tabs + feature cards)
-page-xcrm-features.php               # /features/ directory
+page-xcrm-features.php               # ⭐ /features/ Product Explorer (12-category catalog, search/tabs, hero ecosystem SVG)
 page-xcrm-feature-*.php              # 13 feature detail pages (/features/<slug>/)
 page-xcrm-for-marketers.php          # For Marketers landing (template "For Marketers", /for-marketers/)
 page-xcrm-for-buisness.php           # For Business landing (template "For Business", /for-business/)
@@ -29,19 +29,23 @@ page-xcrm-privacy-policy.php         # /privacy-policy/ (routed)
 page-xcrm-terms.php                  # /terms/ (routed)
 inc/
   features-data.php                  # ⭐ Feature registry — single source of truth (16 entries + nav/home/footer groups)
+  features-directory-data.php        # ⭐ /features/ catalog: 12 categories × cards + hero modules + journey + use cases
+                                    #   + xcrm_fd_resolve_url() (dead-link-proof URL resolver) + xcrm_fd_icons()
+  features-directory-visuals.php     # /features/ SVG generators: xcrm_fd_visual() (12) + xcrm_fd_mini() (8)
 template-parts/
   site-header.php                    # ⭐ Shared header: unified nav, Features mega menu, mobile sidebar
   site-footer.php                    # ⭐ Shared footer: brand, 4 link columns, trust strip, Enamad slot
   feature-hero-graphic.php           # Animated per-feature hero SVG (arg: slug)
   feature-card.php                   # Shared feature card (homepage + grids)
-  cta-section.php                    # End CTA (args-array based)
+  cta-section.php                    # End CTA (args-array based; optional ft_cta_id for unique ids)
   faq-section.php                    # FAQ accordion (args-array based)
   legal-renderer.php                 # Privacy/terms renderer
 assets/
   css/
     xcrm-design-system.css           # ⭐ BASE layer — tokens, cards, utilities, animations
     xcrm-home.css                    # Header/nav/sidebar/mega + homepage (prefix hp-)
-    xcrm-features.css                # /features/ (prefix ft-, fhg for hero graphic)
+    xcrm-features.css                # /features/ detail pages (prefix ft-, fhg for hero graphic)
+    xcrm-features-directory.css      # /features/ directory only (prefix fd-/fdeck-/fdv-/fdm-; page-enqueued)
     xcrm-marketers.css               # For Marketers (prefix fm-)
     xcrm-business.css                # For Business (prefix fb-/xcrm-b2)
     xcrm-legal.css                   # Privacy/terms (prefix xlg-)
@@ -49,6 +53,7 @@ assets/
     xcrm-core.js                     # ⭐ Shared utilities (auto-inits on load)
     xcrm-nav.js                      # ⭐ Mega menu + off-canvas sidebar + accordion (global)
     xcrm-home.js                     # Theme toggle UI, sticky header, hero parallax (global)
+    xcrm-features-directory.js       # /features/ tabs + search (page-enqueued only)
     xcrm-legal.js                    # Legal pages
   fonts/
     IRANYekanXVF.woff2
@@ -74,6 +79,16 @@ To add a new section stylesheet/script, enqueue it in `functions.php` with
   shortcuts for these two routes are commented out in `functions.php`.)
 - Homepage persona links: `$for_marketers` (`/for-marketers/`) and
   `$for_business` (`/for-business/`) at the top of `front-page.php`.
+
+**Features catalog (`/features/`):** all category/card/journey/use-case copy
+lives in `inc/features-directory-data.php`; illustrations come from
+`inc/features-directory-visuals.php` (`xcrm_fd_visual` / `xcrm_fd_mini`).
+Template rules: never hard-code a feature URL — resolve every catalog link with
+`xcrm_fd_resolve_url()` (registry-built slugs + whitelists only, so dead links
+are impossible); compute counts with `count()` instead of writing numbers;
+page-only assets (`xcrm-features-directory.css/.js`) are *registered* in
+`functions.php` and *enqueued* by `page-xcrm-features.php`; all directory SVG
+ids/prefixes are `fd-`/`fdeck-`/`fdv-`/`fdm-` to avoid collisions.
 
 **Shared header + RTL:** every page renders `template-parts/site-header.php`
 (unified link set: صفحه اصلی · امکانات · برای مارکترها · برای کسب‌وکارها ·

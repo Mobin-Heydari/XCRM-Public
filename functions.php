@@ -172,6 +172,29 @@ function hello_elementor_child_scripts_styles() {
 		HELLO_ELEMENTOR_CHILD_VERSION
 	);
 
+	/*
+	 * Features Directory product explorer — REGISTERED only.
+	 * page-xcrm-features.php enqueues these so other pages never pay for them.
+	 */
+	wp_register_style(
+		'xcrm-features-directory',
+		get_stylesheet_directory_uri() . '/assets/css/xcrm-features-directory.css',
+		[
+			'xcrm-design-system',
+			'xcrm-features-style',
+		],
+		HELLO_ELEMENTOR_CHILD_VERSION
+	);
+	wp_register_script(
+		'xcrm-features-directory',
+		get_stylesheet_directory_uri() . '/assets/js/xcrm-features-directory.js',
+		[
+			'xcrm-core-js',
+		],
+		HELLO_ELEMENTOR_CHILD_VERSION,
+		true
+	);
+
 }
 add_action( 'wp_enqueue_scripts', 'hello_elementor_child_scripts_styles', 20 );
 

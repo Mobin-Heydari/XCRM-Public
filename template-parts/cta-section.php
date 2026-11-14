@@ -58,6 +58,7 @@ $ft_cta_primary_label   = isset( $ft_cta['ft_cta_primary_label'] ) ? (string) $f
 $ft_cta_secondary_url   = isset( $ft_cta['ft_cta_secondary_url'] ) ? (string) $ft_cta['ft_cta_secondary_url'] : '';
 $ft_cta_secondary_label = isset( $ft_cta['ft_cta_secondary_label'] ) ? (string) $ft_cta['ft_cta_secondary_label'] : '';
 $ft_cta_note            = isset( $ft_cta['ft_cta_note'] ) ? (string) $ft_cta['ft_cta_note'] : '';
+$ft_cta_id              = isset( $ft_cta['ft_cta_id'] ) && '' !== $ft_cta['ft_cta_id'] ? sanitize_html_class( (string) $ft_cta['ft_cta_id'] ) : 'cta';
 
 // 4) Graceful degradation: without a title or a primary action there is
 //    nothing meaningful to render, so skip the section instead of outputting
@@ -69,7 +70,7 @@ if ( '' === $ft_cta_title && '' === $ft_cta_primary_label ) {
 $ft_cta_has_primary   = ( '' !== $ft_cta_primary_url && '' !== $ft_cta_primary_label );
 $ft_cta_has_secondary = ( '' !== $ft_cta_secondary_url && '' !== $ft_cta_secondary_label );
 ?>
-<section class="ft__section ft__cta-section" id="cta">
+<section class="ft__section ft__cta-section" id="<?php echo esc_attr( $ft_cta_id ); ?>">
 	<div class="ft__inner">
 		<div class="ft__cta-box brand-surface" data-reveal="scale">
 			<div class="ft__cta-deco" aria-hidden="true">

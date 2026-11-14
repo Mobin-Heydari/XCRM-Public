@@ -103,6 +103,13 @@ full `prefers-reduced-motion` kill-switch; inline script calls
 `svg.pauseAnimations()` under reduced motion). Wired after each page’s
 `ft__hero-pills` (script-verified insertion).
 
+**Hero layout (follow-up):** `.ft__hero-inner` is now `flex-direction: row`
+(wrap, not column) on all 14 feature templates — the copy (breadcrumb, title,
+actions, pills) sits in `.ft__hero-copy` beside a `.ft__hero-media` column that
+holds the animated graphic (and the page-specific `ft__hero-visual` mock on
+revenue/identity/event). Columns wrap to a stack below ~860px with no
+horizontal overflow.
+
 ## 9. Files changed
 
 | File | Change |
@@ -113,13 +120,13 @@ full `prefers-reduced-motion` kill-switch; inline script calls
 | `template-parts/cta-section.php`, `faq-section.php` | `$args`-based rewrite (warning fix) |
 | `template-parts/feature-card.php` | `xcrm_feature_url()` links |
 | `template-parts/feature-hero-graphic.php` | **New** shared hero SVG partial |
-| `inc/features-data.php` | 16-entry registry + nav/home/footer groups/helpers |
+| `inc/features-data.php` | 16-entry registry + nav/home/footer groups/helpers; footer flags reduced to 4 links |
 | `assets/js/xcrm-nav.js` | **New** mega/sidebar/accordion behavior |
 | `assets/css/xcrm-home.css` | Header, mega, sidebar, footer, logo CSS |
-| `assets/css/xcrm-features.css` | `fhg-*` hero-graphic CSS + responsive/reduced-motion |
+| `assets/css/xcrm-features.css` | `fhg-*` hero-graphic CSS + hero row layout (`.ft__hero-copy`/`.ft__hero-media`) + responsive/reduced-motion |
 | `assets/css/xcrm-marketers.css`, `xcrm-business.css` | Body-class RTL rules |
 | `front-page.php` | `hp__feature-pages` registry grid |
-| `page-xcrm-feature-*.php` (13) | Hero-graphic `get_template_part` wiring |
+| `page-xcrm-feature-*.php` (13) + `page-xcrm-features.php` | Hero-graphic wiring + hero copy/media wrappers |
 | `AGENTS.md`, `docs/website-content-map.md` | Docs/tracker updates |
 | `.gitignore` | Added `.playwright-mcp/` (browser test artifacts) |
 

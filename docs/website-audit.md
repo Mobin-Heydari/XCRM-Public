@@ -7,6 +7,8 @@
 **Platform:** WordPress child theme of Hello Elementor  
 **Status:** Public-content and architecture audit; not a repository-level code audit.
 
+**Update (2026-11-14):** `/features/` is now implemented as the XCRM Product Explorer (12 categories / 48 catalog entries, animated 14-module hero ecosystem, search + category tabs, customer-lifecycle journey, industry use cases) — see `docs/features-directory-implementation-report.md`. Detail pages for all 13 built features are live; `/privacy-policy/` and `/terms/` return HTTP 200 via template routing.
+
 ---
 
 ## 1. Executive summary

@@ -38,6 +38,9 @@ $xcrm_is_active = function ( $url ) use ( $xcrm_uri ) {
 
 $xcrm_nav_groups = function_exists( 'xcrm_get_nav_groups' ) ? xcrm_get_nav_groups() : array();
 
+// Active state for the Features entry (directory or any detail page).
+$xcrm_on_features = ( '/features' === $xcrm_uri || 0 === strpos( $xcrm_uri, '/features/' ) );
+
 $xcrm_chevron = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>';
 ?>
 <header class="hp__header" id="hp-header">
@@ -63,7 +66,7 @@ $xcrm_chevron = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" str
 			<div class="hp__mega-wrap">
 				<button
 					type="button"
-					class="hp__nav-link hp__mega-btn"
+					class="hp__nav-link hp__mega-btn<?php echo $xcrm_on_features ? ' is-active' : ''; ?>"
 					id="hp-mega-btn"
 					aria-expanded="false"
 					aria-controls="hp-mega"
