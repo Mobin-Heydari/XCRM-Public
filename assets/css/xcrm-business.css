@@ -26,6 +26,8 @@
 @keyframes b2-funnel-fill { from { transform:scaleX(0); } to { transform:scaleX(1); } }
 
 /* ── Base ── */
+/* Body-level RTL so the shared header (outside .xcrm-b2) inherits direction. */
+.xcrm-b2-page { direction:rtl; }
 .xcrm-b2 { font-family:var(--x-font-sans); background:var(--x-bg); color:var(--x-text); direction:rtl; min-height:100vh; overflow-x:hidden; transition:background-color 0.45s var(--x-ease-smooth), color 0.45s var(--x-ease-smooth); }
 .xcrm-b2 *, .xcrm-b2 *::before, .xcrm-b2 *::after { box-sizing:border-box; }
 .xcrm-b2__inner { max-width:1120px; margin:0 auto; padding-inline:clamp(20px,4vw,40px); }

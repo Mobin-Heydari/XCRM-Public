@@ -454,6 +454,41 @@ $for_business  = home_url( '/for-business/' );
 
 				</div>
 			</div>
+
+			<!-- ===== Registry-driven feature page links (single source: inc/features-data.php) ===== -->
+			<?php
+			$xcrm_home_features = function_exists( 'xcrm_get_home_features' ) ? xcrm_get_home_features() : array();
+			if ( $xcrm_home_features ) :
+				?>
+				<div class="hp__feature-pages" data-reveal="up">
+					<div class="hp__feature-pages-head">
+						<h3 class="hp__feature-pages-title">مستقیم به صفحهٔ هر قابلیت بروید</h3>
+						<a href="<?php echo esc_url( home_url( '/features/' ) ); ?>" class="hp__feature-pages-all">
+							مشاهده همه امکانات
+							<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="m12 19-7-7 7-7"/></svg>
+						</a>
+					</div>
+
+					<div class="ft__grid ft__grid--cards">
+						<?php
+						$xcrm_hp_delay = 0;
+						foreach ( $xcrm_home_features as $xcrm_hp_feature ) :
+							get_template_part(
+								'template-parts/feature-card',
+								null,
+								array(
+									'feature'       => $xcrm_hp_feature,
+									'ft_card_delay' => $xcrm_hp_delay,
+								)
+							);
+							$xcrm_hp_delay += 50;
+						endforeach;
+						?>
+					</div>
+				</div>
+				<?php
+			endif;
+			?>
 		</div>
 	</section>
 

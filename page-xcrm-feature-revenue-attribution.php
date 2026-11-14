@@ -88,6 +88,7 @@ $page_description = 'منابع جذب مشتری را با اتریبیوشن U
 		</div>
 
 		<div class="ft__inner ft__hero-inner">
+			<div class="ft__hero-copy">
 			<nav class="ft__breadcrumb" aria-label="مسیر ناوبری" data-reveal="fade">
 				<a href="<?php echo esc_url( $home_url ); ?>">خانه</a>
 				<span class="ft__breadcrumb-sep" aria-hidden="true">‹</span>
@@ -127,6 +128,9 @@ $page_description = 'منابع جذب مشتری را با اتریبیوشن U
 				<li>LTV بر اساس کانال جذب</li>
 				<li>نرخ تبدیل هر کانال ترافیکی</li>
 			</ul>
+			</div>
+			<div class="ft__hero-media">
+			<?php get_template_part( 'template-parts/feature-hero-graphic', null, array( 'slug' => 'revenue-attribution' ) ); ?>
 
 			<div class="ft__hero-visual ft-anim ft-anim--5">
 				<div class="ft__attrib">
@@ -210,6 +214,7 @@ $page_description = 'منابع جذب مشتری را با اتریبیوشن U
 					</div>
 				</div>
 				<p class="ft__mock-caption">داده‌های نمونه — نمایش تزئینی رابط تحلیل درآمد و اتریبیوشن</p>
+			</div>
 			</div>
 		</div>
 	</section>

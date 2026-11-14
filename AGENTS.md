@@ -18,45 +18,72 @@ WordPress **child theme** of Hello Elementor. Persian/RTL marketing pages for xC
 ## 2. File map
 
 ```
-functions.php                        # All enqueues live here + /for-marketers/ + /for-business/ routes
+functions.php                        # Enqueues + RTL filter + /features/ + /privacy-policy/ + /terms/ routes
 style.css                            # Theme header only (WP requires it)
-front-page.php                       # ⭐ Homepage (question + persona links + tabs)
-page-xcrm-for-marketers.php          # For Marketers landing (/for-marketers/)
-page-xcrm-for-business.php           # For Business landing (/for-business/)
+front-page.php                       # ⭐ Homepage (question + persona links + tabs + feature cards)
+page-xcrm-features.php               # /features/ directory
+page-xcrm-feature-*.php              # 13 feature detail pages (/features/<slug>/)
+page-xcrm-for-marketers.php          # For Marketers landing (template "For Marketers", /for-marketers/)
+page-xcrm-for-buisness.php           # For Business landing (template "For Business", /for-business/)
+page-xcrm-privacy-policy.php         # /privacy-policy/ (routed)
+page-xcrm-terms.php                  # /terms/ (routed)
+inc/
+  features-data.php                  # ⭐ Feature registry — single source of truth (16 entries + nav/home/footer groups)
+template-parts/
+  site-header.php                    # ⭐ Shared header: unified nav, Features mega menu, mobile sidebar
+  site-footer.php                    # ⭐ Shared footer: brand, 4 link columns, trust strip, Enamad slot
+  feature-hero-graphic.php           # Animated per-feature hero SVG (arg: slug)
+  feature-card.php                   # Shared feature card (homepage + grids)
+  cta-section.php                    # End CTA (args-array based)
+  faq-section.php                    # FAQ accordion (args-array based)
+  legal-renderer.php                 # Privacy/terms renderer
 assets/
   css/
     xcrm-design-system.css           # ⭐ BASE layer — tokens, cards, utilities, animations
-    xcrm-home.css                    # Homepage (prefix hp-) — hero, tabs, toggle, bg shapes
-    xcrm-marketers.css               # For Marketers (prefix fm-) — SVG animations, use-cases
-    xcrm-business.css                # For Business (prefix fb-) — editorial, FAQ, UI mocks
+    xcrm-home.css                    # Header/nav/sidebar/mega + homepage (prefix hp-)
+    xcrm-features.css                # /features/ (prefix ft-, fhg for hero graphic)
+    xcrm-marketers.css               # For Marketers (prefix fm-)
+    xcrm-business.css                # For Business (prefix fb-/xcrm-b2)
+    xcrm-legal.css                   # Privacy/terms (prefix xlg-)
   js/
     xcrm-core.js                     # ⭐ Shared utilities (auto-inits on load)
+    xcrm-nav.js                      # ⭐ Mega menu + off-canvas sidebar + accordion (global)
     xcrm-home.js                     # Theme toggle UI, sticky header, hero parallax (global)
+    xcrm-legal.js                    # Legal pages
   fonts/
     IRANYekanXVF.woff2
     iranyekanwebregular.woff
   image/
+    logo.png                         # Brand mark (header + footer tile)
 ```
 
 **Load order (important):**
 `style.css` → `xcrm-design-system.css` → section CSS.
-`xcrm-core.js` loads in the footer before `xcrm-home.js`.
+`xcrm-core.js` loads in the footer before `xcrm-nav.js` and `xcrm-home.js`.
 
 To add a new section stylesheet/script, enqueue it in `functions.php` with
 `xcrm-design-system` as the style dependency (see existing sections for the pattern).
 
 **Routing:**
 - Homepage: `front-page.php` (auto — WP front page)
-- Marketers: `/for-marketers/` via `template_include` filter in `functions.php`
-  (also available as page template "For Marketers" if a WP page is preferred)
-- Business: `/for-business/` via `template_include` filter in `functions.php`
-  (also available as page template "For Business" if a WP page is preferred)
+- Features: `/features/` + `/features/<built-slug>/` via `template_include`
+  in `functions.php` (served with HTTP 200 even without a matching WP page)
+- Legal: `/privacy-policy/` + `/terms/` via `template_include`
+- Marketers/Business: rendered by WP pages whose slug is `for-marketers` /
+  `for-business` with the matching template assigned. (The old `template_include`
+  shortcuts for these two routes are commented out in `functions.php`.)
 - Homepage persona links: `$for_marketers` (`/for-marketers/`) and
   `$for_business` (`/for-business/`) at the top of `front-page.php`.
 
-**Shared header:** the fixed glass header + dark/light toggle use `hp__*` classes
-from `xcrm-home.css` and are driven by `xcrm-home.js` (enqueued globally).
-Any page can reuse the same header markup.
+**Shared header + RTL:** every page renders `template-parts/site-header.php`
+(unified link set: صفحه اصلی · امکانات · برای مارکترها · برای کسب‌وکارها ·
+حریم خصوصی — identical on all pages). `dir="rtl"` is forced on `<html>` by the
+`language_attributes` filter in `functions.php` (the WP locale is en-US), so the
+header/sidebar/mega are RTL even outside the per-page RTL wrappers
+(`.hp` / `.fm` / `.xcrm-b2` / `.ft-page` …). The fixed glass header, mega menu
+and off-canvas sidebar use `hp__*` classes from `xcrm-home.css`, driven by
+`xcrm-nav.js`; the dark/light toggle is `xcrm-home.js` (enqueued globally).
+
 
 ---
 

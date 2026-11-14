@@ -88,6 +88,7 @@ $page_description = 'فرصت‌های فروش را در کانبان مراح�
 		</div>
 
 		<div class="ft__inner ft__hero-inner">
+			<div class="ft__hero-copy">
 			<nav class="ft__breadcrumb" aria-label="مسیر ناوبری" data-reveal="fade">
 				<a href="<?php echo esc_url( $home_url ); ?>">خانه</a>
 				<span class="ft__breadcrumb-sep" aria-hidden="true">‹</span>
@@ -126,6 +127,10 @@ $page_description = 'فرصت‌های فروش را در کانبان مراح�
 				<li>یادآوری، واگذاری و «برای بعدا»</li>
 				<li>تحلیل قیف و ماتریس مراحل</li>
 			</ul>
+			</div>
+			<div class="ft__hero-media">
+			<?php get_template_part( 'template-parts/feature-hero-graphic', null, array( 'slug' => 'sales-pipeline' ) ); ?>
+			</div>
 		</div>
 	</section>
 

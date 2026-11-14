@@ -85,6 +85,7 @@ $page_description = 'با اسکریپت SDK «xCRM فروش» بازدیدها�
 		</div>
 
 		<div class="ft__inner ft__hero-inner">
+			<div class="ft__hero-copy">
 			<nav class="ft__breadcrumb" aria-label="مسیر ناوبری" data-reveal="fade">
 				<a href="<?php echo esc_url( $home_url ); ?>">خانه</a>
 				<span class="ft__breadcrumb-sep" aria-hidden="true">‹</span>
@@ -122,6 +123,10 @@ $page_description = 'با اسکریپت SDK «xCRM فروش» بازدیدها�
 				<li>هویت ناشناس و شناسایی‌شده</li>
 				<li>UTM، Web Vitals و رویدادهای فروشگاهی</li>
 			</ul>
+			</div>
+			<div class="ft__hero-media">
+			<?php get_template_part( 'template-parts/feature-hero-graphic', null, array( 'slug' => 'website-tracking' ) ); ?>
+			</div>
 		</div>
 	</section>
 

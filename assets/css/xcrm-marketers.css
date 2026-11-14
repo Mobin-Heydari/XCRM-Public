@@ -217,6 +217,12 @@
    2. PAGE BASE
    ========================================================================== */
 
+/* Body-level RTL so the shared header (outside .fm) inherits direction,
+   matching the .ft-page / .xcrm-legal-page pattern. */
+.fm-page {
+  direction: rtl;
+}
+
 .fm {
   font-family: var(--x-font-sans);
   background: var(--x-bg);

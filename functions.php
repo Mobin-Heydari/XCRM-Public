@@ -11,6 +11,53 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 define( 'HELLO_ELEMENTOR_CHILD_VERSION', '2.0.0' );
 
+/*
+ * Feature registry (single source of truth) is loaded globally so the shared
+ * header/footer can render the Features mega menu and sidebar on EVERY page.
+ * require_once keeps this idempotent — feature templates may also load it.
+ */
+require_once get_stylesheet_directory() . '/inc/features-data.php';
+
+/**
+ * Force RTL document direction on every page.
+ *
+ * The WP locale is en-US, so language_attributes() omits dir — but the whole
+ * design (header, mega menu, off-canvas sidebar, page wrappers) assumes RTL.
+ * The shared header sits outside the per-page RTL wrappers (.hp / .fm / .xcrm-b2),
+ * so without dir="rtl" on <html> it renders LTR on landing pages.
+ * The guard avoids a duplicate attribute if the locale ever outputs dir itself.
+ */
+add_filter( 'language_attributes', 'xcrm_language_attributes_rtl' );
+function xcrm_language_attributes_rtl( $output ) {
+	if ( false === stripos( (string) $output, 'dir=' ) ) {
+		$output .= ' dir="rtl"';
+	}
+	return $output;
+}
+
+/**
+ * Serve a routed custom template with a real 200 status.
+ *
+ * Routes like /features/ and /privacy-policy/ have no matching WP page, so the
+ * main query is 404 even though our template renders the full page. Clear the
+ * 404 state before the template loads so the response is indexable and the
+ * document title is not "Page not found".
+ *
+ * @param string|null $custom Path to the custom template, or null.
+ * @return string|null
+ */
+function xcrm_serve_custom_template( $custom ) {
+	if ( file_exists( $custom ) ) {
+		global $wp_query;
+		if ( $wp_query instanceof WP_Query && ! empty( $wp_query->is_404 ) ) {
+			$wp_query->is_404 = false;
+			status_header( 200 );
+		}
+		return $custom;
+	}
+	return null;
+}
+
 function hello_elementor_child_scripts_styles() {
 
 	/*
@@ -41,6 +88,15 @@ function hello_elementor_child_scripts_styles() {
 		'xcrm-core-js',
 		get_stylesheet_directory_uri() . '/assets/js/xcrm-core.js',
 		[],
+		HELLO_ELEMENTOR_CHILD_VERSION,
+		true
+	);
+
+	// Shared navigation (desktop Features mega menu + mobile off-canvas sidebar).
+	wp_enqueue_script(
+		'xcrm-nav-js',
+		get_stylesheet_directory_uri() . '/assets/js/xcrm-nav.js',
+		[ 'xcrm-core-js' ],
 		HELLO_ELEMENTOR_CHILD_VERSION,
 		true
 	);
@@ -128,16 +184,16 @@ function xcrm_legal_template( $template ) {
 	$uri = untrailingslashit( (string) $uri );
 
 	if ( $uri === '/privacy-policy' || substr( $uri, -15 ) === '/privacy-policy' ) {
-		$custom = get_stylesheet_directory() . '/page-xcrm-privacy-policy.php';
-		if ( file_exists( $custom ) ) {
-			return $custom;
+		$served = xcrm_serve_custom_template( get_stylesheet_directory() . '/page-xcrm-privacy-policy.php' );
+		if ( null !== $served ) {
+			return $served;
 		}
 	}
 
 	if ( $uri === '/terms' || substr( $uri, -6 ) === '/terms' ) {
-		$custom = get_stylesheet_directory() . '/page-xcrm-terms.php';
-		if ( file_exists( $custom ) ) {
-			return $custom;
+		$served = xcrm_serve_custom_template( get_stylesheet_directory() . '/page-xcrm-terms.php' );
+		if ( null !== $served ) {
+			return $served;
 		}
 	}
 
@@ -172,18 +228,18 @@ function xcrm_features_template( $template ) {
 
 	foreach ( $detail_routes as $route => $file ) {
 		if ( $uri === $route || substr( $uri, -strlen( $route ) ) === $route ) {
-			$custom = get_stylesheet_directory() . $file;
-			if ( file_exists( $custom ) ) {
-				return $custom;
+			$served = xcrm_serve_custom_template( get_stylesheet_directory() . $file );
+			if ( null !== $served ) {
+				return $served;
 			}
 		}
 	}
 
 	// Directory.
 	if ( $uri === '/features' || substr( $uri, -9 ) === '/features' ) {
-		$custom = get_stylesheet_directory() . '/page-xcrm-features.php';
-		if ( file_exists( $custom ) ) {
-			return $custom;
+		$served = xcrm_serve_custom_template( get_stylesheet_directory() . '/page-xcrm-features.php' );
+		if ( null !== $served ) {
+			return $served;
 		}
 	}
 

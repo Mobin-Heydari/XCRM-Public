@@ -88,6 +88,7 @@ $page_description = 'هویت کاربران ناشناس را با شناسه�
 		</div>
 
 		<div class="ft__inner ft__hero-inner">
+			<div class="ft__hero-copy">
 			<nav class="ft__breadcrumb" aria-label="مسیر ناوبری" data-reveal="fade">
 				<a href="<?php echo esc_url( $home_url ); ?>">خانه</a>
 				<span class="ft__breadcrumb-sep" aria-hidden="true">‹</span>
@@ -129,6 +130,9 @@ $page_description = 'هویت کاربران ناشناس را با شناسه�
 				<li>تطبیق در محدودهٔ همان شرکت</li>
 				<li>وصل به تحلیل و بخش‌بندی</li>
 			</ul>
+			</div>
+			<div class="ft__hero-media">
+			<?php get_template_part( 'template-parts/feature-hero-graphic', null, array( 'slug' => 'identity-resolution' ) ); ?>
 
 			<div class="ft__hero-visual ft-anim ft-anim--5">
 				<div class="ft__idvz">
@@ -208,6 +212,7 @@ $page_description = 'هویت کاربران ناشناس را با شناسه�
 					</div>
 				</div>
 				<p class="ft__mock-caption">داده‌های نمونه — نمایش تزئینی شناسه‌ها؛ مقادیر واقعی از قواعد شناسایی XCRM پیروی می‌کنند</p>
+			</div>
 			</div>
 		</div>
 	</section>

@@ -87,6 +87,7 @@ $page_description = 'کانال‌های پیامک، ایمیل، پوش نوت
 		</div>
 
 		<div class="ft__inner ft__hero-inner">
+			<div class="ft__hero-copy">
 			<nav class="ft__breadcrumb" aria-label="مسیر ناوبری" data-reveal="fade">
 				<a href="<?php echo esc_url( $home_url ); ?>">خانه</a>
 				<span class="ft__breadcrumb-sep" aria-hidden="true">‹</span>
@@ -126,6 +127,10 @@ $page_description = 'کانال‌های پیامک، ایمیل، پوش نوت
 				<li>بازه مجاز ارسال برای هر کانال</li>
 				<li>تاریخچه پیامک با وضعیت تحویل</li>
 			</ul>
+			</div>
+			<div class="ft__hero-media">
+			<?php get_template_part( 'template-parts/feature-hero-graphic', null, array( 'slug' => 'communication' ) ); ?>
+			</div>
 		</div>
 	</section>
 

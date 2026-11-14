@@ -71,6 +71,7 @@ $groups     = xcrm_get_feature_groups();
 		</div>
 
 		<div class="ft__inner ft__hero-inner">
+			<div class="ft__hero-copy">
 			<nav class="ft__breadcrumb" aria-label="مسیر ناوبری" data-reveal="fade">
 				<a href="<?php echo esc_url( $home_url ); ?>">خانه</a>
 				<span class="ft__breadcrumb-sep" aria-hidden="true">‹</span>
@@ -107,6 +108,7 @@ $groups     = xcrm_get_feature_groups();
 				<li>اتوماسیون روی n8n اختصاصی</li>
 				<li>تحلیل قیف، کوهورت و RFM</li>
 			</ul>
+			</div>
 		</div>
 	</section>
 

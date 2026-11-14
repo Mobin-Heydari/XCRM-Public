@@ -19,7 +19,7 @@ if ( empty( $feature ) || ! is_array( $feature ) ) {
 }
 
 $ft_delay = isset( $ft_card_delay ) ? (int) $ft_card_delay : 0;
-$ft_url   = home_url( '/features/' . $feature['slug'] . '/' );
+$ft_url   = function_exists( 'xcrm_feature_url' ) ? xcrm_feature_url( $feature ) : home_url( '/features/' . $feature['slug'] . '/' );
 $ft_tag   = ! empty( $feature['built'] ) ? 'a' : 'div';
 ?>
 <<?php echo $ft_tag; ?>

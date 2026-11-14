@@ -83,6 +83,7 @@ $page_description = 'قیف تبدیل، کوهورت، RFM، مسیر مشتر�
 		</div>
 
 		<div class="ft__inner ft__hero-inner">
+			<div class="ft__hero-copy">
 			<nav class="ft__breadcrumb" aria-label="مسیر ناوبری" data-reveal="fade">
 				<a href="<?php echo esc_url( $home_url ); ?>">خانه</a>
 				<span class="ft__breadcrumb-sep" aria-hidden="true">‹</span>
@@ -121,6 +122,10 @@ $page_description = 'قیف تبدیل، کوهورت، RFM، مسیر مشتر�
 				<li>تحلیل قیف فروش و ماتریس مراحل</li>
 				<li>خروجی CSV و XLSX</li>
 			</ul>
+			</div>
+			<div class="ft__hero-media">
+			<?php get_template_part( 'template-parts/feature-hero-graphic', null, array( 'slug' => 'analytics' ) ); ?>
+			</div>
 		</div>
 	</section>
 
